@@ -1,21 +1,30 @@
 load('sounds.mat')
 load('icaTest.mat')
 A(1:2,1:2);
-m1=audioread('music-1.wav');
-m2=audioread('music-2.wav');
+m1=audioread('init-music-1.wav');
+m2=audioread('init-music-2.wav');
 
-audiowrite('miii1.wav',m1,16000)
-audiowrite('miii2.wav',m2,16000)
+e1=audioread('expected-music-1.wav');
+e2=audioread('expected-music-2.wav');
+
+
 
 M=[m1,m2];
-%B=A(1:2,1:2);
-A=rand(numSrc, numSrc);
-M*A;
-X=A*M.';
+B=[1.1 , 0.7 ; 1.5 , 0.5];
+ 
+M=[e1,e2];
+%A=rand(numSrc, numSrc);
+%M*A;
+
+%X=B*M.';
+X=B*M.';
+%X=M.';
 subplot (4, 1, 1)
-plot(m1)
+audiowrite('miii1.wav',X(1,:),16000)
+plot(X(1,:))
 subplot (4, 1, 2)
-plot(m2)
+audiowrite('miii2.wav',X(2,:),16000)
+plot(X(2,:))
 
 eta = 0.01;
 eta0 = eta;

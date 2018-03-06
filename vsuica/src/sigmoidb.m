@@ -1,4 +1,4 @@
-function g= sigmoid(B, y)
+function g= sigmoidb(B, y)
 % The sigmoid/logistic function
 % g(y) = 1/(1 + e^{-by})
 % Returns the sigmoid of y, where y can be a single value, vector or a matrix
