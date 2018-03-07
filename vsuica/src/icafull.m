@@ -12,6 +12,12 @@ fprintf('Loading and Visualizing Sources ... \n')
 load('icaTest.mat'); % Original signals stored in matrices U (3x40) and A(3x3)
 load('sounds.mat'); % Original signals stored in sounds
 
+audiowrite("s1.wav",sounds(1,:),11025)
+audiowrite("s2.wav",sounds(2,:),11025)
+audiowrite("s3.wav",sounds(3,:),11025)
+audiowrite("s4.wav",sounds(4,:),11025)
+audiowrite("s5.wav",sounds(5,:),11025)
+
 %srcMat=U;
 %srcMat=sounds;  	% Takes too much time to run all 5
 %srcMat=sounds(1:3,:);	% Take only 3 signals
