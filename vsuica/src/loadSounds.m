@@ -34,21 +34,26 @@ num_iter=1000;
 %Make some random guess of mix-matrix inverse
 W = rand(size(B))./50;
 W
-
+size(X)
 numSrc = size(X,1);
-ta = 0.01;
-eta0 = eta;
+numSrc
+
 b = ones(numSrc,1);
+b
 kappa=0.01;	%0.0001-no change, 0.01-good
-T=1000;
-num_iter=5000;
+num_iter=2;
+
 
 for i=0:num_iter,
 	Y = W*X;			% predict source matrix based on guessed mix matrix
+  size(Y)
 	[delW, delmyW, delb] = wgradientbeta(eta, kappa, b, Y, W);	% gradient descent - shift by delta
 	W = W + delW;			% update W
+  W
+  delW
 	%W = W + (delmyW * 0.001);			% update W
 	eta = eta0 / (1 + (i/T));	% annealing - learning rate
+  eta
 	if(mod(i,100)==0),
 		b;
 		b = b + delb;
