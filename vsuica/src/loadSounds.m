@@ -41,7 +41,7 @@ numSrc
 b = ones(numSrc,1);
 b
 kappa=0.01;	%0.0001-no change, 0.01-good
-num_iter=2;
+num_iter=10;
 
 
 for i=0:num_iter,
