@@ -10,7 +10,7 @@ delW = zeros(size(W));
 
 B = repmat(b, 1, size(Y,2));
 Z = sigmoidb(B,Y);
-Z([1,2],1:3)
+Z([1,2],1:3);
 Id = eye(size(Y,1));
 #Id
 grad = eta * (Id + (B .* (1-2*Z))*Y') * W;
@@ -19,7 +19,7 @@ grad = eta * (Id + (B .* (1-2*Z))*Y') * W;
 #size(W)
 #size(grad)
 
-size(B .* (1-2*Z))
+size(B .* (1-2*Z));
 delmyW = eta * (((B .* (1-2*Z))*Y') +pinv(W)') ;
 delb = kappa * (sum((Y .* (1-2*Z) *Y')'))' ;
 

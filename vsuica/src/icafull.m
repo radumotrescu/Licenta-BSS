@@ -23,7 +23,8 @@ audiowrite("s5.wav",sounds(5,:),11025)
 %srcMat=sounds(1:3,:);	% Take only 3 signals
 %srcMat=sounds(2:4,:);	% Take only 3 signals
 %srcMat=sounds(3:5,:);	% Take only 3 signals
-srcMat=[sounds(2,:); sounds(3,:); sounds(5,:)];
+%srcMat=[sounds(2,:); sounds(3,:); sounds(5,:)];
+srcMat=[sounds(2,:); sounds(3,:)];
 
 plot(0,0);
 hold on;
@@ -40,6 +41,7 @@ fprintf('\n Showing Original Source. Press enter to continue.\n');
 
 numSrc = size(srcMat,1);
 A=rand(numSrc, numSrc);
+A
 %fprintf('\n Actual A.\n');
 %A
 X = A*srcMat;
@@ -70,7 +72,7 @@ for i=0:num_iter,
 	%	%fflush(stdout);
 	%end;
 end;
-
+W
 Y = W*X;				% predict source matrix based on guessed mix matrix
 
 Y = (Y - min(min(Y))) ./ (max(max(Y)) - min(min(Y)));

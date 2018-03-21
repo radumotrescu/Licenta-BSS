@@ -6,9 +6,9 @@ function g= sigmoidb(B, y)
 % B is the same dimension as y!
 
 g = zeros(size(y));
-y([1,2],[1:3])
-(-(B.*y))([1,2],1:3)
-exp(-(B.*y))([1,2],1:3)
+y([1,2],[1:3]);
+(-(B.*y))([1,2],1:3);
+exp(-(B.*y))([1,2],1:3);
 
 g = 1 ./ (1 + exp(- (B .* y)));
 
