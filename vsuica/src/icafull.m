@@ -24,7 +24,7 @@ audiowrite("s5.wav",sounds(5,:),11025)
 %srcMat=sounds(2:4,:);	% Take only 3 signals
 %srcMat=sounds(3:5,:);	% Take only 3 signals
 %srcMat=[sounds(2,:); sounds(3,:); sounds(5,:)];
-srcMat=[sounds(2,:); sounds(3,:)];
+srcMat=[sounds(2,:); sounds(3,:);sounds(4,:)];
 
 plot(0,0);
 hold on;
