@@ -11,7 +11,7 @@
 \everymath{\displaystyle}
 \setcounter{secnumdepth}{4}
 
-\title{Folosirea PCA pentru recunoasterea imaginilor cu ajutorul librariei Accord}
+\title{Separarea surselor}
 \author{Motrescu Radu}
 \date{}
 
@@ -25,12 +25,17 @@
 
 \newpage
 
-\section{Libraria Accord.NET}
+\section{Introducere in separarea surselor //TODO}
+
+\newpage
+\section{PCA}
+\section{Kernel PCA}
+\subsection{Libraria Accord.NET}
 Libraria Accord.Net contine clase pentru:
 \begin{itemize}
 \item Calcul stiintific: matematica, statistica si machine learning
 \item Procesare de imagini si semnale: imagini, semnale audio si recunoastere si urmarire faciala in timp real
-\item Librarii suport pentru controale specifice: histograme, scatter-plots, controale pentru fiecare clasa de procesare imagini si semnale
+\item Biblioteci suport pentru controale specifice: histograme, scatter-plots, controale pentru fiecare clasa de procesare imagini si semnale
 \end{itemize}
 
 
@@ -38,7 +43,7 @@ In contextul cerintelor pe care vrem noi sa le indeplinim, vom folosi clase dedi
 
 \newpage
 
-\section{Ce este PCA?}
+\subsection{Ce este PCA?}
 PCA, sau Principal Component Analysis, sau pe romaneste, Analiza Componentelor Principale este o unealta matematica aplicata din algebra liniara.
 
 Este o metoda non-parametrica (care nu depinde de statistici) de a extrage informatiile relevante dintr-un set de date complex sau confuz.
@@ -150,7 +155,7 @@ FinalData = RowFeatureVector $\times$ RowZeroMeanData
 Matricea rezultata \textbf{FinalData} va contine setul de date dupa aplicarea algoritmului PCA.
 \newpage
 
-\section{Jurnalul dezvoltarii aplicatiei}
+\subsection{Jurnalul dezvoltarii aplicatiei}
 
 \subsection{Aplicatia AccordPCA}
 Primii pasi pe care i-am facut in cadrul acestui proiect a fost implementarea algoritmului PCA. Acest lucru a fost realizat usor, folosind libraria Accord, mai specific, pentru a realiza diferitele operatii cu matrici. 
@@ -325,7 +330,6 @@ v=min(N)
 $W=$ reprezinta fetele setului de date initial proiectate in spatiul fetelor
 
 $D=$ diferenta dintre toate liniile lui $W$ si $Y$ 
-
 $N=$ norma fiecarei linii din $D$
 
 $v=$ este distanta dintre imaginea nou proiectata si spatiul fetelor
@@ -333,4 +337,29 @@ $v=$ este distanta dintre imaginea nou proiectata si spatiul fetelor
 Pentru a afla granita care delimiteaza imaginile din spatiul fetelor de celelalte, vom folosi aceleasi operatii ca si mai sus, dar aplicate pe toate imaginile setului initial, si vom cauta $v=avg(N)$, distanta medie dintre toate fetele proiectate si spatiul fetelor. Am ales sa facem acest lucru si sa nu cautam $v=max(N)$ deoarece se poate intampla ca o imagine din setul initial sa aiba distanta fata de spatiul fetelor disproportional mai mare fata de celelalte, si astfel granita de clasificare ar fi prea mare, incluzand orice imagine pe care incercam sa o proiectam.
 
 Acestea fiind zise, am facut urmatorul test: din cele 65 de imagini ale subiectului 1 din baza de date Yale, primele 44 au fost folosite pentru a "antrena" algoritmul, iar ultimele 21 au fost folosite pentru clasificare. Eroarea rezultata a fost de $\sim$ 50\%, imaginile care nu au fost clasificate ca facand parte in set au fost cele in care subiectul are numai jumatate de fata iluminata, numarul acestor imagini fiind $\sim$ 50\% din ele, deci putem trage concluzia ca algoritmul face ceea ce isi propune. 
+
+\newpage
+\cite{Nobody06} \cite{mrx05}
+\newpage
+\section{ICA //TODO}
+
+\subsection{Ce este ICA?}
+Una dintre problemele din lumea reala este gasirea unei reprezentari potrivite pentru date multivariate, adica date care au multe dimensiuni, si care de multe ori sunt aleatoare. Din cauza problemelor de performanta, orice fel de reprezentare este deobicei interpretata ca o transformare liniara a datelor originale. Printre aceste metode de analiza a transformarilor liniare se numara si PCA, despre care am vorbit pana acum. ICA (Independent Component Analysis) sau Analiza Componentelor Individuale este o abordare noua care are rolul de a reprezentarile liniare ale unor date cu distributie nongaussiana, astfel incat componentele sa fie cat mai independente din punct de vedere statistic. Acest tip de separare este dorita deoarece captureaza structura esentiala a datelor in multe tipuri de aplicatii, precum extragerea caracteristicilor (feature extraction) sau separarea semnalelor (signal separation). 
+
+Pentru a putea vizualiza aceasta idee, putem analiza o problema din lumea reala. Sa spunem ca suntem intr-o camera in care 2 oameni vorbesc simultan. Avem 2 microfoane pe care le pozitionam in locuri diferite in camera, si ele ne dau 2 inregistrari ale semnalelor. Aceste semnale sunt $x_1 (t)$ si $x_2 (t)$, cu $x_1$ si $x_2$ functii de amplitudine in functie de $t$. Fiecare inregistrare este o suma ponderata a semnalelor emise de cei doi oameni care vorbesc, pe care le notam $s_1(t)$ si $s_2(t)$. Pentru claritate le punem sub forma de ecuatie liniara:
+
+\begin{equation}
+	x_1(t)=a_{11} s_1 + a_{12} s_2
+\end{equation}
+\begin{equation}
+	x_2(t)=a_{21} s_2 + a_{22} s_2
+\end{equation}
+
+unde $a_{11}, a{12}, a_{21}, a_{22}$ sunt niste parametrii care determina distanta dintre microfoane si vorbitori. Avand aceste date, daca am putea estima cele doua semnale initiale $s_1(t)$ si $s_2(t)$ folosind doar semnalele inregistrate $x_1(t)$ si $x_2(t)$, am reusi sa rezolvam multe probleme din lumea reala. Tipul de problema prezentat mai sus este denumit si \textit{cocktail-party problem}.
+\newpage
+\section{Concluzii //TODO}
+\section{Bibliografie //TODO}
+\bibliography{referinte}
+\bibliographystyle{plain}
+
 \end{document}
