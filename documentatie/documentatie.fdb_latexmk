@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex documentatie"] 1527620676 "documentatie.aux" "documentatie.bbl" "documentatie" 1527621261
+["bibtex documentatie"] 1527700129 "documentatie.aux" "documentatie.bbl" "documentatie" 1527700779
   "C:/Program Files (x86)/MiKTeX 2.9/bibtex/bst/bibtex/plain.bst" 1291868336 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "documentatie.aux" 1527621260 3146 5ae18c2830c248e497d6c213140d4f00 ""
+  "documentatie.aux" 1527700779 3146 af65467f616fd0b737e5402fc39caec1 ""
   "referinte.bib" 1527619053 215 81f2efbdfd594edc27f08e66f0a7494f ""
   (generated)
-  "documentatie.blg"
   "documentatie.bbl"
-["pdflatex"] 1527621258 "c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie.tex" "documentatie.pdf" "documentatie" 1527621261
+  "documentatie.blg"
+["pdflatex"] 1527700777 "c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie.tex" "documentatie.pdf" "documentatie" 1527700779
   "C:/Program Files (x86)/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files (x86)/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233955448 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Program Files (x86)/MiKTeX 2.9/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -84,14 +84,15 @@
   "PCAPics/threecloud1.png" 1499800024 31351 1b97ac121dc54be696f288c9ff6fcf14 ""
   "PCAPics/threecloud2.png" 1499800024 34257 e870de8b094889bc3ac5508a997754df ""
   "PCAPics/threecloud3.png" 1499800024 34581 a7917d2de5fd66110d90f0ea0c5969b4 ""
+  "PCAPics/two-sound-sources.png" 1527699726 345436 b9984dc4a529f0484ff26d964b707864 ""
   "PCAPics/twomoon1.png" 1499800024 30680 f4e49a7ddd63e9d7cf3459bac7f00d97 ""
-  "c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie.tex" 1527621258 19234 51397d060fccef3b69b4a6b2d91f2aac ""
-  "documentatie.aux" 1527621260 3146 5ae18c2830c248e497d6c213140d4f00 ""
-  "documentatie.bbl" 1527620677 188 0b662a664db3d5fa327fea19d9596313 "bibtex documentatie"
-  "documentatie.tex" 1527621258 19234 51397d060fccef3b69b4a6b2d91f2aac ""
-  "documentatie.toc" 1527621260 1687 97cb3566b552ee192d650bda2c29cef4 ""
+  "c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie.tex" 1527700776 19911 a4b55426df7cf0392f8fb9c7ecbc7308 ""
+  "documentatie.aux" 1527700779 3146 af65467f616fd0b737e5402fc39caec1 ""
+  "documentatie.bbl" 1527700129 188 0b662a664db3d5fa327fea19d9596313 "bibtex documentatie"
+  "documentatie.tex" 1527700776 19911 a4b55426df7cf0392f8fb9c7ecbc7308 ""
+  "documentatie.toc" 1527700779 1687 706db4fc867c942a7277c19bd9dc4370 ""
   (generated)
-  "documentatie.log"
-  "documentatie.pdf"
   "documentatie.aux"
+  "documentatie.log"
   "documentatie.toc"
+  "documentatie.pdf"

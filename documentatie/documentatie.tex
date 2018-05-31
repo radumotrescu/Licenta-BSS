@@ -357,6 +357,14 @@ Pentru a putea vizualiza aceasta idee, putem analiza o problema din lumea reala.
 
 unde $a_{11}, a{12}, a_{21}, a_{22}$ sunt niste parametrii care determina distanta dintre microfoane si vorbitori. Avand aceste date, daca am putea estima cele doua semnale initiale $s_1(t)$ si $s_2(t)$ folosind doar semnalele inregistrate $x_1(t)$ si $x_2(t)$, am reusi sa rezolvam multe probleme din lumea reala. Tipul de problema prezentat mai sus este denumit si \textit{cocktail-party problem}.
 \newpage
+
+In imaginea urmatoare avem o reprezentare a problemei:
+
+\includegraphics[scale=0.3]{two-sound-sources}
+Stiind $x_1$ si $x_2$, daca am cunoaste elementele matricii $A$, atunci am putea afla $s_1$ si $s_2$ prin mijloace normale, fiind o ecuatie liniara. Dar, formuland problema ca mai inainte, informatiile initiale sunt cele 2 semmnale inregistrate de la cele 2 microfoane.
+
+O abordare de rezolvare a problemei ar putea fi sa incercam sa ne folosim de proprietatiile statistice ale semnalelor $s_1(t)$ si $s_2(t)$ pentru a estima matricea $A$. Tot ce trebuie sa facem este sa presupunem ca semnalele $s_i(t)$ sunt independente statistic la fiecare moment $t$.
+\newpage
 \section{Concluzii //TODO}
 \section{Bibliografie //TODO}
 \bibliography{referinte}

@@ -20,5 +20,5 @@
 \contentsline {subsubsection}{\numberline {3.6.2}Clasificarea unei imagini noi}{15}
 \contentsline {section}{\numberline {4}ICA //TODO}{17}
 \contentsline {subsection}{\numberline {4.1}Ce este ICA?}{17}
-\contentsline {section}{\numberline {5}Concluzii //TODO}{18}
-\contentsline {section}{\numberline {6}Bibliografie //TODO}{18}
+\contentsline {section}{\numberline {5}Concluzii //TODO}{19}
+\contentsline {section}{\numberline {6}Bibliografie //TODO}{19}
