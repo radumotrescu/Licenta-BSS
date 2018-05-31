@@ -1,24 +1,29 @@
-\contentsline {section}{\numberline {1}Introducere in separarea surselor //TODO}{3}
-\contentsline {section}{\numberline {2}PCA}{4}
-\contentsline {section}{\numberline {3}Kernel PCA}{4}
-\contentsline {subsection}{\numberline {3.1}Libraria Accord.NET}{4}
-\contentsline {subsection}{\numberline {3.2}Ce este PCA?}{5}
-\contentsline {paragraph}{\numberline {3.2.0.1}Un scurt exemplu: }{5}
-\contentsline {paragraph}{\numberline {3.2.0.2}Variatia}{6}
-\contentsline {paragraph}{\numberline {3.2.0.3}Covariatia}{6}
-\contentsline {paragraph}{\numberline {3.2.0.4}Matricea de covariatie}{6}
-\contentsline {paragraph}{\numberline {3.2.0.5}Valorile si vectorii proprii}{7}
-\contentsline {paragraph}{\numberline {3.2.0.6}Pasul final PCA}{7}
-\contentsline {subsection}{\numberline {3.3}Jurnalul dezvoltarii aplicatiei}{8}
-\contentsline {subsection}{\numberline {3.4}Aplicatia AccordPCA}{8}
-\contentsline {subsection}{\numberline {3.5}Aplicatia PlotPCA}{9}
-\contentsline {subsubsection}{\numberline {3.5.1}Setul 3-cloud-points}{9}
-\contentsline {subsubsection}{\numberline {3.5.2}Setul two-moon si abordarea Kernel PCA}{11}
-\contentsline {subsubsection}{\numberline {3.5.3}Cros-validare 10-fold}{12}
-\contentsline {subsection}{\numberline {3.6}Aplicatia Eigenfaces}{14}
-\contentsline {subsubsection}{\numberline {3.6.1}Proiectarea unei imagini noi}{14}
-\contentsline {subsubsection}{\numberline {3.6.2}Clasificarea unei imagini noi}{15}
-\contentsline {section}{\numberline {4}ICA //TODO}{17}
-\contentsline {subsection}{\numberline {4.1}Ce este ICA?}{17}
-\contentsline {section}{\numberline {5}Concluzii //TODO}{19}
-\contentsline {section}{\numberline {6}Bibliografie //TODO}{19}
+\contentsline {section}{\numberline {1}Introducere in separarea surselor //TODO}{4}
+\contentsline {section}{\numberline {2}PCA}{5}
+\contentsline {section}{\numberline {3}Kernel PCA}{5}
+\contentsline {subsection}{\numberline {3.1}Libraria Accord.NET}{5}
+\contentsline {subsection}{\numberline {3.2}Ce este PCA?}{6}
+\contentsline {paragraph}{\numberline {3.2.0.1}Un scurt exemplu: }{6}
+\contentsline {paragraph}{\numberline {3.2.0.2}Variatia}{7}
+\contentsline {paragraph}{\numberline {3.2.0.3}Covariatia}{8}
+\contentsline {paragraph}{\numberline {3.2.0.4}Matricea de covariatie}{8}
+\contentsline {paragraph}{\numberline {3.2.0.5}Valorile si vectorii proprii}{9}
+\contentsline {paragraph}{\numberline {3.2.0.6}Pasul final PCA}{9}
+\contentsline {subsection}{\numberline {3.3}Jurnalul dezvoltarii aplicatiei}{11}
+\contentsline {subsection}{\numberline {3.4}Aplicatia AccordPCA}{11}
+\contentsline {subsection}{\numberline {3.5}Aplicatia PlotPCA}{12}
+\contentsline {subsubsection}{\numberline {3.5.1}Setul 3-cloud-points}{12}
+\contentsline {subsubsection}{\numberline {3.5.2}Setul two-moon si abordarea Kernel PCA}{14}
+\contentsline {subsubsection}{\numberline {3.5.3}Cros-validare 10-fold}{16}
+\contentsline {subsection}{\numberline {3.6}Aplicatia Eigenfaces}{18}
+\contentsline {subsubsection}{\numberline {3.6.1}Proiectarea unei imagini noi}{19}
+\contentsline {subsubsection}{\numberline {3.6.2}Clasificarea unei imagini noi}{20}
+\contentsline {section}{\numberline {4}ICA //TODO}{23}
+\contentsline {subsection}{\numberline {4.1}Ce este ICA?}{23}
+\contentsline {subsection}{\numberline {4.2}Definitia riguroasa ICA}{25}
+\contentsline {subsection}{\numberline {4.3}Limitarile ICA}{26}
+\contentsline {subsection}{\numberline {4.4}Independenta}{27}
+\contentsline {subsubsection}{\numberline {4.4.1}Definitie}{27}
+\contentsline {subsubsection}{\numberline {4.4.2}Corelatia si independenta}{28}
+\contentsline {section}{\numberline {5}Concluzii //TODO}{29}
+\contentsline {section}{\numberline {6}Bibliografie //TODO}{29}

@@ -1,14 +1,15 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{mathtools}
 \usepackage{titlesec}
 \usepackage{indentfirst}
 \usepackage{graphicx}
 \usepackage{float}
-
+\usepackage{amsmath}
 
 \graphicspath{{PCAPics/}}
 \everymath{\displaystyle}
+\setlength{\parskip}{1em}
 \setcounter{secnumdepth}{4}
 
 \title{Separarea surselor}
@@ -358,12 +359,96 @@ Pentru a putea vizualiza aceasta idee, putem analiza o problema din lumea reala.
 unde $a_{11}, a{12}, a_{21}, a_{22}$ sunt niste parametrii care determina distanta dintre microfoane si vorbitori. Avand aceste date, daca am putea estima cele doua semnale initiale $s_1(t)$ si $s_2(t)$ folosind doar semnalele inregistrate $x_1(t)$ si $x_2(t)$, am reusi sa rezolvam multe probleme din lumea reala. Tipul de problema prezentat mai sus este denumit si \textit{cocktail-party problem}.
 \newpage
 
-In imaginea urmatoare avem o reprezentare a problemei:
+In imaginea urmatoare avem o reprezentare vizuala a problemei:
 
-\includegraphics[scale=0.3]{two-sound-sources}
+\includegraphics[scale=0.4]{two-sound-sources}
+
+
 Stiind $x_1$ si $x_2$, daca am cunoaste elementele matricii $A$, atunci am putea afla $s_1$ si $s_2$ prin mijloace normale, fiind o ecuatie liniara. Dar, formuland problema ca mai inainte, informatiile initiale sunt cele 2 semmnale inregistrate de la cele 2 microfoane.
 
 O abordare de rezolvare a problemei ar putea fi sa incercam sa ne folosim de proprietatiile statistice ale semnalelor $s_1(t)$ si $s_2(t)$ pentru a estima matricea $A$. Tot ce trebuie sa facem este sa presupunem ca semnalele $s_i(t)$ sunt independente statistic la fiecare moment $t$.
+\newpage
+
+\subsection{Definitia riguroasa ICA}
+Pornim de la presupunerea ca observam $n$ amestecari liniare $x_1, x_2, \ldots, x_n$ a $n$ componente independente:
+	\begin{equation}
+		x_j=a_{j1}s_1+a_{j2}s_2+\ldots+a_{jn}s_n, \text{ pentru toate }j.
+	\end{equation}
+
+Se observa ca am renuntat la indicele de timp $t$, deoarece ICA presupune ca atat fiecare amestecare $x_j$ cat si fiecare sursa $s_k$ sunt variable aleatoare, lucru care o sa fie folositor cand vom vorbi despre distributia datelor. De asemenea, ne vom asigura ca variabilele observate $x_j$ sunt centrate, scazand media esantioanelor.
+
+Este convenient sa ne folosim de notatia vector-matrice, in locul sumelor precum cea precedenta. De acum vom nota \textbf{x} vectorul al carui elemente sunt amestecarile $x_j$, si la fel pentru \textbf{s}, ale carui elemente sunt $s_j$. De asemenea, vom nota \textbf{A} matricea de elemente $a_{ij}$. Folosind aceasta notatie, modelul de amestecare se scrie astfel:
+\begin{equation}
+	\textbf{x}=\textbf{As}.
+\end{equation}
+
+Modelul prezentat este modelul ICA, si este un model generativ, descris in statistica astfel:
+\begin{equation}
+	P(X|Y=y) 
+\end{equation}
+unde $X$ este o variabila observabila, iar $Y$ este variabila cautata, ceea ce inseamna ca descrie cum datele observate, $x_i$, sunt generate de un proces aplicat asupra datelor initiale, in cazul nostru componentele $s_i$. Componentele independente sunt variabile latente, nu sunt observate direct, ci sunt deduse din alte variable. De asemenea, presupunem ca matricea de amestecare $A$ nu este cunoscuta. Tot ce observam este vectorul aleator \textbf{x}, si trebuie sa estimam atat \textbf{A} cat si \textbf{s}. Acest lucru trebuie facut sub anumite ipoteze.
+
+Punctul de inceput al ICA este ipoteza ca componentele independente $s_i$ sunt independente statistic, lucru pe care il vom defini mai incolo. Vom presupune deasemenea ca acestea au distributie \textit{nongaussiana}, si ca matricea $A$ de amestecare este patrata. Dupa ce am estimat matricea $A$, ii putem calcula inversa, sa zicem \textbf{W}, si obtinem componentele independente astfel:
+\begin{equation}
+\textbf{s}=\textbf{Wx}
+\end{equation}
+
+\subsection{Limitarile ICA}
+Avand in vedere modelul dat, se pot observa 2 limitari:
+
+1. Nu putem determina \textit{energiile} componentelor independente.
+
+Motivul este ca, atat \textbf{s} cat si \textbf{A} sunt necunoscute, orice multiplicator scalar al unei dintre surse $s_i$ ar putea fi negat prin impartirea coloanei corespunzatoare $a_i$ al \textbf{A} cu acest scalar. Acelasi lucru se intampla cu semnul variabilelor, acesta se poate inmulti cu $-1$ fara a afecta modelul. Din fericire, aceasta limitare nu este semnificativa in majoritatea cazurilor.
+
+2. Nu putem determina ordinea componentelor independente:
+
+Motivul este ca, din nou, atat \textbf{s} cat si \textbf{A} fiind necunoscute, putem schimba ordinea termenilor din suma precedenta, oricare dintre componente putand fi prima. Formal, avand o matrice de permutare \textbf{P} si inversa ei, modelul poate fi formulat astfel:
+\begin{equation}
+	x=AP^{-1}Ps.
+\end{equation}
+
+Elementele lui \textbf{Ps} sunt componentele independente originale, dar in ordine diferita, iar matricea $\textbf{AP}^{-1}$ este doar o noua matrice de amestecare necunoscuta, care poate fi aflata.
+\newpage
+
+\subsection{Independenta}
+\subsubsection{Definitie} 
+
+Ca sa putem intelege conceptul de independenta, consideram 2 variabile scalare aleatoare, $y_1$ si $y_2$. Variabilele $y_1$ si $y_2$ sunt independente daca informatia din $y_1$ nu influnteaza informatia din $y_2$ si invers. Acest lucru este valabil pentru variabilele precedente $s_1,s_2$, dar nu si pentru amestecarile $x_1,x_2$.
+
+independenta poate fi definita prin probabilitati de densitate. O functie de densitate a unei probabilitati este folosita pentru a specifica probabilitatea unei variabile aleatoare de a avea valori dintr-un anumit interval. Probabilitatea este data prin integrarea functiei cu limitele intervalului. Sa notam $p(y-1,y_2)$ functia de densitate cumulata a $y_1$ si $y_2$, si $p_1(y_1)$ functia de densitate marginala a $y_1$, care reprezeinta functia de densitate a variabilei $y_1$:
+\begin{equation}
+p_1(y_1)=\int{p(y_1,y_2)dy_2},
+\end{equation}
+si similar pentru $y_2$. Acestea fiind spuse, definim $y_1$ si $y_2$ ca fiind independente daca:
+\begin{equation}
+	p(y_1,y_2)=p_1(y_1)p_2(y_2)
+\end{equation}
+
+Definitia aceasta poate fi folosita pentru a demonstra una dintre cele mai importante proprietati ale variabilelor aleatoare independente. Folosind functii $h_1$ si $h_2$ de mai sus, avem:
+\begin{equation}
+E{h_1(h_1),h_2(y_2)}=E{h_1(y_1)}E{h_2(y_2)}
+\end{equation}
+Putem demonstra astfel:
+\begin{equation}
+\begin{split}
+E\{h_1(y_1),h_2(y_2)\} & =\iint{h_1(y_1)h_2(y_2)p(y_1,y_2)dy_1dy_2} \\ 
+& =\iint{h_1(y_1)p_1(y_1)h_2(y_2)p_2(y_2)dy_1dy_2} \\
+& =\int{h_1(y_1)p_1(y_1)dy_1)}\int{h_2(y_2)p_2(y_2)dy_2)}\\ 
+& =E\{h_1(y_1)\}E\{h_2(y_2)\}
+\end{split}
+\end{equation}
+
+\subsubsection{Corelatia si independenta}
+O forma mai slaba de independenta este necorelatia. Doua variabile independente $y_1$ si $y_2$ se numeste necorelate daca covariatia lor este 0:
+\begin{equation}
+	E\{y_1y_2\}-E\{y_1\}E\{y_2\}=0
+\end{equation}
+Daca variabilele sunt independente, ele sunt necorelate, rezultand $h_1(y_1)=y_1$ si $h_2(y_2)=y_2$ din ecuatia precedenta.
+Pe de alta parte, necorelarea nu implica independenta. Sa presupunem ca $(y_1,y_2)$ sunt valori discrete si au o distributie astfel incat perechea are $1/4$ sanse sa ia una dintre valorile urmatoare: $(0,1),(0,-1),(1,0),(-1,0)$. Atunci $y_1$ si $y_2$ sunt necorelate, dar:
+\begin{equation}
+E\{y_1^2, y_2^2\}=0 \neq \frac{1}{4} = E\{y_1^2\}E\{y_2^2\}
+\end{equation}
+si astfel conditia de mai sus nu este respectata, variabilele nefiind independente.
 \newpage
 \section{Concluzii //TODO}
 \section{Bibliografie //TODO}
