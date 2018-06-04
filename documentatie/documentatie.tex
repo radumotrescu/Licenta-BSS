@@ -449,6 +449,20 @@ Pe de alta parte, necorelarea nu implica independenta. Sa presupunem ca $(y_1,y_
 E\{y_1^2, y_2^2\}=0 \neq \frac{1}{4} = E\{y_1^2\}E\{y_2^2\}
 \end{equation}
 si astfel conditia de mai sus nu este respectata, variabilele nefiind independente.
+\subsubsection{Variabile nongaussiene}
+Restrictia fundamentala a ICA este ca componentele independente sa fie nongaussiane pentru ca separarea sa se intample. Ca sa vedem de ce acest lucru este necesar, sa presupunem ca sursele $s_1, s_2$ au distributie gaussiana, iar $A$ este o matrice ortonormala. Din asta rezulta ca $x_1,x_2$ vor fi gaussiene, necorelate si au variatie unitara. Densitatea cumulata a $x_1, x_2$ este:
+\begin{equation}
+	p(x_1,x_2)=\frac{1}{2\pi}\exp(-\frac{x_1^2+x_2^2}{2})
+\end{equation}
+\newpage
+Distributia aceasta este ilustrata mai jos:
+\begin{center}
+	\includegraphics[scale=0.8]{multivariate_gaussian_distribution}
+ \end{center}
+ Se poate observa cum densitatea este complet simetrica. Asta inseamna ca nu contine informatii cu privire la directiile coloanelor matricii de amestecare $A$. Din acest motiv, $A$ nu poate fi estimat.
+
+ \subsection{Principiile estimarii ICA}
+ \subsubsection{Nongaussianitate inseamna dependenta}
 \newpage
 \section{Concluzii //TODO}
 \section{Bibliografie //TODO}
