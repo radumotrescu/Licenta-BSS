@@ -433,7 +433,7 @@ Putem demonstra astfel:
 \begin{split}
 E\{h_1(y_1),h_2(y_2)\} & =\iint{h_1(y_1)h_2(y_2)p(y_1,y_2)dy_1dy_2} \\ 
 & =\iint{h_1(y_1)p_1(y_1)h_2(y_2)p_2(y_2)dy_1dy_2} \\
-& =\int{h_1(y_1)p_1(y_1)dy_1)}\int{h_2(y_2)p_2(y_2)dy_2)}\\ 
+& =\int{h_1(y_1)p_1(y_1)dy_1}\int{h_2(y_2)p_2(y_2)dy_2}\\ 
 & =E\{h_1(y_1)\}E\{h_2(y_2)\}
 \end{split}
 \end{equation}
@@ -462,7 +462,111 @@ Distributia aceasta este ilustrata mai jos:
  Se poate observa cum densitatea este complet simetrica. Asta inseamna ca nu contine informatii cu privire la directiile coloanelor matricii de amestecare $A$. Din acest motiv, $A$ nu poate fi estimat.
 
  \subsection{Principiile estimarii ICA}
- \subsubsection{Nongaussianitate inseamna dependenta}
+ \subsubsection{Nongaussianitate inseamna independenta}
+ Daca luam in calcul cele spuse pana acum, putem deduce ca esenta estimarii unui model ICA sta in nongaussianitate.
+
+ Teorema limita centrala, in versiunea clasica, stabileste ca sumele partiale "normalizate" ale unui sir de variabile aleatoare independente si identic distribuite, cu dispersie finita, tind in distributie catre legea normala (gaussiana). 
+
+ Sa presupunem ca datele din vectorul $x$ este distribuit asemenea modelului ICA prezentat mai devreme, adica ca o amestecare de componente independente, si distributia componentelor independente este  identica. Pentru a estima componentele independente, trebuie sa aplicam operatii liniare asupra $x_i$:
+ \begin{equation}
+	y=w^Tx=\sum_{i}w_ix_i, \text{unde $w$ este vectorul pe care il cautam.}
+ \end{equation}
+
+ Daca $w$ ar fi un rand al inversei lui $A$, aceasta combinatie liniara ar fi egala cu una dintre componentele independente. Ca sa vedem cum teorema limita centrala este folosita pentru a gasi un $w$ ca sa respecte conditia precedenta, putem face o schimbare de variabile, definind $z=A^Tw$. Apoi avem:
+ \begin{equation}
+	 y=w^Tx=w^TAs=z^Ts
+ \end{equation}
+ Se observa ca $y$ este o combinatie liniara de $s_i$, cu ponderile date de $z_i$. Deoarece suma suma celor doua variabile independente este mai gaussiana decat variabilele originale, $z^Ts$ este mai gaussian decat oricare $s_i$, si devine mai putin gaussian atunci cand este $s_i$, in acest caz, doar un element al lui $z$ este diferite de 0. 
+ 
+ Cautam $w$ astfel incat $w^Tx$ sa fie cat mai nongaussian. Un astfel de vector ar corespunde unui $z$ care are doar o componenta diferita de zero. Asta inseamna ca $w^Tx=z^Ts$ este egal cu una dintre componentele independente.
+
+ Maximizand nongaussianitatea lui $w^Tx$ ne da una dintre componentele independente. Spatiul de cautare pentru optimizarea nongaussianitatii intr-un spatiul $n$-dimensional al vectorilor $w$ are $2n$ maxime locale, 2 pentru fiecare componente independenta, $s_i$ si $-s_i$. Ca sa gasim mai multe componente independente, trebuie sa gasim toate maximele locale.  
+\newpage
+\subsection{Masuratori ale nongaussianitatii}
+Pentru a folosi nongaussianitatea in estimarea ICA, avem nevoie de o masura cantitativa a nongaussinitatii unei variabile aleatoare, $y$. Vom presupune ca $y$ este centrat, adica are media egala cu zero, iar variatia ei este unu. 
+\subsubsection{Kurtosis / Aplatizarea}
+O masura clasica a nongaussinitatii este aplatizarea, sau al patrulea moment central al unei variabile aleatoare, si este definit astfel:
+\begin{equation}
+kurt(y)=E\{y^4\}-3(E\{y^2\})^2
+\end{equation}
+Deoarece am stabilitia ca variatia este unu, atunci formula se simplifica la:
+\begin{equation}
+kurt(y)=E\{y^4\}-3
+\end{equation}
+Acest lucru arata defapt ca aplatizarea reprezinta al patrulea moment, $E\{y^4\}$. Pentru un $y$ gaussian, al patrulea moment este definit ca $3(E\{y^2\})^2$, deci aplatizarea pentru un asemenea $y$ este 0. Pentru majoritatea variabilelor aleatoare nongaussiene, aplatizarea este diferita de zero.
+
+Aplatizarea poate fi pozitiva sau negativa, variabilele aleatoare care au aplatizare negativa numinduse subgaussiene, iar cele care au aplatizare pozitiva se numest supergaussiene. Variabilele aleatoare supergaussiene corespund cu distributii de tip Laplace, care au un varf ascutit, si coada alungita:
+\begin{center}
+	\includegraphics[scale=0.25]{laplace_distribution}
+ \end{center}
+
+ Variabilele aleatoare subgaussiene corespund cu distributiile uniforme, acestea fiind plate in reprezentare:
+
+\begin{center}
+	\includegraphics[scale=0.8]{uniform_distribution}
+ \end{center}
+
+Valoarea absoluta a aplatizarii, a fost folosita ca masura a nongaussianitatii in ICA, deoarece este simplu atat teoretic cat si computational. Pentru a calcula aplatizarea, putem folosi pur si simplu al patrulea moment al datelor avute. Analiza teoretica este simplificata datorita proprietatii de liniaritate. Daca avem doua variabile aleatoare independente, atunci:
+\begin{equation}
+kurt(x_1+x_2)=kurt(x_1)	+ kurt(x_2)
+\end{equation}
+\begin{equation}
+kurt(\alpha x_1)=\alpha^4kurt(x_1)
+\end{equation}
+
+Pentru a demonstra cum arata spatiul de optimizare pentru aplatizare, si cum se pot afla componentele independente pot fi gasite prin maximizarea sau minimizarea aplatizarii. Avand modelul $x=As$ ca mai inainte, si componentele independente $s_1$ si $s_2$, cu valorile aplatizarii $kurt(s_1)$ si $kurt(s_2)$, ambele diferite de zero, cautam componentele independente prin $y=w^Tx$.
+Facem din nou transformarea $z=A^Tw$. Apoi avem:
+\begin{equation}
+y=w^Tx=w^TAs=z^Ts=z_1s_1+z_2s_2
+\end{equation}
+
+Folosind proprietatiile aplatizarii mentionate mai devreme avem:
+\begin{equation}
+kurt(y)=kurt(z_1s_1)+kurt(z_2s_2)=z_1^4kurt(s_1)+z_2^4kurt(s_2)	
+\end{equation}
+
+Mai devreme am spus ca variatia lui $y$ este unu, deoarece $s_1$ si $s_2$ au variatia unu. Acest lucru implica faptul ca:
+\begin{equation}
+E\{y^2\}=z_1^2+z_2^2=1
+\end{equation} 
+ceea ce inseamna ca $z$ este restrans la un cerc cu raza unu in spatiul 2D. Problema de optimizare este urmatoarea: care este maximul functiei $|kurt(y)|=|z_1^4kurt(s_1)+z_2^4kurt(s_2)|$ pentru acest tip de cerc?
+
+Maximele in acest caz sunt in punctele unde exact unul dintre elementele vectorului $z$ este zero si celalalt este diferit de zero, si deoarece ne aflam intr-un cerc cu raza unu, elementul diferit de zero este egal cu $-1$ sau $1$. Putem observa ca aceste puncte sunt cele in care $y$ este egal cu unul dintre componentele independente $\pm s_i$, si problema este rezolvata.
+
+In practica am incepe de la un $w$ aleator, am calcula directia in care aplatizarea lui $y=w^Tx$ creste cel mai rapid, daca aplatizarea este pozitiva sau scade cel mai rapid, daca aplatizarea este negativa, in functie de esantioanele lui $x(i)$ al vectorului de mixturi $x$, si folosind o metoda de tip gradient pentru a gasi un nou vector $w$.
+
+In practica, aceasta metoda are cateva dezavantaje. Aplatizarea este sensibila la valori extreme setului de date, ceea ce ar insemna ca toata aproximarea ar depinde de aceste valori, lucru care cauzeaza rezultate eronate.
+
+\subsubsection{Negentropia}
+Negentropia este a doua metoda foarte importanta pentru masurarea nongaussianitatii unor variabile aleatoare independente. Din punctul de vedere al teoriei informatiei, negentropia se bazeaza pe cantitatea de entropie diferentiala. Conceptul de entropie este un concept de baza in teoria informatiei. Aceasta reprezinta gradul de informatiei pe care observarea unei variabile o da. Cu cat variabila este mai putin structurata si mai putin previzibila, cu atat mai mare este entropia variabilei. Entropia $H$ a unei variabile aleatoare discrete $Y$ este:
+\begin{equation}
+	H(Y)=-\sum_i P(Y=a_i)log P(Y=a_i)
+\end{equation}
+unde $a_i$ reprezinta valorile posibile alea lui $Y$. Aceasta definitie poate fi generalizata pentru variabile aleatoare continue, in acest caz, numinduse entropie diferentiala:
+\begin{equation}
+H(Y)=-\int f(y) logf(y)dy	
+\end{equation}
+unde $f(y)$ este functia de densitate a unui vector aleator $y$.
+
+Un rezultat fundamental al teoriei informatiei este stabilirea faptului ca variabilele gaussiene au cea mai mare entropie, comparativ cu alte variabile cu variatie egala. Asta inseamna ca entropia poate fi folosita ca si masura pentru nongaussianitate, aratand ca variabilele cu distributie gaussiana sunt cele mai putin structurate dintre toate distributiile. Entropia este mica pentru variabilele ale caror distributii sunt concentrate pe anumite valori, fiind analog unor functii cu varfuri ascutite, de tip Laplace. Pentru a obtine o masura a nongaussianitatii care este zero pentru o variabila aleatoare gaussiana si tot timpul pozitiva, se foloseste o versiune modificata a definitiei entropiei diferentiale, numita negentropie. Negentropia $J$ este definitia astfel:
+\begin{equation}
+	J(y)=H(y_{gauss})-H(y)	
+\end{equation}
+unde $y_{gauss}$ este variabila aleatoare gaussiana care are aceasi matrice de covariatie ca si $y$. Datorita proprietatilor de mai sus, negentropia este pozitiva, si zero atunci cand variabila $y$ are distributie gaussiana. 
+
+La fel ca la aplatizare, aproximarea negentropiei are un dezavantaj major, acela ca este greu de calculat din punct de vedere computational, deoarece ar fi nevoie de o estimare a functiei de densitate, lucru care nu poate fi facut precis. 
+
+\subsubsection{Aproximarea negentropiei}
+Dupa cum am mentionat mai devreme, aproximarea negentropiei este dificila. In practica, se fac anumite aproximari, iar tipurile de aproximari abordate se va face aici. 
+\begin{equation}
+	J(y)\approx \frac{1}{12}E\{y^3\}^2 + \frac{1}{48}kurt(y)^2
+\end{equation}
+Prima abordare este cea bazata pe momentele statistice:
+Variabila $y$ se presupune ca are media egala cu zero, si variatie unitara. Se poate observa ca aceata abordare sufera de aceleasi limitari precum aproximarea folosind aplatizarea. Pentru a evita acest lucru, s-au dezvoltat aproximari bazate pe principiul entropiei maxime, cu forma:
+\begin{equation}
+	J(y)\approx\sum_{i=1}^p k_i[E\{G_i(y)\}]-E\{G_i(v)\}]^2
+\end{equation}
+unde $k_i$ reprezinta constante pozitive, si $v$ este o variabila gaussiana, iar atat $v$ cat si $y$ au media zero si variatie unitara. 
 \newpage
 \section{Concluzii //TODO}
 \section{Bibliografie //TODO}
