@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300) (preloaded format=pdflatex 2017.6.8)  8 JUN 2018 16:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300) (preloaded format=pdflatex 2017.6.8)  11 JUN 2018 21:06
 entering extended mode
 **c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie.tex
 (c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie.tex
@@ -566,35 +566,35 @@ G,.JBIG2,.JB2,.eps]
 \tf@toc=\write3
 \openout3 = `documentatie.toc'.
 
- [3] [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 37.
+ [3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 36.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
 
-[5] <images/Picture1.png, id=21, 331.2375pt x 316.93407pt>
+[4] [5] <images/Picture1.png, id=21, 331.2375pt x 316.93407pt>
 File: images/Picture1.png Graphic file (type png)
 
 <use images/Picture1.png>
-Package pdftex.def Info: images/Picture1.png used on input line 77.
+Package pdftex.def Info: images/Picture1.png used on input line 86.
 (pdftex.def)             Requested size: 165.61833pt x 158.46664pt.
  [6]
 <images/Picture2.png, id=25, 568.37344pt x 219.06844pt>
 File: images/Picture2.png Graphic file (type png)
 
 <use images/Picture2.png>
-Package pdftex.def Info: images/Picture2.png used on input line 84.
+Package pdftex.def Info: images/Picture2.png used on input line 93.
 (pdftex.def)             Requested size: 390.0pt x 150.32503pt.
  [7 <./images/Picture1.png> <./images/Picture2.png>]
-Overfull \hbox (11.97534pt too wide) in paragraph at lines 106--107
+Overfull \hbox (11.97534pt too wide) in paragraph at lines 115--116
 \OT1/cmr/m/n/12 tragem val-oarea me-die (zero-mean data) si avand se-tul de vec
 -tori $[]$
  []
 
 
-Overfull \hbox (12.33333pt too wide) in paragraph at lines 108--109
+Overfull \hbox (12.33333pt too wide) in paragraph at lines 117--118
 []\OT1/cmr/m/n/12 Fiecare linie a ma-tricii reprez-inta toate ma-sur-a-to-rile 
 unui an-u-mit parametru,
  []
@@ -603,19 +603,19 @@ unui an-u-mit parametru,
 File: images/Compute.png Graphic file (type png)
 
 <use images/Compute.png>
-Package pdftex.def Info: images/Compute.png used on input line 166.
+Package pdftex.def Info: images/Compute.png used on input line 175.
 (pdftex.def)             Requested size: 390.0pt x 146.48833pt.
  <images/Test1.png, id=47, 758.835pt x 307.90031pt>
 File: images/Test1.png Graphic file (type png)
 
 <use images/Test1.png>
-Package pdftex.def Info: images/Test1.png used on input line 173.
+Package pdftex.def Info: images/Test1.png used on input line 182.
 (pdftex.def)             Requested size: 390.0pt x 158.2439pt.
  [11 <./images/Compute.png> <./images/Test1.png>]
 <images/Test2.png, id=53, 756.57657pt x 302.63063pt>
 File: images/Test2.png Graphic file (type png)
  <use images/Test2.png>
-Package pdftex.def Info: images/Test2.png used on input line 182.
+Package pdftex.def Info: images/Test2.png used on input line 191.
 (pdftex.def)             Requested size: 390.0pt x 156.00197pt.
 
 [12 <./images/Test2.png>]
@@ -623,21 +623,21 @@ Package pdftex.def Info: images/Test2.png used on input line 182.
 File: images/threecloud1.png Graphic file (type png)
 
 <use images/threecloud1.png>
-Package pdftex.def Info: images/threecloud1.png used on input line 197.
+Package pdftex.def Info: images/threecloud1.png used on input line 206.
 (pdftex.def)             Requested size: 390.0pt x 159.79225pt.
 
 <images/threecloud2.png, id=59, 1112.65688pt x 455.45157pt>
 File: images/threecloud2.png Graphic file (type png)
 
 <use images/threecloud2.png>
-Package pdftex.def Info: images/threecloud2.png used on input line 204.
+Package pdftex.def Info: images/threecloud2.png used on input line 213.
 (pdftex.def)             Requested size: 390.0pt x 159.63977pt.
 
 <images/threecloud3.png, id=60, 1113.40968pt x 457.71pt>
 File: images/threecloud3.png Graphic file (type png)
 
 <use images/threecloud3.png>
-Package pdftex.def Info: images/threecloud3.png used on input line 211.
+Package pdftex.def Info: images/threecloud3.png used on input line 220.
 (pdftex.def)             Requested size: 390.0pt x 160.31963pt.
  [13 <./images/threecloud1.png> <./images/threecloud2.png>] [14 <./images/three
 cloud3.png>]
@@ -645,16 +645,16 @@ cloud3.png>]
 File: images/twomoon1.png Graphic file (type png)
 
 <use images/twomoon1.png>
-Package pdftex.def Info: images/twomoon1.png used on input line 251.
+Package pdftex.def Info: images/twomoon1.png used on input line 260.
 (pdftex.def)             Requested size: 390.0pt x 159.68784pt.
  [15 <./images/twomoon1.png>]
-Overfull \hbox (5.57922pt too wide) in paragraph at lines 261--262
+Overfull \hbox (5.57922pt too wide) in paragraph at lines 270--271
 []\OT1/cmr/m/n/12 -cu cele-lalte 90 de puncte vom "antrena" al-go-rit-mul pen-t
 ru a putea proiecta
  []
 
 
-Overfull \hbox (50.50192pt too wide) in paragraph at lines 267--268
+Overfull \hbox (50.50192pt too wide) in paragraph at lines 276--277
 \OT1/cmr/m/n/12 putem ver-i-fica eroarea al-go-rit-mu-lui pen-tru cele 10 punct
 e: $[]$ 
  []
@@ -663,17 +663,17 @@ e: $[]$
 File: images/tenfold1.png Graphic file (type png)
 
 <use images/tenfold1.png>
-Package pdftex.def Info: images/tenfold1.png used on input line 276.
+Package pdftex.def Info: images/tenfold1.png used on input line 285.
 (pdftex.def)             Requested size: 390.0pt x 164.27487pt.
  [16] [17 <./images/tenfold1.png>]
 <images/eigenfaces.png, id=80, 632.3625pt x 289.08pt>
 File: images/eigenfaces.png Graphic file (type png)
 
 <use images/eigenfaces.png>
-Package pdftex.def Info: images/eigenfaces.png used on input line 293.
+Package pdftex.def Info: images/eigenfaces.png used on input line 302.
 (pdftex.def)             Requested size: 390.0pt x 178.2882pt.
  [18 <./images/eigenfaces.png>] [19]
-Overfull \hbox (5.7621pt too wide) in paragraph at lines 340--341
+Overfull \hbox (5.7621pt too wide) in paragraph at lines 349--350
 \OT1/cmr/m/n/12 "antrena" al-go-rit-mul, iar ul-timele 21 au fost folosite pen-
 tru clasi-fi-care. Eroarea
  []
@@ -683,7 +683,7 @@ tru clasi-fi-care. Eroarea
 File: images/two-sound-sources.png Graphic file (type png)
 
 <use images/two-sound-sources.png>
-Package pdftex.def Info: images/two-sound-sources.png used on input line 364.
+Package pdftex.def Info: images/two-sound-sources.png used on input line 373.
 (pdftex.def)             Requested size: 371.28055pt x 294.79614pt.
  [24 <./images/two-sound-sources.png>]
 [25] [26] [27] [28]
@@ -692,10 +692,10 @@ pt>
 File: images/multivariate_gaussian_distribution.png Graphic file (type png)
  <use images/multivariate_gaussian_distribution.png>
 Package pdftex.def Info: images/multivariate_gaussian_distribution.png used on 
-input line 460.
+input line 469.
 (pdftex.def)             Requested size: 224.0373pt x 224.63954pt.
  [29 <./images/multivariate_gaussian_distribution.png>] [30]
-Overfull \hbox (0.35178pt too wide) in paragraph at lines 495--497
+Overfull \hbox (0.35178pt too wide) in paragraph at lines 504--506
 \OT1/cmr/m/n/12 Acest lu-cru arata de-fapt ca apla-ti-zarea reprez-inta al pa-t
 rulea mo-ment, $\OML/cmm/m/it/12 E\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 y[]\OMS/cm
 sy/m/n/12 g$\OT1/cmr/m/n/12 .
@@ -705,7 +705,7 @@ sy/m/n/12 g$\OT1/cmr/m/n/12 .
 File: images/laplace_distribution.png Graphic file (type png)
 
 <use images/laplace_distribution.png>
-Package pdftex.def Info: images/laplace_distribution.png used on input line 500
+Package pdftex.def Info: images/laplace_distribution.png used on input line 509
 .
 (pdftex.def)             Requested size: 200.74951pt x 150.56212pt.
  [31 <./images/laplace_distribution.png>]
@@ -713,33 +713,39 @@ Package pdftex.def Info: images/laplace_distribution.png used on input line 500
 File: images/uniform_distribution.png Graphic file (type png)
 
 <use images/uniform_distribution.png>
-Package pdftex.def Info: images/uniform_distribution.png used on input line 506
+Package pdftex.def Info: images/uniform_distribution.png used on input line 515
 .
 (pdftex.def)             Requested size: 297.51189pt x 97.5646pt.
  [32 <./images/uniform_distribution.png>]
-[33] [34] [35] (documentatie.bbl) [36] (documentatie.aux) ) 
+[33] [34] [35] [36] <sigmoid_function.png, id=148, 602.25pt x 401.5pt>
+File: sigmoid_function.png Graphic file (type png)
+
+<use sigmoid_function.png>
+Package pdftex.def Info: sigmoid_function.png used on input line 614.
+(pdftex.def)             Requested size: 361.35278pt x 240.90184pt.
+ [37 <./sigmoid_function.png>] [38] (documentatie.bbl) [39] (documentatie.aux) 
+) 
 Here is how much of TeX's memory you used:
- 3411 strings out of 493328
- 47751 string characters out of 3136536
+ 3416 strings out of 493328
+ 47870 string characters out of 3136536
  115717 words of memory out of 3000000
- 6873 multiletter control sequences out of 15000+200000
+ 6877 multiletter control sequences out of 15000+200000
  11128 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,15n,28p,972b,235s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmti12.pfb>
-Output written on documentatie.pdf (36 pages, 981534 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on documentatie.pdf (39 pages, 1006259 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
+ 194 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

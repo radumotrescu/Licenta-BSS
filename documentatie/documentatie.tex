@@ -27,7 +27,16 @@
 \newpage
 
 \section{Introducere in separarea surselor //TODO}
+Aceasta lucrare are scopul de a informa cititorul asupra unor metoda de analizare a componentelor unor date, fie acestea date economice sau imagini, pentru a putea fi interpretate mai usor, cat si metode de separare a componentelor unui set de date. 
 
+Algoritmii abordati sunt \textbf{PCA (Principal Component Analysis)}, \textbf{KPCA (Kernel Principal Component Analysis)} si \textbf{ICA (Independent Component Analysis)}. 
+
+O scurta descriere a cazurilor de aplicare a algoritmilor mentionati:
+\begin{itemize}
+	\item{PCA - Este folosit pentru a extrage informatiile cele mai relevante dintr-un set de date, adeseori cu dimensionalitate mare, cu scopul atat de a face interpretarea lor mai usoara, cat si pentru prelucrarea lor mai rapida.}
+	\item{KPCA - Este o extensie a PCA, si acopera slabiciunile PCA, spre exemplu in seturi de date in care distributia valorilor nu poate fi analizata la fel de bine de PCA, si in cazuri de clustering.}
+	\item{ICA - Aceasta abordare de analizare a componentelor are avantajul de le putea si separa, folosind atat unelte matematica cat si statistice, si este adeseori folosita in cazuri de separare a semnalelor de diferite tipuri, precum audio si video.}
+\end{itemize}
 \newpage
 \section{PCA}
 \section{Kernel PCA}
@@ -566,7 +575,55 @@ Variabila $y$ se presupune ca are media egala cu zero, si variatie unitara. Se p
 \begin{equation}
 	J(y)\approx\sum_{i=1}^p k_i[E\{G_i(y)\}]-E\{G_i(v)\}]^2
 \end{equation}
-unde $k_i$ reprezinta constante pozitive, si $v$ este o variabila gaussiana, iar atat $v$ cat si $y$ au media zero si variatie unitara. 
+unde $k_i$ reprezinta constante pozitive, si $v$ este o variabila gaussiana, iar atat $v$ cat si $y$ au media zero si variatie unitara, functiile $G_i$ fiind niste functii nonpatratice. In cazul in care folosim o singura functie nonpatratica, aproximarea devine:
+\begin{equation}
+	J(y)\propto[E\{G(y)\}]-E\{G(v)\}]^2
+\end{equation}
+Alegand $G$ bine, putem obtine aproximari mult mai bune decat cele de mai devreme, spre exemplu, daca alegem $G$ care nu creste repede, precum:
+\begin{equation}
+	G_1(u)=\frac{1}{a_1}\log \cosh a_1 u_1, G_2(u)=-\exp(\frac{-u^2}{2})
+\end{equation}
+unde $1\leq a_1 \leq 2$ este o constanta. Cu toate ca nu am folosit aceste tipuri de aproximari, ele sunt un compromis bun intre metodele de masurare a nongaussianitatii abordate mai devreme, aplatizarea si negentropia. 
+\newpage
+\subsection{Abordarea Maximum Likelihood}
+O abordare foarte populara pentru rezolvarea modelului ICA este \textit{maximum likelihood estimation}. Aceasta metoda estimeaza valorile parametrului unui model. Acesti parametri sunt gasiti astfel inca estimarea lor sa mareasca sansa ca modelul sa produca datele observate. Pentru cazul particular al modelului nostru ICA, avand $W=(w_1, \dots, w_n)^T$ ca $A^{-1}$, \textit{log-likelihood-ul} ia forma:
+\begin{equation}
+	L=\sum_{t=1}^T \sum_{i=1}^n \log f_i(w_i^Tx(t)) + T \log |\det W|
+\end{equation}
+unde $f_i$ este functia de densitate a lui $s_i$, aici presupunand ca o stim, iar $x(t)$ reprezinta esantioanele amestecarilor $x_i$. Termenul $\log | \det W|$ vine din faptul ca pentru un vector aleator $x$ cu densitatea $p_x$, si pentru orice matrice $W$:
+\begin{equation}
+	y=Wx, \text{data de } p_x(Wx)|\det W|.
+\end{equation}
+
+\subsection{Metoda Gradient Descent}
+Metoda gradient descent este una dintre cele mai folosite metode pentru aproximarea maximului sau minimului pentru o functie complexa. Acesta functioneaza facand pasi in directia gradientului functiei in punctul curent, astfel se ajunge la minimul functiei. Daca in schimb, pasii sunt in directia pozitiva gradientului, se ajunge la maximul functiei. Gradientul unei functii reprezinta derivata partiala a functiei pe care incercam sa o minimizam/maximizam. 
+
+Vom folosi aceasta metoda pentru a incerca sa aproximam matricea $A^{-1}$, sau $W$, aceasta fiind matricea care ne va ajuta sa separam componentele, asa cum am mentionat pana acum. Functia de update pentru o abordare de tip gradient descent pentru optimizarea maximum likelihood este:
+\begin{equation}
+	W^+=W+ \mu [I + g(y) y^T]W
+\end{equation}
+unde $\mu$ este rata de invatare a algoritmului, iar $g$ este functia de densitate a componentelor independente. 
+
+Un factor important in succesul acestui algoritm este alegerea functiei de densitate. Pana acum am presupus ca se cunoaste functia de densitate a componentelor independente, dar in practica, acest lucru nu poate fi garantat, iar din aceasta cauza, va fi nevoie de o aproximare. S-a observat ca o functie potrivita acestei probleme este functia sigmoida, deoarece avand o distributie continua, calculand derivata acestei functii ajungem la o functie de densitate, care poate fi folosita pentru aproximarea densitatii componentelor independente. Aici vom defini $g$ ca fiind functia sigmoida, in practica s-a demonstrat ca este suficient de buna:
+\begin{equation}
+	g_i(x)=\frac{1}{1+e^{-x}}
+\end{equation}
+
+Functia sigmoida are urmatoarea distributie:
+\begin{center}
+	\includegraphics[scale=0.6]{sigmoid_function}
+ \end{center}
+
+\subsection{Metodologia si algoritmul}
+\subsubsection{Jupyter Notebook}
+Implementarea algoritmului s-a facut in limbajul de programare Python, folosind platforma Jupyter Notebook. Am ales aceasta platforma deoarece face ca pasii algoritmului sa poata fi mai bine urmariti, iar afisarea rezultatelor sa se faca intr-o maniera usoara si concisa. Aplicatia functioneaza pe un server local, iar codul este scris intr-un \textit{notebook (caiet)}, prezent intr-o pagina web, codul fiind impartit in \textit{cells (celule)}, in fiecare celula putem scrie o bucata de cod, care mai apoi poate fi executata. Acest stil de lucru este de folos deoarece permite executarea fiecarei celule individual, scurtand timpul dedicat intretinerii caietului. De asemenea, in aceste celule putem amplasa grafice, histograme, elemente de tip \textit{mark-up} pentru prezentarea unor informatii suplimentare, si elemente de tip audio sau video. 
+
+\subsubsection{Semnalele audio testate}
+
+\subsubsection{Conditia de oprire}
+
+\subsubsection{Rezultate}
+
 \newpage
 \section{Concluzii //TODO}
 \section{Bibliografie //TODO}

@@ -103,9 +103,9 @@ INPUT C:/Program Files (x86)/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
 INPUT C:/Program Files (x86)/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT C:/Program Files (x86)/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 OUTPUT documentatie.toc
+INPUT C:/Program Files (x86)/MiKTeX 2.9/tex/latex/base/omscmr.fd
+INPUT C:/Program Files (x86)/MiKTeX 2.9/tex/latex/base/omscmr.fd
 INPUT C:/Program Files (x86)/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
-INPUT C:/Program Files (x86)/MiKTeX 2.9/tex/latex/base/omscmr.fd
-INPUT C:/Program Files (x86)/MiKTeX 2.9/tex/latex/base/omscmr.fd
 INPUT images/Picture1.png
 INPUT ./images/Picture1.png
 INPUT ./images/Picture1.png
@@ -185,6 +185,11 @@ INPUT ./images/uniform_distribution.png
 INPUT ./images/uniform_distribution.png
 INPUT ./images/uniform_distribution.png
 INPUT ./images/uniform_distribution.png
+INPUT sigmoid_function.png
+INPUT ./sigmoid_function.png
+INPUT ./sigmoid_function.png
+INPUT ./sigmoid_function.png
+INPUT ./sigmoid_function.png
 INPUT documentatie.bbl
 INPUT documentatie.bbl
 INPUT documentatie.aux
