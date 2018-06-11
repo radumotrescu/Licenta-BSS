@@ -18,26 +18,26 @@
 \contentsline {subsection}{\numberline {3.6}Aplicatia Eigenfaces}{18}
 \contentsline {subsubsection}{\numberline {3.6.1}Proiectarea unei imagini noi}{19}
 \contentsline {subsubsection}{\numberline {3.6.2}Clasificarea unei imagini noi}{20}
-\contentsline {section}{\numberline {4}ICA //TODO}{23}
-\contentsline {subsection}{\numberline {4.1}Ce este ICA?}{23}
-\contentsline {subsection}{\numberline {4.2}Definitia riguroasa ICA}{25}
-\contentsline {subsection}{\numberline {4.3}Limitarile ICA}{26}
-\contentsline {subsection}{\numberline {4.4}Independenta}{27}
-\contentsline {subsubsection}{\numberline {4.4.1}Definitie}{27}
-\contentsline {subsubsection}{\numberline {4.4.2}Corelatia si independenta}{28}
-\contentsline {subsubsection}{\numberline {4.4.3}Variabile nongaussiene}{28}
-\contentsline {subsection}{\numberline {4.5}Principiile estimarii ICA}{29}
-\contentsline {subsubsection}{\numberline {4.5.1}Nongaussianitate inseamna independenta}{29}
-\contentsline {subsection}{\numberline {4.6}Masuratori ale nongaussianitatii}{31}
-\contentsline {subsubsection}{\numberline {4.6.1}Kurtosis / Aplatizarea}{31}
-\contentsline {subsubsection}{\numberline {4.6.2}Negentropia}{33}
-\contentsline {subsubsection}{\numberline {4.6.3}Aproximarea negentropiei}{34}
-\contentsline {subsection}{\numberline {4.7}Abordarea Maximum Likelihood}{36}
-\contentsline {subsection}{\numberline {4.8}Metoda Gradient Descent}{36}
-\contentsline {subsection}{\numberline {4.9}Metodologia si algoritmul}{38}
-\contentsline {subsubsection}{\numberline {4.9.1}Jupyter Notebook}{38}
-\contentsline {subsubsection}{\numberline {4.9.2}Semnalele audio testate}{38}
-\contentsline {subsubsection}{\numberline {4.9.3}Conditia de oprire}{38}
-\contentsline {subsubsection}{\numberline {4.9.4}Rezultate}{38}
-\contentsline {section}{\numberline {5}Concluzii //TODO}{39}
-\contentsline {section}{\numberline {6}Bibliografie //TODO}{39}
+\contentsline {section}{\numberline {4}ICA //TODO}{21}
+\contentsline {subsection}{\numberline {4.1}Ce este ICA?}{21}
+\contentsline {subsection}{\numberline {4.2}Definitia riguroasa ICA}{24}
+\contentsline {subsection}{\numberline {4.3}Limitarile ICA}{25}
+\contentsline {subsection}{\numberline {4.4}Independenta}{26}
+\contentsline {subsubsection}{\numberline {4.4.1}Definitie}{26}
+\contentsline {subsubsection}{\numberline {4.4.2}Corelatia si independenta}{27}
+\contentsline {subsubsection}{\numberline {4.4.3}Variabile nongaussiene}{27}
+\contentsline {subsection}{\numberline {4.5}Principiile estimarii ICA}{28}
+\contentsline {subsubsection}{\numberline {4.5.1}Nongaussianitate inseamna independenta}{28}
+\contentsline {subsection}{\numberline {4.6}Masuratori ale nongaussianitatii}{30}
+\contentsline {subsubsection}{\numberline {4.6.1}Kurtosis / Aplatizarea}{30}
+\contentsline {subsubsection}{\numberline {4.6.2}Negentropia}{32}
+\contentsline {subsubsection}{\numberline {4.6.3}Aproximarea negentropiei}{33}
+\contentsline {subsection}{\numberline {4.7}Abordarea Maximum Likelihood}{35}
+\contentsline {subsection}{\numberline {4.8}Metoda Gradient Descent}{35}
+\contentsline {subsection}{\numberline {4.9}Metodologia si algoritmul}{37}
+\contentsline {subsubsection}{\numberline {4.9.1}Jupyter Notebook}{37}
+\contentsline {subsubsection}{\numberline {4.9.2}Semnalele audio testate}{37}
+\contentsline {subsubsection}{\numberline {4.9.3}Conditia de oprire}{37}
+\contentsline {subsubsection}{\numberline {4.9.4}Rezultate}{37}
+\contentsline {section}{\numberline {5}Concluzii //TODO}{38}
+\contentsline {section}{\numberline {6}Bibliografie //TODO}{38}

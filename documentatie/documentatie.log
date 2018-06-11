@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300) (preloaded format=pdflatex 2017.6.8)  11 JUN 2018 21:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300) (preloaded format=pdflatex 2017.6.8)  11 JUN 2018 21:20
 entering extended mode
 **c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie.tex
 (c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie.tex
@@ -678,72 +678,72 @@ Overfull \hbox (5.7621pt too wide) in paragraph at lines 349--350
 tru clasi-fi-care. Eroarea
  []
 
-[20] [21] [22] [23]
-<images/two-sound-sources.png, id=101, 928.21782pt x 737.00343pt>
+[20] [21] [22]
+<images/two-sound-sources.png, id=98, 928.21782pt x 737.00343pt>
 File: images/two-sound-sources.png Graphic file (type png)
 
 <use images/two-sound-sources.png>
-Package pdftex.def Info: images/two-sound-sources.png used on input line 373.
+Package pdftex.def Info: images/two-sound-sources.png used on input line 370.
 (pdftex.def)             Requested size: 371.28055pt x 294.79614pt.
- [24 <./images/two-sound-sources.png>]
-[25] [26] [27] [28]
-<images/multivariate_gaussian_distribution.png, id=118, 280.04625pt x 280.79906
+ [23 <./images/two-sound-sources.png>]
+[24] [25] [26] [27]
+<images/multivariate_gaussian_distribution.png, id=115, 280.04625pt x 280.79906
 pt>
 File: images/multivariate_gaussian_distribution.png Graphic file (type png)
  <use images/multivariate_gaussian_distribution.png>
 Package pdftex.def Info: images/multivariate_gaussian_distribution.png used on 
-input line 469.
+input line 466.
 (pdftex.def)             Requested size: 224.0373pt x 224.63954pt.
- [29 <./images/multivariate_gaussian_distribution.png>] [30]
-Overfull \hbox (0.35178pt too wide) in paragraph at lines 504--506
+ [28 <./images/multivariate_gaussian_distribution.png>] [29]
+Overfull \hbox (0.35178pt too wide) in paragraph at lines 501--503
 \OT1/cmr/m/n/12 Acest lu-cru arata de-fapt ca apla-ti-zarea reprez-inta al pa-t
 rulea mo-ment, $\OML/cmm/m/it/12 E\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 y[]\OMS/cm
 sy/m/n/12 g$\OT1/cmr/m/n/12 .
  []
 
-<images/laplace_distribution.png, id=125, 803.0pt x 602.25pt>
+<images/laplace_distribution.png, id=122, 803.0pt x 602.25pt>
 File: images/laplace_distribution.png Graphic file (type png)
 
 <use images/laplace_distribution.png>
-Package pdftex.def Info: images/laplace_distribution.png used on input line 509
+Package pdftex.def Info: images/laplace_distribution.png used on input line 506
 .
 (pdftex.def)             Requested size: 200.74951pt x 150.56212pt.
- [31 <./images/laplace_distribution.png>]
-<images/uniform_distribution.png, id=131, 371.88937pt x 121.95563pt>
+ [30 <./images/laplace_distribution.png>]
+<images/uniform_distribution.png, id=127, 371.88937pt x 121.95563pt>
 File: images/uniform_distribution.png Graphic file (type png)
 
 <use images/uniform_distribution.png>
-Package pdftex.def Info: images/uniform_distribution.png used on input line 515
+Package pdftex.def Info: images/uniform_distribution.png used on input line 512
 .
 (pdftex.def)             Requested size: 297.51189pt x 97.5646pt.
- [32 <./images/uniform_distribution.png>]
-[33] [34] [35] [36] <sigmoid_function.png, id=148, 602.25pt x 401.5pt>
+ [31 <./images/uniform_distribution.png>]
+[32] [33] [34] [35] <sigmoid_function.png, id=145, 602.25pt x 401.5pt>
 File: sigmoid_function.png Graphic file (type png)
 
 <use sigmoid_function.png>
-Package pdftex.def Info: sigmoid_function.png used on input line 614.
+Package pdftex.def Info: sigmoid_function.png used on input line 611.
 (pdftex.def)             Requested size: 361.35278pt x 240.90184pt.
- [37 <./sigmoid_function.png>] [38] (documentatie.bbl) [39] (documentatie.aux) 
-) 
+ [36 <./sigmoid_function.png>] [37] (documentatie.bbl) [38] [39] (documentatie.
+aux) ) 
 Here is how much of TeX's memory you used:
- 3416 strings out of 493328
- 47870 string characters out of 3136536
- 115717 words of memory out of 3000000
- 6877 multiletter control sequences out of 15000+200000
+ 3415 strings out of 493328
+ 47863 string characters out of 3136536
+ 115714 words of memory out of 3000000
+ 6876 multiletter control sequences out of 15000+200000
  11128 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,15n,28p,972b,235s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on documentatie.pdf (39 pages, 1006259 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on documentatie.pdf (39 pages, 1006018 bytes).
 PDF statistics:
  194 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
