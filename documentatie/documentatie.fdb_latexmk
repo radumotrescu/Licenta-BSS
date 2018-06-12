@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex documentatie"] 1528741236 "documentatie.aux" "documentatie.bbl" "documentatie" 1528741239
+["bibtex documentatie"] 1528807317 "documentatie.aux" "documentatie.bbl" "documentatie" 1528814902
   "C:/Program Files (x86)/MiKTeX 2.9/bibtex/bst/bibtex/plain.bst" 1291868336 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "documentatie.aux" 1528741239 4879 672bf7cd511572d5f7cdb0200ba5df80 ""
-  "referinte.bib" 1528741228 828 846fbaf8cd1b4a26c385219787c8dd8d ""
+  "documentatie.aux" 1528814901 4977 00390bc5350667782643e328e699c320 ""
+  "referinte.bib" 1528741546 1579 8e2efd32713aa1ca23993578d5e69a87 ""
   (generated)
-  "documentatie.blg"
   "documentatie.bbl"
-["pdflatex"] 1528741236 "c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie.tex" "documentatie.pdf" "documentatie" 1528741239
+  "documentatie.blg"
+["pdflatex"] 1528814899 "c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie.tex" "documentatie.pdf" "documentatie" 1528814902
   "C:/Program Files (x86)/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233955448 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files (x86)/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233955448 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Program Files (x86)/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -73,11 +73,11 @@
   "C:/Program Files (x86)/MiKTeX 2.9/tex/latex/tools/indentfirst.sty" 1492423194 1663 820bc46185ca5aeeda2ecc6c21866b18 ""
   "C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map" 1520376782 327669 0495370a7a1fe41f32707ddf202ef710 ""
   "C:/Users/BDRadu/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1496932210 4003949 27da82f211159ebc7370cca1221c0085 ""
-  "c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie.tex" 1528740982 41754 b20a26b3ba93e96d2a811ed6bf4728b1 ""
-  "documentatie.aux" 1528741239 4879 672bf7cd511572d5f7cdb0200ba5df80 ""
-  "documentatie.bbl" 1528741236 149 82df5ebfb33951732b29771e8a5c069b "bibtex documentatie"
-  "documentatie.tex" 1528740982 41754 b20a26b3ba93e96d2a811ed6bf4728b1 ""
-  "documentatie.toc" 1528741239 3114 8aea9725852657a367f3fff94bd71f8b ""
+  "c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie.tex" 1528814899 42964 5bb0f143b5830583634c42c771e54344 ""
+  "documentatie.aux" 1528814901 4977 00390bc5350667782643e328e699c320 ""
+  "documentatie.bbl" 1528807317 196 67647f1476679ad85acc9d2c39ef041c "bibtex documentatie"
+  "documentatie.tex" 1528814899 42964 5bb0f143b5830583634c42c771e54344 ""
+  "documentatie.toc" 1528814901 3194 2be7a86177ec20ecf66ac8e10f150a28 ""
   "images/Compute.png" 1497207550 14333 0f42ca055d4bdf318f157871addf87df ""
   "images/Picture1.png" 1496939548 16806 fdd17b727e147abc1ae3fab2cfdc7832 ""
   "images/Picture2.png" 1496940423 25393 64031bae19505162bbf98b706ebee828 ""
@@ -95,7 +95,7 @@
   "images/uniform_distribution.png" 1528452666 2743 0acaf89ee838ac10de05b83391efc985 ""
   "sigmoid_function.png" 1528738265 12066 723145fb52e61f8fbcb97cf0855fe9f8 ""
   (generated)
-  "documentatie.pdf"
   "documentatie.aux"
+  "documentatie.pdf"
   "documentatie.toc"
   "documentatie.log"

@@ -190,6 +190,8 @@ INPUT ./sigmoid_function.png
 INPUT ./sigmoid_function.png
 INPUT ./sigmoid_function.png
 INPUT ./sigmoid_function.png
+INPUT images/two-sound-sources.png
+INPUT ./images/two-sound-sources.png
 INPUT documentatie.bbl
 INPUT documentatie.bbl
 INPUT documentatie.aux

@@ -617,6 +617,22 @@ Implementarea algoritmului s-a facut in limbajul de programare Python, folosind 
 
 \subsubsection{Semnalele audio testate}
 
+\subsubsection{Pre-procesarea datelor}
+Pentru toate semnalele audio inafara de cele primitive, a fost nevoie sa centram datele, la fel ca in cazul PCA, pentru standardizare. 
+
+Pornind de la semnalele audio initiale, vom simula amestecarea lor, folosind operatorul de amestecare, $A$. In realitate, acest $A$ ar fi dat de distantele dintre sursele de semnal si dispozitivele care le inregistreaza. In cazul nostru, $A$ va fi o matrice patratica, fie de $2x2$, fie de $3x3$, in functie de caz. Acest proces arata ca mai inainte:
+\begin{center}
+	\includegraphics[scale=0.3]{two-sound-sources}
+ \end{center}
+
+Pentru fiecare caz testat, am ales initial matricea $A$ aleator, cu valorile distribuite uniform intre $0.01$ si $0.1$. Deoarece acest lucru a facut verificarea rezultatelor si modificarea algoritmului destul de greu, am ales dintre matricile aleatoare $A$ cele care au demonstrat cel mai bine eficacitatea algoritmului. O astfel de matrice este:
+\[
+ \begin{matrix}
+ 	0.56804456  & 0.92559664 \\
+	0.07103606  & 0.08712930 
+ \end{matrix}
+\]
+Vom prezenta mai tarziu rezultatele fiecarui test, iar acolo vor fi prezentate toate variabilele folosite pentru a se ajunge la rezultatele noastre.
 \subsubsection{Conditia de oprire}
 
 \subsubsection{Rezultate}
@@ -628,6 +644,6 @@ Implementarea algoritmului s-a facut in limbajul de programare Python, folosind 
 \bibliographystyle{plain}
 
 \newpage
-\cite{paltanea}
+\cite{hyvarien}
 \newpage
 \end{document}
