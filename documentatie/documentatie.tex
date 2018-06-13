@@ -6,7 +6,7 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{amsmath}
-\usepackage[paper=a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+%\usepackage[paper=a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 
 \graphicspath{{images/}}
 \everymath{\displaystyle}
@@ -27,7 +27,7 @@
 
 \newpage
 
-\section{Introducere in separarea surselor //TODO}
+\section{Introducere in separarea surselor}
 Aceasta lucrare are scopul de a informa cititorul asupra unor metoda de analizare a componentelor unor date, fie acestea date economice sau imagini, pentru a putea fi interpretate mai usor, cat si metode de separare a componentelor unui set de date. 
 
 Algoritmii abordati sunt \textbf{PCA (Principal Component Analysis)}, \textbf{KPCA (Kernel Principal Component Analysis)} si \textbf{ICA (Independent Component Analysis)}. 
@@ -40,7 +40,6 @@ O scurta descriere a cazurilor de aplicare a algoritmilor mentionati:
 \end{itemize}
 \newpage
 \section{PCA}
-\section{Kernel PCA}
 \subsection{Libraria Accord.NET}
 Libraria Accord.Net contine clase pentru:
 \begin{itemize}
@@ -159,7 +158,7 @@ Pentru orice valoare a lui $\lambda$ pentru care ecuatia are solutie se numeste 
 
 FinalData = RowFeatureVector $\times$ RowZeroMeanData
 
-\textbf{RowFeatureVectore} este matricea cu vectorii proprii transpusi, cu cel mai semnificati vector propriu pe prima linie.
+\textbf{RowFeatureVector} este matricea cu vectorii proprii transpusi, cu cel mai semnificati vector propriu pe prima linie.
 
 \textbf{RowZeroMeanData} este matricea care contine setul de date initial din care s-a scazut valorea medie.
 
@@ -221,8 +220,9 @@ Primele teste pe care le-am facut, au fost pe 3 nori de puncte generati aleator,
 \includegraphics[width=\linewidth]{threecloud3}
 \end{figure}
 
+\section{Kernel PCA}
 
-\subsubsection{Setul two-moon si abordarea Kernel PCA}
+\subsection{Setul two-moon si abordarea Kernel PCA}
 Pentru a aborda problema seturilor de date liniar inseparabile, nu putem folosi abordarea PCA simpla, rezultatul nu va fi cel dorit, dupa cum se poate vedea aplicand algoritmul PCA pentru setul two-moon: cele doua seturi de puncte se amesteca de-a lungul primei componente principale, astfel o clasificare a unui nou punct proiectat in spatiul respectiv va fi dificila, deoarece nu putem seta un punct de delimitare intre cei doi nori, acestia fiind intrepatrunsi.
 
 Abordarea Kernel PCA rezolva acest lucru prin proiectarea datelor intr-un spatiu dimensional mai mare, unde ele vor deveni liniar separabile, iar acest lucru se face cu o "functie kernel".
@@ -261,7 +261,7 @@ In imaginile urmatoare se poate observa cum algoritmul PCA si algoritmul KPCA af
 \includegraphics[width=\linewidth]{twomoon1}
 \end{figure}
 
-\subsubsection{Cros-validare 10-fold}
+\subsection{Cros-validare 10-fold}
 Pentru a ne asigura ca algoritmul se comporta corect si in alte situatii, am decis sa facem o cros-validare 10-fold (10-fold crossvalidation). Acest lucru implica urmatoarele: 
 
 -avem 100 de puncte, distribuite in setul de date two-moon
@@ -319,7 +319,6 @@ $E_0=$ este vectorul propriu asociat valorii proprii maxime
 
 $Y=$ este imaginea proiectata.
 
-\newpage
 \subsubsection{Clasificarea unei imagini noi}
 
 Pentru a vedea daca o imagine nou proiectata apartine sau nu setului initial de imagini, avem nevoie mai intai de imaginea proiectata, si de o granita, la fel ca la abordarea KPCA.
@@ -340,7 +339,8 @@ v=min(N)
 
 $W=$ reprezinta fetele setului de date initial proiectate in spatiul fetelor
 
-$D=$ diferenta dintre toate liniile lui $W$ si $Y$ 
+$D=$ diferenta dintre toate liniile lui $W$ si $Y$
+
 $N=$ norma fiecarei linii din $D$
 
 $v=$ este distanta dintre imaginea nou proiectata si spatiul fetelor
@@ -753,6 +753,11 @@ Rezultatul separarii este:
 Rezultatul amestecarii este:
 \begin{center}
 	\includegraphics[scale=1]{three_mixed}
+ \end{center}
+
+ La fel ca in testele de pana acum, amestecarea rezulta in semnale care sunt foarte similare. Dupa executarea algoritmului, semnalele separate rezultate sunt:
+\begin{center}
+	\includegraphics[scale=1]{three_separated}
  \end{center}
 
 \subsubsection{Analiza coeficientilor de corelatie a testelor}

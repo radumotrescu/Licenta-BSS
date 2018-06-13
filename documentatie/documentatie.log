@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300) (preloaded format=pdflatex 2017.6.8)  13 JUN 2018 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300) (preloaded format=pdflatex 2017.6.8)  13 JUN 2018 20:14
 entering extended mode
 **c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie.tex
 (c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie.tex
@@ -485,33 +485,6 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks24
 \@floatcapt=\box30
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
-Package: geometry 2010/09/12 v5.6 Page Geometry
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count105
-\Gm@cntv=\count106
-\c@Gm@tempcnt=\count107
-\Gm@bindingoffset=\dimen128
-\Gm@wd@mp=\dimen129
-\Gm@odd@mp=\dimen130
-\Gm@even@mp=\dimen131
-\Gm@layoutwidth=\dimen132
-\Gm@layoutheight=\dimen133
-\Gm@layouthoffset=\dimen134
-\Gm@layoutvoffset=\dimen135
-\Gm@dimlist=\toks25
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 (documentatie.aux)
 \openout1 = `documentatie.aux'.
 
@@ -530,17 +503,17 @@ LaTeX Font Info:    ... okay on input line 20.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen136
+\scratchcounter=\count105
+\scratchdimen=\dimen128
 \scratchbox=\box31
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen137
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks27
+\nofMPsegments=\count106
+\nofMParguments=\count107
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count108
+\MPscratchDim=\dimen129
+\MPnumerator=\count109
+\makeMPintoPDFobject=\count110
+\everyMPtoPDFconversion=\toks26
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -548,6 +521,9 @@ Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -583,48 +559,14 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=483.69687pt
-* \textheight=731.23584pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
-* \topmargin=-52.36449pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=44.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (documentatie.toc
-[2])
+[2] [3])
 \tf@toc=\write3
 \openout3 = `documentatie.toc'.
 
- [3]
+ [4]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 37.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -632,115 +574,133 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
 
-[4] [5]
-Overfull \hbox (6.4497pt too wide) in paragraph at lines 63--64
-[] |\OT1/cmr/bx/n/12 3.2.0.1 Un scurt ex-em-plu: \OT1/cmr/m/n/12 Sa pre-supunem
- ca am ex-tras in-for-matii pen-tru 100 de parametri
- []
-
-<images/Picture1.png, id=21, 331.2375pt x 316.93407pt>
+[5] [6] <images/Picture1.png, id=24, 331.2375pt x 316.93407pt>
 File: images/Picture1.png Graphic file (type png)
 
 <use images/Picture1.png>
-Package pdftex.def Info: images/Picture1.png used on input line 87.
+Package pdftex.def Info: images/Picture1.png used on input line 86.
 (pdftex.def)             Requested size: 165.61833pt x 158.46664pt.
- [6 <./images/Picture1.png>]
-<images/Picture2.png, id=26, 568.37344pt x 219.06844pt>
+ [7]
+<images/Picture2.png, id=29, 568.37344pt x 219.06844pt>
 File: images/Picture2.png Graphic file (type png)
 
 <use images/Picture2.png>
-Package pdftex.def Info: images/Picture2.png used on input line 94.
-(pdftex.def)             Requested size: 483.69687pt x 186.43968pt.
- [7 <./images/Picture2.png>] [8]
-<images/Compute.png, id=39, 623.32875pt x 234.1247pt>
-File: images/Compute.png Graphic file (type png)
- <use images/Compute.png>
-Package pdftex.def Info: images/Compute.png used on input line 176.
-(pdftex.def)             Requested size: 483.69687pt x 181.68053pt.
-
-<images/Test1.png, id=41, 758.835pt x 307.90031pt>
-File: images/Test1.png Graphic file (type png)
- <use images/Test1.png>
-Package pdftex.def Info: images/Test1.png used on input line 183.
-(pdftex.def)             Requested size: 483.69687pt x 196.26622pt.
-
-Overfull \hbox (165.0633pt too wide) in paragraph at lines 179--184
-\OT1/cmr/m/n/12 altcineva, unde se poate ob-serva clar rezul-tatul al-go-rit-mu
--lui. ( refer-inta catre http://dai.fmph.uniba.sk/courses/ml/sl/PCA.pdf) 
+Package pdftex.def Info: images/Picture2.png used on input line 93.
+(pdftex.def)             Requested size: 390.0pt x 150.32503pt.
+ [8 <./images/Picture1.png> <./images/Picture2.png>]
+Overfull \hbox (11.97534pt too wide) in paragraph at lines 115--116
+\OT1/cmr/m/n/12 tragem val-oarea me-die (zero-mean data) si avand se-tul de vec
+-tori $[]$
  []
 
-[9 <./images/Compute.png> <./images/Test1.png>]
-<images/Test2.png, id=47, 756.57657pt x 302.63063pt>
+
+Overfull \hbox (12.33333pt too wide) in paragraph at lines 117--118
+[]\OT1/cmr/m/n/12 Fiecare linie a ma-tricii reprez-inta toate ma-sur-a-to-rile 
+unui an-u-mit parametru,
+ []
+
+[9] [10] [11] <images/Compute.png, id=48, 623.32875pt x 234.1247pt>
+File: images/Compute.png Graphic file (type png)
+
+<use images/Compute.png>
+Package pdftex.def Info: images/Compute.png used on input line 175.
+(pdftex.def)             Requested size: 390.0pt x 146.48833pt.
+ <images/Test1.png, id=50, 758.835pt x 307.90031pt>
+File: images/Test1.png Graphic file (type png)
+
+<use images/Test1.png>
+Package pdftex.def Info: images/Test1.png used on input line 182.
+(pdftex.def)             Requested size: 390.0pt x 158.2439pt.
+ [12 <./images/Compute.png> <./images/Test1.png>]
+<images/Test2.png, id=56, 756.57657pt x 302.63063pt>
 File: images/Test2.png Graphic file (type png)
  <use images/Test2.png>
-Package pdftex.def Info: images/Test2.png used on input line 192.
-(pdftex.def)             Requested size: 483.69687pt x 193.47975pt.
+Package pdftex.def Info: images/Test2.png used on input line 191.
+(pdftex.def)             Requested size: 390.0pt x 156.00197pt.
 
-<images/threecloud1.png, id=48, 1113.40968pt x 456.20438pt>
+[13 <./images/Test2.png>]
+<images/threecloud1.png, id=62, 1113.40968pt x 456.20438pt>
 File: images/threecloud1.png Graphic file (type png)
 
 <use images/threecloud1.png>
-Package pdftex.def Info: images/threecloud1.png used on input line 207.
-(pdftex.def)             Requested size: 483.69687pt x 198.18277pt.
- [10 <./images/Test2.png>]
-<images/threecloud2.png, id=53, 1112.65688pt x 455.45157pt>
+Package pdftex.def Info: images/threecloud1.png used on input line 206.
+(pdftex.def)             Requested size: 390.0pt x 159.79225pt.
+
+<images/threecloud2.png, id=63, 1112.65688pt x 455.45157pt>
 File: images/threecloud2.png Graphic file (type png)
 
 <use images/threecloud2.png>
-Package pdftex.def Info: images/threecloud2.png used on input line 214.
-(pdftex.def)             Requested size: 483.69687pt x 197.99474pt.
+Package pdftex.def Info: images/threecloud2.png used on input line 213.
+(pdftex.def)             Requested size: 390.0pt x 159.63977pt.
 
-<images/threecloud3.png, id=54, 1113.40968pt x 457.71pt>
+<images/threecloud3.png, id=64, 1113.40968pt x 457.71pt>
 File: images/threecloud3.png Graphic file (type png)
 
 <use images/threecloud3.png>
-Package pdftex.def Info: images/threecloud3.png used on input line 221.
-(pdftex.def)             Requested size: 483.69687pt x 198.83685pt.
- [11 <./images/threecloud1.png> <./images/threecloud2.png> <./images/threecloud
-3.png>]
-<images/twomoon1.png, id=58, 1114.1625pt x 456.20438pt>
+Package pdftex.def Info: images/threecloud3.png used on input line 220.
+(pdftex.def)             Requested size: 390.0pt x 160.31963pt.
+ [14 <./images/threecloud1.png> <./images/threecloud2.png>] [15 <./images/three
+cloud3.png>]
+<images/twomoon1.png, id=71, 1114.1625pt x 456.20438pt>
 File: images/twomoon1.png Graphic file (type png)
 
 <use images/twomoon1.png>
 Package pdftex.def Info: images/twomoon1.png used on input line 261.
-(pdftex.def)             Requested size: 483.69687pt x 198.0505pt.
- [12]
-<images/tenfold1.png, id=63, 1113.40968pt x 469.00218pt>
+(pdftex.def)             Requested size: 390.0pt x 159.68784pt.
+ [16 <./images/twomoon1.png>]
+Overfull \hbox (5.57922pt too wide) in paragraph at lines 271--272
+[]\OT1/cmr/m/n/12 -cu cele-lalte 90 de puncte vom "antrena" al-go-rit-mul pen-t
+ru a putea proiecta
+ []
+
+
+Overfull \hbox (50.50192pt too wide) in paragraph at lines 277--278
+\OT1/cmr/m/n/12 putem ver-i-fica eroarea al-go-rit-mu-lui pen-tru cele 10 punct
+e: $[]$ 
+ []
+
+<images/tenfold1.png, id=76, 1113.40968pt x 469.00218pt>
 File: images/tenfold1.png Graphic file (type png)
 
 <use images/tenfold1.png>
 Package pdftex.def Info: images/tenfold1.png used on input line 286.
-(pdftex.def)             Requested size: 483.69687pt x 203.74236pt.
- [13 <./images/twomoon1.png>] [14 <./images/tenfold1.png>] <images/eigenfaces.p
-ng, id=71, 632.3625pt x 289.08pt>
+(pdftex.def)             Requested size: 390.0pt x 164.27487pt.
+ [17] [18 <./images/tenfold1.png>]
+<images/eigenfaces.png, id=83, 632.3625pt x 289.08pt>
 File: images/eigenfaces.png Graphic file (type png)
 
 <use images/eigenfaces.png>
 Package pdftex.def Info: images/eigenfaces.png used on input line 303.
-(pdftex.def)             Requested size: 483.69687pt x 221.12341pt.
- [15 <./images/eigenfaces.png>] [16] [17]
-<images/two-sound-sources.png, id=82, 928.21782pt x 737.00343pt>
+(pdftex.def)             Requested size: 390.0pt x 178.2882pt.
+ [19 <./images/eigenfaces.png>] [20]
+Overfull \hbox (5.7621pt too wide) in paragraph at lines 350--351
+\OT1/cmr/m/n/12 "antrena" al-go-rit-mul, iar ul-timele 21 au fost folosite pen-
+tru clasi-fi-care. Eroarea
+ []
+
+[21] [22] <images/two-sound-sources.png, id=98, 928.21782pt x 737.00343pt>
 File: images/two-sound-sources.png Graphic file (type png)
 
 <use images/two-sound-sources.png>
 Package pdftex.def Info: images/two-sound-sources.png used on input line 373.
 (pdftex.def)             Requested size: 371.28055pt x 294.79614pt.
- [18 <./images/two-sound-sources.png>]
-[19] [20]
-<images/multivariate_gaussian_distribution.png, id=93, 280.04625pt x 280.79906p
-t>
+ [23 <./images/two-sound-sources.png>]
+[24] [25] [26]
+<images/multivariate_gaussian_distribution.png, id=112, 280.04625pt x 280.79906
+pt>
 File: images/multivariate_gaussian_distribution.png Graphic file (type png)
  <use images/multivariate_gaussian_distribution.png>
 Package pdftex.def Info: images/multivariate_gaussian_distribution.png used on 
 input line 469.
 (pdftex.def)             Requested size: 252.03928pt x 252.71681pt.
- [21 <./images/multivariate_gaussian_distribution.png>]
-Overfull \hbox (3.12209pt too wide) in paragraph at lines 492--493
-[]\OT1/cmr/m/n/12 Maximizand non-gaus-sian-i-tatea lui $\OML/cmm/m/it/12 w[]x$ 
-\OT1/cmr/m/n/12 ne da una din-tre com-po-nen-tele in-de-pen-dente. Spatiul
+ [27] [28 <./images/multivariate_gaussian_distribution.png>] [29]
+Overfull \hbox (0.35178pt too wide) in paragraph at lines 504--506
+\OT1/cmr/m/n/12 Acest lu-cru arata de-fapt ca apla-ti-zarea reprez-inta al pa-t
+rulea mo-ment, $\OML/cmm/m/it/12 E\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 y[]\OMS/cm
+sy/m/n/12 g$\OT1/cmr/m/n/12 .
  []
 
-[22] <images/laplace_distribution.png, id=100, 803.0pt x 602.25pt>
+<images/laplace_distribution.png, id=122, 803.0pt x 602.25pt>
 File: images/laplace_distribution.png Graphic file (type png)
 
 <use images/laplace_distribution.png>
@@ -748,129 +708,159 @@ Package pdftex.def Info: images/laplace_distribution.png used on input line 509
 .
 (pdftex.def)             Requested size: 401.49902pt x 301.12425pt.
 
-<images/uniform_distribution.png, id=101, 371.88937pt x 121.95563pt>
+Overfull \hbox (11.49902pt too wide) in paragraph at lines 509--510
+ [] 
+ []
+
+[30] <images/uniform_distribution.png, id=126, 371.88937pt x 121.95563pt>
 File: images/uniform_distribution.png Graphic file (type png)
 
 <use images/uniform_distribution.png>
 Package pdftex.def Info: images/uniform_distribution.png used on input line 515
 .
 (pdftex.def)             Requested size: 446.26501pt x 146.346pt.
- [23 <./images/laplace_distribution.png>]
-[24 <./images/uniform_distribution.png>] [25] [26]
-<sigmoid_function.png, id=117, 602.25pt x 401.5pt>
+
+Overfull \hbox (56.26501pt too wide) in paragraph at lines 515--516
+ [] 
+ []
+
+[31 <./images/laplace_distribution.png> <./images/uniform_distribution.png>]
+[32] [33] [34] [35] [36] <sigmoid_function.png, id=148, 602.25pt x 401.5pt>
 File: sigmoid_function.png Graphic file (type png)
- <use sigmoid_function.png>
+
+<use sigmoid_function.png>
 Package pdftex.def Info: sigmoid_function.png used on input line 614.
 (pdftex.def)             Requested size: 361.35278pt x 240.90184pt.
+ [37 <./sigmoid_function.png>]
+Overfull \hbox (4.89174pt too wide) in paragraph at lines 626--627
+[]\OT1/cmr/m/n/12 Pornind de la sem-nalele au-dio ini-tiale, vom sim-ula ameste
+-carea lor, folosind
+ []
 
-[27]
 File: images/two-sound-sources.png Graphic file (type png)
- <use images/two-sound-sources.png>
+<use images/two-sound-sources.png>
 Package pdftex.def Info: images/two-sound-sources.png used on input line 628.
 (pdftex.def)             Requested size: 278.4675pt x 221.10274pt.
- [28 <./sigmoid_function.png>] [29]
-[30] <images/primitives_mixed.png, id=131, 276.28218pt x 192.72pt>
+ [38] [39] [40] [41]
+<images/primitives_mixed.png, id=166, 276.28218pt x 192.72pt>
 File: images/primitives_mixed.png Graphic file (type png)
 
 <use images/primitives_mixed.png>
 Package pdftex.def Info: images/primitives_mixed.png used on input line 676.
 (pdftex.def)             Requested size: 276.2815pt x 192.71951pt.
 
-<images/primitives_separated.png, id=132, 298.86656pt x 391.4625pt>
+<images/primitives_separated.png, id=167, 298.86656pt x 391.4625pt>
 File: images/primitives_separated.png Graphic file (type png)
 
 <use images/primitives_separated.png>
 Package pdftex.def Info: images/primitives_separated.png used on input line 683
 .
 (pdftex.def)             Requested size: 298.86581pt x 391.46153pt.
- [31 <./images/primitives_mixed.png>]
-<images/music_mixed_1.png, id=138, 295.1025pt x 195.73125pt>
+ [42 <./images/primitives_mixed.png>]
+[43 <./images/primitives_separated.png>]
+<images/music_mixed_1.png, id=177, 295.1025pt x 195.73125pt>
 File: images/music_mixed_1.png Graphic file (type png)
 
 <use images/music_mixed_1.png>
 Package pdftex.def Info: images/music_mixed_1.png used on input line 698.
 (pdftex.def)             Requested size: 295.10176pt x 195.73076pt.
- [32 <./images/primitives_separated.png>]
-<images/music_mixed_2.png, id=143, 283.0575pt x 190.46156pt>
+
+<images/music_mixed_2.png, id=178, 283.0575pt x 190.46156pt>
 File: images/music_mixed_2.png Graphic file (type png)
 
 <use images/music_mixed_2.png>
 Package pdftex.def Info: images/music_mixed_2.png used on input line 701.
 (pdftex.def)             Requested size: 283.0568pt x 190.46107pt.
-
-<images/music_separated_1.png, id=144, 294.34969pt x 194.22563pt>
+ [44 <./images/music_mixed_1.png> <./images/music_mixed_2.png>]
+<images/music_separated_1.png, id=184, 294.34969pt x 194.22563pt>
 File: images/music_separated_1.png Graphic file (type png)
 
 <use images/music_separated_1.png>
 Package pdftex.def Info: images/music_separated_1.png used on input line 707.
 (pdftex.def)             Requested size: 294.34895pt x 194.22514pt.
- [33 <./images/music_mixed_1.png> <./images/music_mixed_2.png>]
-<images/music_separated_2.png, id=150, 290.58563pt x 194.97844pt>
+
+<images/music_separated_2.png, id=185, 290.58563pt x 194.97844pt>
 File: images/music_separated_2.png Graphic file (type png)
 
 <use images/music_separated_2.png>
 Package pdftex.def Info: images/music_separated_2.png used on input line 710.
 (pdftex.def)             Requested size: 290.58492pt x 194.97795pt.
-
-<images/speech_mixed_1.png, id=151, 280.79906pt x 188.20313pt>
+ [45 <./images/music_separated_1.png> <./images/music_separated_2.png>]
+<images/speech_mixed_1.png, id=191, 280.79906pt x 188.20313pt>
 File: images/speech_mixed_1.png Graphic file (type png)
 
 <use images/speech_mixed_1.png>
 Package pdftex.def Info: images/speech_mixed_1.png used on input line 725.
 (pdftex.def)             Requested size: 280.79837pt x 188.20265pt.
- [34 <./images/music_separated_1.png> <./images/music_separated_2.png>]
-<images/speech_mixed_2.png, id=157, 277.78781pt x 185.94469pt>
+
+<images/speech_mixed_2.png, id=192, 277.78781pt x 185.94469pt>
 File: images/speech_mixed_2.png Graphic file (type png)
 
 <use images/speech_mixed_2.png>
 Package pdftex.def Info: images/speech_mixed_2.png used on input line 728.
 (pdftex.def)             Requested size: 277.78711pt x 185.94421pt.
-
-<images/speech_separated_1.png, id=158, 300.3722pt x 194.22563pt>
+ [46 <./images/speech_mixed_1.png>]
+<images/speech_separated_1.png, id=197, 300.3722pt x 194.22563pt>
 File: images/speech_separated_1.png Graphic file (type png)
 
 <use images/speech_separated_1.png>
 Package pdftex.def Info: images/speech_separated_1.png used on input line 735.
 (pdftex.def)             Requested size: 300.37144pt x 194.22514pt.
 
-<images/speech_separated_2.png, id=159, 295.85532pt x 186.6975pt>
+<images/speech_separated_2.png, id=198, 295.85532pt x 186.6975pt>
 File: images/speech_separated_2.png Graphic file (type png)
 
 <use images/speech_separated_2.png>
 Package pdftex.def Info: images/speech_separated_2.png used on input line 738.
 (pdftex.def)             Requested size: 295.85458pt x 186.69704pt.
- [35 <./images/speech_mixed_1.png> <./images/speech_mixed_2.png> <./images/spee
-ch_separated_1.png>]
-<images/three_mixed.png, id=166, 456.95718pt x 458.46281pt>
+ [47 <./images/speech_mixed_2.png> <./images/speech_separated_1.png>]
+<images/three_mixed.png, id=204, 456.95718pt x 458.46281pt>
 File: images/three_mixed.png Graphic file (type png)
 
 <use images/three_mixed.png>
 Package pdftex.def Info: images/three_mixed.png used on input line 755.
 (pdftex.def)             Requested size: 456.95605pt x 458.46169pt.
- [36 <./images/speech_separated_2.png>] [37 <./images/three_mixed.png>] (docume
-ntatie.bbl) [38] [39] (documentatie.aux) ) 
+
+Overfull \hbox (66.95605pt too wide) in paragraph at lines 755--756
+ [] 
+ []
+
+[48 <./images/speech_separated_2.png>]
+<images/three_separated.png, id=209, 470.50781pt x 460.72125pt>
+File: images/three_separated.png Graphic file (type png)
+
+<use images/three_separated.png>
+Package pdftex.def Info: images/three_separated.png used on input line 760.
+(pdftex.def)             Requested size: 470.50665pt x 460.72012pt.
+
+Overfull \hbox (80.50665pt too wide) in paragraph at lines 760--761
+ [] 
+ []
+
+[49 <./images/three_mixed.png>] [50 <./images/three_separated.png>] [51]
+(documentatie.bbl) [52] [53] (documentatie.aux) ) 
 Here is how much of TeX's memory you used:
- 3952 strings out of 493328
- 56654 string characters out of 3136536
- 132413 words of memory out of 3000000
- 7389 multiletter control sequences out of 15000+200000
+ 3476 strings out of 493328
+ 49605 string characters out of 3136536
+ 115714 words of memory out of 3000000
+ 6925 multiletter control sequences out of 15000+200000
  11128 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,15n,28p,972b,235s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmti12.pfb>
-Output written on documentatie.pdf (39 pages, 1193163 bytes).
+<C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmti12.pfb>
+Output written on documentatie.pdf (53 pages, 1243555 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
+ 262 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
