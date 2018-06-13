@@ -633,7 +633,14 @@ Pentru fiecare caz testat, am ales initial matricea $A$ aleator, cu valorile dis
  \end{matrix}
 \]
 Vom prezenta mai tarziu rezultatele fiecarui test, iar acolo vor fi prezentate toate variabilele folosite pentru a se ajunge la rezultatele noastre.
+
+\subsubsection{Aplicarea algoritmuluiii Gradient Descent}
+Avand sursele de semnal amestecate, trebuie sa aplicam algoritmul gradient descent prezentat mai devreme pentru a incerca sa gasim componentele independente initiale. Pentru acest lucru, vom porni de la o matrice $A^{-1}$, sau $W$, cu valori aleatoare uniform distribuite intre $0.01$ si $0.1$. Acest interval s-a observat ca fiind unul bun pentru cazurile noastre, dar el trebuie adaptat in functie de situatie. 
+
+Avand functia de actualizare a lui $W$, definita mai sus, putem incepe executarea algoritmului. In faza initiala, acesta se executa pentru un numar finit de pasi, ales in functie de situatie. Dupa terminarea executarii acestui numar de iteratii, $W$ actualizat ar trebui sa fie cel care poate sa separe componentele. Acest lucru nu este intotdeauna adevarat, ceea ce inseamna ca ne trebuie o alta metoda de a opri cautarea solutiei optime.
+
 \subsubsection{Conditia de oprire}
+Algoritmii care aplica metoda gradient descent, deobicei sunt opriti atunci cand functia de cost ajunge sau este foarte aproape de minim. In general, se considera ca functia a ajuns la costul minim atunci cand diferentele dintre valorile consecutive obtinute de algoritm sunt mai mici decat un anumit \textit{threshold (prag)}. Alegere acestui prag este foarte importanta, deoarece un prag prea mic va duce la castiguri foarte mici de precizie dupa multe operatii, iar un prag mare poate va opri algoritmul inainte de a ajunge la valoarea minima. Cu toate ca aceasta idee pare destul de simpla, balansul dintre precizia rezultatului obtinut si viteza algoritmului este ceva ce trebuie masurat si ajustat de la caz la caz, mai ales in cazul functiilor complexe, precum a noastra.
 
 \subsubsection{Rezultate}
 
