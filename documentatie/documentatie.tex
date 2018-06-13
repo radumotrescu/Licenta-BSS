@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{amsmath}
+\usepackage[paper=a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 
 \graphicspath{{images/}}
 \everymath{\displaystyle}
@@ -348,7 +349,8 @@ Pentru a afla granita care delimiteaza imaginile din spatiul fetelor de celelalt
 
 Acestea fiind zise, am facut urmatorul test: din cele 65 de imagini ale subiectului 1 din baza de date Yale, primele 44 au fost folosite pentru a "antrena" algoritmul, iar ultimele 21 au fost folosite pentru clasificare. Eroarea rezultata a fost de $\sim$ 50\%, imaginile care nu au fost clasificate ca facand parte in set au fost cele in care subiectul are numai jumatate de fata iluminata, numarul acestor imagini fiind $\sim$ 50\% din ele, deci putem trage concluzia ca algoritmul face ceea ce isi propune. 
 
-\section{ICA //TODO}
+\newpage
+\section{ICA}
 
 \subsection{Ce este ICA?}
 Una dintre problemele din lumea reala este gasirea unei reprezentari potrivite pentru date multivariate, adica date care au multe dimensiuni, si care de multe ori sunt aleatoare. Din cauza problemelor de performanta, orice fel de reprezentare este deobicei interpretata ca o transformare liniara a datelor originale. Printre aceste metode de analiza a transformarilor liniare se numara si PCA, despre care am vorbit pana acum. ICA (Independent Component Analysis) sau Analiza Componentelor Individuale este o abordare noua care are rolul de a reprezentarile liniare ale unor date cu distributie nongaussiana, astfel incat componentele sa fie cat mai independente din punct de vedere statistic. Acest tip de separare este dorita deoarece captureaza structura esentiala a datelor in multe tipuri de aplicatii, precum extragerea caracteristicilor (feature extraction) sau separarea semnalelor (signal separation). 
@@ -367,13 +369,14 @@ unde $a_{11}, a{12}, a_{21}, a_{22}$ sunt niste parametrii care determina distan
 
 In imaginea urmatoare avem o reprezentare vizuala a problemei:
 
-\includegraphics[scale=0.4]{two-sound-sources}
+\begin{center}
+	\includegraphics[scale=0.4]{two-sound-sources}
+\end{center}
 
 
 Stiind $x_1$ si $x_2$, daca am cunoaste elementele matricii $A$, atunci am putea afla $s_1$ si $s_2$ prin mijloace normale, fiind o ecuatie liniara. Dar, formuland problema ca mai inainte, informatiile initiale sunt cele 2 semmnale inregistrate de la cele 2 microfoane.
 
 O abordare de rezolvare a problemei ar putea fi sa incercam sa ne folosim de proprietatiile statistice ale semnalelor $s_1(t)$ si $s_2(t)$ pentru a estima matricea $A$. Tot ce trebuie sa facem este sa presupunem ca semnalele $s_i(t)$ sunt independente statistic la fiecare moment $t$.
-\newpage
 
 \subsection{Definitia riguroasa ICA}
 Pornim de la presupunerea ca observam $n$ amestecari liniare $x_1, x_2, \ldots, x_n$ a $n$ componente independente:
@@ -460,10 +463,10 @@ Restrictia fundamentala a ICA este ca componentele independente sa fie nongaussi
 \begin{equation}
 	p(x_1,x_2)=\frac{1}{2\pi}\exp(-\frac{x_1^2+x_2^2}{2})
 \end{equation}
-\newpage
+
 Distributia aceasta este ilustrata mai jos:
 \begin{center}
-	\includegraphics[scale=0.8]{multivariate_gaussian_distribution}
+	\includegraphics[scale=0.9]{multivariate_gaussian_distribution}
  \end{center}
  Se poate observa cum densitatea este complet simetrica. Asta inseamna ca nu contine informatii cu privire la directiile coloanelor matricii de amestecare $A$. Din acest motiv, $A$ nu poate fi estimat.
 
@@ -503,13 +506,13 @@ Acest lucru arata defapt ca aplatizarea reprezinta al patrulea moment, $E\{y^4\}
 
 Aplatizarea poate fi pozitiva sau negativa, variabilele aleatoare care au aplatizare negativa numinduse subgaussiene, iar cele care au aplatizare pozitiva se numest supergaussiene. Variabilele aleatoare supergaussiene corespund cu distributii de tip Laplace, care au un varf ascutit, si coada alungita:
 \begin{center}
-	\includegraphics[scale=0.25]{laplace_distribution}
+	\includegraphics[scale=0.5]{laplace_distribution}
  \end{center}
 
  Variabilele aleatoare subgaussiene corespund cu distributiile uniforme, acestea fiind plate in reprezentare:
 
 \begin{center}
-	\includegraphics[scale=0.8]{uniform_distribution}
+	\includegraphics[scale=1.2]{uniform_distribution}
  \end{center}
 
 Valoarea absoluta a aplatizarii, a fost folosita ca masura a nongaussianitatii in ICA, deoarece este simplu atat teoretic cat si computational. Pentru a calcula aplatizarea, putem folosi pur si simplu al patrulea moment al datelor avute. Analiza teoretica este simplificata datorita proprietatii de liniaritate. Daca avem doua variabile aleatoare independente, atunci:
@@ -620,7 +623,7 @@ Implementarea algoritmului s-a facut in limbajul de programare Python, folosind 
 \subsubsection{Pre-procesarea datelor}
 Pentru toate semnalele audio inafara de cele primitive, a fost nevoie sa centram datele, la fel ca in cazul PCA, pentru standardizare. 
 
-Pornind de la semnalele audio initiale, vom simula amestecarea lor, folosind operatorul de amestecare, $A$. In realitate, acest $A$ ar fi dat de distantele dintre sursele de semnal si dispozitivele care le inregistreaza. In cazul nostru, $A$ va fi o matrice patratica, fie de $2x2$, fie de $3x3$, in functie de caz. Acest proces arata ca mai inainte:
+Pornind de la semnalele audio initiale, vom simula amestecarea lor, folosind operatorul de amestecare, $A$. In realitate, acest $A$ ar fi dat de distantele dintre sursele de semnal si dispozitivele care le inregistreaza. In cazul nostru, $A$ va fi o matrice patratica, fie de $2 \times 2$, fie de $3 \times 3$, in functie de caz. Acest proces arata ca mai inainte:
 \begin{center}
 	\includegraphics[scale=0.3]{two-sound-sources}
  \end{center}
@@ -634,16 +637,126 @@ Pentru fiecare caz testat, am ales initial matricea $A$ aleator, cu valorile dis
 \]
 Vom prezenta mai tarziu rezultatele fiecarui test, iar acolo vor fi prezentate toate variabilele folosite pentru a se ajunge la rezultatele noastre.
 
-\subsubsection{Aplicarea algoritmuluiii Gradient Descent}
+\subsubsection{Aplicarea algoritmului Gradient Descent}
 Avand sursele de semnal amestecate, trebuie sa aplicam algoritmul gradient descent prezentat mai devreme pentru a incerca sa gasim componentele independente initiale. Pentru acest lucru, vom porni de la o matrice $A^{-1}$, sau $W$, cu valori aleatoare uniform distribuite intre $0.01$ si $0.1$. Acest interval s-a observat ca fiind unul bun pentru cazurile noastre, dar el trebuie adaptat in functie de situatie. 
 
-Avand functia de actualizare a lui $W$, definita mai sus, putem incepe executarea algoritmului. In faza initiala, acesta se executa pentru un numar finit de pasi, ales in functie de situatie. Dupa terminarea executarii acestui numar de iteratii, $W$ actualizat ar trebui sa fie cel care poate sa separe componentele. Acest lucru nu este intotdeauna adevarat, ceea ce inseamna ca ne trebuie o alta metoda de a opri cautarea solutiei optime.
+Se calculeaza:
+\begin{equation}
+	Y=WX
+\end{equation} 
+unde $Y$ reprezinta banuiala algoritmului cu privire la componentele independente. Functia de actualizare a lui $W$, definita mai sus, va gasi un $W$ mai bun, luand in calcul $Y$. In faza initiala, acest pas se executa pentru un numar finit de pasi, ales in functie de situatie. Dupa terminarea executarii acestui numar de iteratii, $W$ actualizat ar trebui sa fie cel care poate sa separe componentele. Acest lucru nu este intotdeauna adevarat, ceea ce inseamna ca ne trebuie o alta metoda de a opri cautarea solutiei optime.
 
 \subsubsection{Conditia de oprire}
-Algoritmii care aplica metoda gradient descent, deobicei sunt opriti atunci cand functia de cost ajunge sau este foarte aproape de minim. In general, se considera ca functia a ajuns la costul minim atunci cand diferentele dintre valorile consecutive obtinute de algoritm sunt mai mici decat un anumit \textit{threshold (prag)}. Alegere acestui prag este foarte importanta, deoarece un prag prea mic va duce la castiguri foarte mici de precizie dupa multe operatii, iar un prag mare poate va opri algoritmul inainte de a ajunge la valoarea minima. Cu toate ca aceasta idee pare destul de simpla, balansul dintre precizia rezultatului obtinut si viteza algoritmului este ceva ce trebuie masurat si ajustat de la caz la caz, mai ales in cazul functiilor complexe, precum a noastra.
+Algoritmii care aplica metoda gradient descent, deobicei sunt opriti atunci cand functia de cost ajunge sau este foarte aproape de minim. In general, se considera ca functia a ajuns la costul minim atunci cand diferentele dintre valorile consecutive obtinute de algoritm sunt mai mici decat un anumit \textit{threshold (prag)}. Alegere acestui prag este foarte importanta, deoarece un prag prea mic va duce la castiguri foarte mici de precizie dupa multe operatii, iar un prag mare poate va opri algoritmul inainte de a ajunge la valoarea minima. Cu toate ca aceasta idee pare destul de simpla, balansul dintre precizia rezultatului obtinut si viteza algoritmului este ceva ce trebuie masurat si ajustat de la caz la caz. Functia de cost calculata este:
+\begin{equation}
+	f_{cost}=\log g(Y)(1-g(Y))
+\end{equation}
+care va fi o matrice patratica, cu numarul de linii egal cu numarul de esantioane al lui $Y$. Pentru ca trebuie sa calculam diferenta dintre costurile iteratiilor consecutive, si pentru ca nu putem face asta usor pentru matrici, vom modifica functia de cost astfel incat ea sa devina suma elementelor matricii rezultate din functia $f_{cost}$.
 
-\subsubsection{Rezultate}
+Aceasta abordare este cea de preferat in cazul algoritmilor de tip gradient descent, deoarece avem un mod obiectiv de a masura performanta algoritmului, si pentru ca functia de cost este legata direct de restul operatiilor. In realitate, am descoperit ca metoda aceasta de a opri algoritmul nu este posibila atunci cand lucram cu semnale audio lungi, care pot avea pana la 16000 de esantioane pe secunda, matricea pentru care trebuie sa calculam suma elementelor ar avea dimensiuni foarte mari, spre exemplu $120000 \times 120000$ elemente, care nu incape in memoria RAM a calculatorului. 
 
+O alta abordare pentru a masura independenta este necorelatia, asa cum am mentionat intr-un capitol mai devreme. Acolo am spus ca daca doua variabile sunt independente, ele sunt necorelate, dar afirmatia inversa nu este intotdeauna adevarata. Deoarece abordarea care implica functia de cost nu era potrivita pentru semnale audio de dimensiuni mari, pentru testele care implicau acest tip de componente, am decis sa folosim necorelatia pentru a masura independenta componentelor. Dupa fiecare iteratie a algoritmului, am calculat corelatia intre componentele rezultate, si daca se afla sub un anumit prag, deobicei foarte mic, spre exemplu $3e^{-6}$. Aceasta abordare s-a dovedit a fi una reusita, era consistenta de-a lungul testelor, si poate fi aplicata pentru orice fel de semnale. 
+
+\newpage
+\subsection{Rezultate}
+Dupa cum am mentionat mai sus, am realizat patru teste. Le vom prezenta aici pe fiecare, impreuna cu rezultatele obtinute.
+
+\subsubsection{Semnale primitive}
+Primul test a fost realizat cu doua semnale generate prin intermediul codului Python, unul de tip sinus, si unul de tip fierastrau:
+
+Matricea de amestecare $A$ aleasa a fost:
+\[
+ \begin{matrix}
+ 	0.56804456  & 0.92559664 \\
+	0.07103606  & 0.08712930 
+ \end{matrix}
+\]
+Realizarea acestei amestecari arata astfel:
+\begin{center}
+	\includegraphics[scale=1]{primitives_mixed}
+ \end{center}
+
+Se poate observa cum nu se poate distinge diferenta dintre semnalele initiale, desi se pot observa asemanari cu acestea, precum varfurile ascutite ale semnalului de tip fierastrau. 
+
+Dupa executarea algoritmului pe semnalele amestecate, se ajunge la urmatoarea separare:
+\begin{center}
+	\includegraphics[scale=1]{primitives_separated}
+ \end{center}
+
+Se poate observa cum semnalele au fost complet separate, lucru care ne indica ca teoria prezentata pana acum este corecta. Coeficientul de corelatie al semnalelor separate este $0.000515439559418$. Pentru acest caz simplu, ICA isi face treaba foarte bine, iar timpul de executie este acceptabil, pana in 10 secunde.
+
+\subsubsection{Semnale audio: voce si muzica}
+Urmatorul test a fost efectuat cu doua semnale audio preluate de pe disc. Un semnal continea muzica, si un semnal continea o voce de barbat care spunea cifrele in engleza. Matricea de amestecare $A$ a fost:
+\[
+ \begin{matrix}
+	0.15270211 & 0.08406566 \\
+	0.90514896 & 0.53725471
+ \end{matrix}
+\]
+Semnalele amestecate rezultate sunt:
+\begin{center}
+	\includegraphics[scale=1]{music_mixed_1}
+ \end{center}
+\begin{center}
+	\includegraphics[scale=1]{music_mixed_2}
+ \end{center}
+ Am ales prezentarea lor separata deoarece avand magnitudini diferite, al doilea semnal l-ar fi acoperit pe primul in cazul unei afisari combinate. Acest caz de amestecare ar simula un caz din viata reala in care unul dintre microfoane este mai aproape de cele doua surse de semnal, iar celalalt mai departe. Se observa cum cele doua semnale sunt aproape identice, daca ignoram factorul magnitudinii. 
+
+ Rezultatele separarii:
+\begin{center}
+	\includegraphics[scale=1]{music_separated_1}
+ \end{center}
+\begin{center}
+	\includegraphics[scale=1]{music_separated_2}
+ \end{center}
+
+ Din nou, se observa o separare foarte buna semnalelor amestecate, coeficientul de corelatie fiind $-3.11671198288e-06$, acest exemplu fiind foarte expresiv in acest sens, se poate face foarte clar diferenta dintre semnalul cu voce si cel cu muzica. 
+
+ \subsubsection{Semnale audio: doua voci}
+ Urmatorul este a fost efectuat cu doua semnale audio, ambele contineau voci de barbat, unul spunea cifrele in engleza, iar celalalt spunea cifrele in spaniola. Matricea de amestecare $A$ este: 
+\[
+ \begin{matrix}
+	0.82583118 & 0.39868634 \\
+	0.12657259 & 0.96097025
+ \end{matrix}
+\]
+Rezultatul amestecarii este:
+\begin{center}
+	\includegraphics[scale=1]{speech_mixed_1}
+ \end{center}
+\begin{center}
+	\includegraphics[scale=1]{speech_mixed_2}
+ \end{center}
+
+ Aceasta amestecare simuleaza un caz din viata reala cand primul microfon se afla la o distanta echidistanta de cele doua surse de semnal, iar al doilea microfon se afla mai aproape de semnalul cu vocea spaniola, pe fundal auzindu-se si vocea engleza.
+
+Rezultatul separarii este:
+\begin{center}
+	\includegraphics[scale=1]{speech_separated_1}
+ \end{center}
+\begin{center}
+	\includegraphics[scale=1]{speech_separated_2}
+ \end{center}
+
+ Coeficientul de corelatie al surselor separate este $5.62035243305e-08$, un coeficient foarte mic, care arata o separare buna, acest lucru se observa si din imagini, se poate face clar diferenta intre cele doua voci, si se vede asemanarea cu semnalele originale.
+
+ \subsubsection{Semnale audio: trei semnale}
+ Urmatorul test a fost realizat cu trei semnale audio: un aspirator in functiune, o serie de aplaude si o voce. Acest test a fost facut pentru a demonstra faptul ca ICA poate separa mai mult de doua surse independente. 
+ Matricea de amestecare $A$ este:
+\[
+ \begin{matrix}
+	0.77191 & 0.4752 &  0.58699 \\
+	0.33712 & 0.47563 & 0.20836 \\
+	0.96878 & 0.57618 & 0.65625
+ \end{matrix}
+\]
+Rezultatul amestecarii este:
+\begin{center}
+	\includegraphics[scale=1]{three_mixed}
+ \end{center}
+
+\subsubsection{Analiza coeficientilor de corelatie a testelor}
+Uitandu-ne la coeficientii de corelatie ale surselor separate, se poate observa ca necesitatea ca ei sa fie mai mici, pentru o separare mai buna, creste, si asta deoarece complexitatea surselor amestecate este mai mare. Daca pentru semnalele primitive a rezultat un coeficient de corelatie de ordinul $5e^{-4}$, pentru semnalele audio reale acesta a fost si mai mic, $3e^{-6}$ in cazul muzicii amestecate cu voce, si $5e^{-8}$ in cazul vocilor amestecate. Asta arata ca cu cat semnalele initiale sunt considerate mai \textit{asemanatoare} (putem spune ca doua voci sunt mai asemanatoare decat o voce si o melodie acustica), cu atat indicele de corelatie al semnalelor separate este mai mic.
 \newpage
 \section{Concluzii //TODO}
 \section{Bibliografie //TODO}
