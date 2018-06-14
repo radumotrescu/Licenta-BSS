@@ -614,9 +614,32 @@ Functia sigmoida are urmatoarea distributie:
 \subsection{Metodologia si algoritmul}
 \subsubsection{Jupyter Notebook}
 Implementarea algoritmului s-a facut in limbajul de programare Python, folosind platforma Jupyter Notebook. Am ales aceasta platforma deoarece face ca pasii algoritmului sa poata fi mai bine urmariti, iar afisarea rezultatelor sa se faca intr-o maniera usoara si concisa. Aplicatia functioneaza pe un server local, iar codul este scris intr-un \textit{notebook (caiet)}, prezent intr-o pagina web, codul fiind impartit in \textit{cells (celule)}, in fiecare celula putem scrie o bucata de cod, care mai apoi poate fi executata. Acest stil de lucru este de folos deoarece permite executarea fiecarei celule individual, scurtand timpul dedicat intretinerii caietului. De asemenea, in aceste celule putem amplasa grafice, histograme, elemente de tip \textit{mark-up} pentru prezentarea unor informatii suplimentare, si elemente de tip audio sau video. 
-
+\newpage
 \subsubsection{Semnalele audio testate}
-
+Pentru testarea algoritmului, am ales mai multe seturi de semnale audio, fiecare cu proprietati diferite. Astfel, am realizat patru teste:
+\begin{itemize}
+	\item{Semnale primitive: pentru inceput, am testat algoritmul pe doua tipuri de semnale primitive, generate in notebook, unul de tip sinus, si unul de tip fierastrau.}
+		\begin{center}
+			\includegraphics[scale=1]{primitive_waves}
+		\end{center}
+		\newpage
+	\item{Voce si muzica: pentru a testa un caz de separare unde se poate face clar distinctia intre cele doua semnale amestecate, am ales o voce care spunea cifrele in engleza, si o melodie.}
+		\begin{center}
+			\includegraphics[scale=1]{music_music}
+		\end{center}
+		\begin{center}
+			\includegraphics[scale=1]{speech_music}
+		\end{center}
+		\newpage
+	\item{Doua voci: acesta a fost testul care simula cel mai bine realitatea, doua voci, una care spunea cifrele in engleza, si una care spunea cifrele in spaniola.}
+		\begin{center}
+			\includegraphics[scale=1]{english_speech}
+		\end{center}
+		\begin{center}
+			\includegraphics[scale=1]{spanish_speech}
+		\end{center}
+	\item{Trei semnale: acesta a fost testul care demonstra faptul ca se pot separa mai mult de doua componente independente amestecate, asa cum era ipoteza in teorie. Semnalele alese au fost cele reprezentand un aspirator in functiune, un raset de copil, si un grup de oameni ce bat din palme.}
+\end{itemize}
 \subsubsection{Conditia de oprire}
 
 \subsubsection{Rezultate}
