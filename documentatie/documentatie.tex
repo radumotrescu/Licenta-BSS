@@ -764,7 +764,7 @@ Rezultatul separarii este:
 	\includegraphics[scale=1]{speech_separated_2}
  \end{center}
 
- Coeficientul de corelatie al surselor separate este $5.62035243305e-08$, un coeficient foarte mic, care arata o separare buna, acest lucru se observa si din imagini, se poate face clar diferenta intre cele doua voci, si se vede asemanarea cu semnalele originale.
+ Coeficientul de corelatie al surselor separate este $5.62035243305e-08$, un coeficient foarte mic, care arata o separare buna, acest lucru se observa si din imagini, se poate face clar diferenta intre cele doua voci, si se vede asemanarea cu semnalele originale. De asemenea, se poate vedea ca algoritmul nu pastreaza ordinea componentelor initiale, ele ies din algoritm in ordine inversa, lucru sustinut de teorie.
 
  \subsubsection{Semnale audio: trei semnale}
  Acest test a fost facut pentru a demonstra faptul ca ICA poate separa mai mult de doua surse independente, si a fost realizat cu trei semnale audio: un aspirator in functiune, o serie de aplaude si o voce:
@@ -792,6 +792,25 @@ Rezultatul amestecarii este:
 
 \subsubsection{Analiza coeficientilor de corelatie a testelor}
 Uitandu-ne la coeficientii de corelatie ale surselor separate, se poate observa ca necesitatea ca ei sa fie mai mici, pentru o separare mai buna, creste, si asta deoarece complexitatea surselor amestecate este mai mare. Daca pentru semnalele primitive a rezultat un coeficient de corelatie de ordinul $5e^{-4}$, pentru semnalele audio reale acesta a fost si mai mic, $3e^{-6}$ in cazul muzicii amestecate cu voce, si $5e^{-8}$ in cazul vocilor amestecate. Asta arata ca cu cat semnalele initiale sunt considerate mai \textit{asemanatoare} (putem spune ca doua voci sunt mai asemanatoare decat o voce si o melodie acustica), cu atat indicele de corelatie al semnalelor separate este mai mic.
+
+\subsubsection{ICA versus PCA}
+Deoarece am abordat si tema PCA in aceasta lucrare, am dorit sa efectuam un test in care comparam puterea de separare dintre ICA si PCA, in contextul componentelor independente. Din fericire, cei care au realizat biblioteca scikit-learn pentru Python au efectuat aceasta comparatie pentru noi. Acestia au folosit implementarile lor pentru algoritmii PCA si ICA, si deoarece am demonstrat ca implementarile noastre functioneaza conform teoriei, am decis ca nu mai este necesar sa efectuam acest test si cu algoritmii nostrii. Acestea sunt rezultatele:
+\begin{center}
+	\includegraphics[width=\linewidth]{pca_vs_ica}
+ \end{center}
+
+ Se poate observa cum abordarea PCA nu reuseste sa separe componentele independente, in asemenea cazuri, abordarea ICA este mai buna.
+
+\subsubsection{Problema ICA in lumea reala}
+Pana acum, ipoteza teoriei descrise a fost faptul ca semnalele sunt amestecate instant, in diferite proportii. Acest lucru in lumea reala ar insemna ca semnalele audio pornesc de la sursa si ajung la receptori instant, luandu-se in calcul distanta. Se poate observa clar problema: in lumea reala exista un timp de parcurgere al semnalului, care variaza atat in functie de distanta dintre surse si receptori, cat si in functie de tipul mediului prin care se face propagarea. Aceasta intarziere poate fi de la mai putin de o milisecunda, pana la mai multe milisecunde. Avand in considerare faptul ca o secunda inregistrata de un receptor audio poate contine 16000 de esantioane, o intarziere de o milisecunda intre ajungerea unui semnal la cei doi receptori duce la o defazare de 16 esantioane intre inceputul inregistrarilor semnalului. Aceasta diferenta este destul de mare incat rezultatul obtinut de algoritm sa nu fie cel dorit. 
+
+\subsection{Aplicatii ale ICA}
+\subsubsection{Separarea artefactelor din inregistrari MEG}
+Magnetoencefalografia (MEG) este o procedure neinvaziva in care este monitorizata activitatea neuronilor corticali cu o precizie foarte buna din punct de vedere al timpului, si cu precizie moderata din punct de vedere spatial. Cand se analizeaza date MEG, o problema comuna este extractia caracteristicilor semnalelor neuromagnetice in prezenta artefactelor. Amplitudinea artefactelor ar putea fi mai mare decat cele ale semnalelor creierului, acestea putand fi interepretate ca semnale patologice, adica ca semnale care pot cauza sau descriu o anumita afectiune.
+
+O posibila rezolvare a acestei probleme este considerarea faptului ca activitatea cerebrala si artefactele, fie ele miscari ale ochilor sau senzori defecti, sunt procese separate din punct de vedere anatomic si fiziologic, si aceasta separare este data de independenta statistica dintre semnalele magnetice generate de aceste procese.
+
+Semnalele MEG au fost inregistrate intr-o camera izolata magnetic, cu un neuromagnetometru \textit{Neuromag-122} cu 122 de canale, care acopera intreg scalpul pacientului. Aparatul inregistreaza date din 61 de locatii. Persoana de test a fost rugata sa clipeasca si sa faca miscari rapide si bruste cu ochii, pentru a produce artefacte oculare tipice. Pentru a produce artefacte musculare, acesta a fost rugat sa muste in gol, pana la 20 de secunde. Pe langa asta, un alt artefact a fost creat plasand un ceas digital la un metru de casca, inauntrul camerei izolate.
 \newpage
 \section{Concluzii //TODO}
 \section{Bibliografie //TODO}
