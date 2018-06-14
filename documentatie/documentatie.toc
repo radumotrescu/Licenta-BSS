@@ -48,7 +48,9 @@
 \contentsline {subsubsection}{\numberline {4.10.5}Analiza coeficientilor de corelatie a testelor}{57}
 \contentsline {subsubsection}{\numberline {4.10.6}ICA versus PCA}{57}
 \contentsline {subsubsection}{\numberline {4.10.7}Problema ICA in lumea reala}{58}
-\contentsline {subsection}{\numberline {4.11}Aplicatii ale ICA}{59}
-\contentsline {subsubsection}{\numberline {4.11.1}Separarea artefactelor din inregistrari MEG}{59}
-\contentsline {section}{\numberline {5}Concluzii //TODO}{61}
-\contentsline {section}{\numberline {6}Bibliografie //TODO}{61}
+\contentsline {subsection}{\numberline {4.11}Aplicatii ale ICA}{62}
+\contentsline {subsubsection}{\numberline {4.11.1}Separarea artefactelor din inregistrari MEG}{62}
+\contentsline {subsubsection}{\numberline {4.11.2}Factori ascunsi in date financiare}{65}
+\contentsline {subsubsection}{\numberline {4.11.3}Telecomunicatii}{66}
+\contentsline {section}{\numberline {5}Concluzii //TODO}{67}
+\contentsline {section}{\numberline {6}Bibliografie //TODO}{67}

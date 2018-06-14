@@ -804,6 +804,24 @@ Deoarece am abordat si tema PCA in aceasta lucrare, am dorit sa efectuam un test
 \subsubsection{Problema ICA in lumea reala}
 Pana acum, ipoteza teoriei descrise a fost faptul ca semnalele sunt amestecate instant, in diferite proportii. Acest lucru in lumea reala ar insemna ca semnalele audio pornesc de la sursa si ajung la receptori instant, luandu-se in calcul distanta. Se poate observa clar problema: in lumea reala exista un timp de parcurgere al semnalului, care variaza atat in functie de distanta dintre surse si receptori, cat si in functie de tipul mediului prin care se face propagarea. Aceasta intarziere poate fi de la mai putin de o milisecunda, pana la mai multe milisecunde. Avand in considerare faptul ca o secunda inregistrata de un receptor audio poate contine 16000 de esantioane, o intarziere de o milisecunda intre ajungerea unui semnal la cei doi receptori duce la o defazare de 16 esantioane intre inceputul inregistrarilor semnalului. Aceasta diferenta este destul de mare incat rezultatul obtinut de algoritm sa nu fie cel dorit. 
 
+Testul efectuat pentru a ajunge la aceasta concluzie este urmatorul: am pornit de la doua semnale amestecate in conditii reale, muzica si o voce umana, si preluate de doua microfoane. Semnalele inregistrate sunt:
+\begin{center}
+	\includegraphics[scale=1]{real_mixed}
+ \end{center}
+
+ Dupa aplicarea ICA asupra acestor surse, se obtin urmatoarele semnale:
+\begin{center}
+	\includegraphics[scale=1]{real_separated}
+ \end{center}
+
+ Se poate observa ca nu s-a schimbat aproape nimic in configuratia semnalelor, ele ramanand amestecate, ICA fiind sensibil la defazarea semnalelor.
+
+ Pentru a rezolva aceasta problema, se pot aplica doua solutii:
+ \begin{itemize}
+	\item{Se poate face o calibrare a microfoanelor, sau mai bine spus, a semnalelor primite, astfel incat atunci cand semnalele initiale ajung la microfon sa fie inregistrate digital cu intarzierea deja luata in calcul. Acest lucru s-ar putea face cu doua semnale scurte ascutite care pleaca din locul de unde vor pleca semnalele initiale care se vor amesteca, masurand intarzierea initiala cu ajutorul acestor semnale ascutite si apoi facand pre-procesarea pe semnalele amestecate.} 
+	\item{A doua abordare este una matematica, daca in functia de maximum likelihood a algoritmului am putea lua in calcul intarzierea dintre semnale, fara ca intarzierea sa fie masurata in prealabil. Acest lucru ar insemna ca functia noua sa ia practic in calcul faza semnalelor, ceea ce ar duce problema in domeniul complex.}
+ \end{itemize}
+
 \subsection{Aplicatii ale ICA}
 \subsubsection{Separarea artefactelor din inregistrari MEG}
 Magnetoencefalografia (MEG) este o procedure neinvaziva in care este monitorizata activitatea neuronilor corticali cu o precizie foarte buna din punct de vedere al timpului, si cu precizie moderata din punct de vedere spatial. Cand se analizeaza date MEG, o problema comuna este extractia caracteristicilor semnalelor neuromagnetice in prezenta artefactelor. Amplitudinea artefactelor ar putea fi mai mare decat cele ale semnalelor creierului, acestea putand fi interepretate ca semnale patologice, adica ca semnale care pot cauza sau descriu o anumita afectiune.
@@ -811,6 +829,27 @@ Magnetoencefalografia (MEG) este o procedure neinvaziva in care este monitorizat
 O posibila rezolvare a acestei probleme este considerarea faptului ca activitatea cerebrala si artefactele, fie ele miscari ale ochilor sau senzori defecti, sunt procese separate din punct de vedere anatomic si fiziologic, si aceasta separare este data de independenta statistica dintre semnalele magnetice generate de aceste procese.
 
 Semnalele MEG au fost inregistrate intr-o camera izolata magnetic, cu un neuromagnetometru \textit{Neuromag-122} cu 122 de canale, care acopera intreg scalpul pacientului. Aparatul inregistreaza date din 61 de locatii. Persoana de test a fost rugata sa clipeasca si sa faca miscari rapide si bruste cu ochii, pentru a produce artefacte oculare tipice. Pentru a produce artefacte musculare, acesta a fost rugat sa muste in gol, pana la 20 de secunde. Pe langa asta, un alt artefact a fost creat plasand un ceas digital la un metru de casca, inauntrul camerei izolate.
+
+\begin{center}
+	\includegraphics[scale=1]{meg_1}
+ \end{center}
+ In aceasta imagine se pot vedea 12 semnale MEG din zona frontala, temporala si occipitala, impreuna cu pozitia senzorilor pe casca. Ultimele trei semnale reprezinta doua electrooculograme si o electrocardiograma, si nu au fost folosite in prelucrarea datelor cu ICA.
+
+ Asupra vectorului de semnale $x$, care contine amplitudinile $x(t)$ a 122 de semnale (deci dimensionalitatea este $n=22$), s-a aplicat mai intai PCA, pentru a reduce dimensionalitatea si pentru a standardiza datele. Apoi s-a aplicat un algoritm de tip ICA, rezultatele fiind urmatoarele:
+\begin{center}
+	\includegraphics[scale=0.8]{meg_2}
+ \end{center}
+ In aceasta imagine se vad sectiuni de semnale pentru 9 dintre componentele independente rezultate dupa aplicarea ICA asupra setului de date. In primele doua componente independente au aparut din cauza activitatii musculare cauzate de muscat. Aceasta separare in doua componente pare sa corespunda celor doua seturi de muschi care au fost activati in timpul procesului. A treia si a cincea componenta independenta arata miscarile bruste si rapide ale ochilor, impreuna cu clipitul aferent. A patra componenta arata artefactul cardiac care a fost extras. Ultimele doua componente independente, IC8 si IC9 au fost obtinute dupa o filtrare superioara a frecventelor de peste 1 Hz, IC8 arata artefactele date de ceasul din camera izolata, iar IC9 arata un senzor care are un sunet de fundal mai mare decat restul senzorilor. 
+
+ Acest test arata cum ICA este folosit in separarea multor componente complexe, putand separa multe tipuri de artefacte care pot aparea in cadrului unor scanari de tip MEG.
+
+ \subsubsection{Factori ascunsi in date financiare}
+ ICA a fost folosit si in campul finantelor. Un test a fost efectuat asupra fluxului de bani din cadrul a 40 de magazine care apartin aceluiasi lant comercial. Ipoteza a fost ca toate magazinele trebuie sa fie afectate de factori comuni, spre exemplu variatia sezonieria a consumului cumparatorilor datorata sarbatorilor si altor evenimente, dar fiecare magazin este manageriat in mod diferit, isi face publicitate in alt mod, lucru care ar face diferenta intre fluxul de bani adus de magazine. 
+
+ Au fost analizate datele a 40 de magazine pe durata a 140 de saptamani. Dupa aplicarea PCA asupra datelor, s-au pastrat primele cinci componente principale, iar dupa aplicarea ICA, s-au estimat patru componente independente. Primele doua componente au fost cele reflectate de sarbatorile de iarna si sarbatorile de vara, in acest caz, sarbatorile de vara au avut o variatie mai mica asupra fluxului de bani decat cele de iarna. A treia componenta are o variatie si mai mica decat a doua componenta, semanand cu un trend de piata, iar a patra componenta nu se asemana cu precedentele, o banuiala ar fi ca reprezinta pozitia pe piata relativ la lanturile de magazine rivale.
+
+ \subsubsection{Telecomunicatii}
+Aplicarea ICA in telecomunicatii s-a facut cu succesul in cazurile unde semnalul unui utilizator poate interfera cu semnalul altor utilizatori. Acest lucru se poate intampla in cazul modelului de comunicatii mobile CDMA (Code-Division Multiple Access), unde telefoanele mai multor utilizatori trimit semnale radio combinate pe un singur canal, iar receptorii decripteaza semnalele cu ajutorul unor chei numerice unice, asignate fiecarui utilizator. In acest caz, datorita numarului mare de utilizatori, problema se preteaza unei abordari de tip ICA, desi prin modelul CDMA avem acces la mai multe informatii initiale, ceea ce face separarea mult mai usoara.
 \newpage
 \section{Concluzii //TODO}
 \section{Bibliografie //TODO}
