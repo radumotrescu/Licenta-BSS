@@ -1,5 +1,13 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: documentatie.aux
-The style file: plain.bst
+The style file: IEEEtran.bst
 Database file #1: referinte.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in data_reduction
 Warning--empty journal in hyvarien
-(There was 1 warning)
+Warning--empty journal in accord_pca
+Warning--empty journal in paltanea
+
+Done.
+(There were 4 warnings)
