@@ -7,6 +7,9 @@
 \usepackage{float}
 \usepackage{amsmath}
 \usepackage{url}
+\usepackage{tocbibind}
+\renewcommand{\contentsname}{Capitole}
+\renewcommand{\refname}{Bibliografie}
 %\usepackage{fontspec}
 %\setmainfont[Ligatures=TeX]{UTSans}
 %\usepackage[paper=a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
@@ -25,12 +28,11 @@
 \maketitle
 
 \newpage
-
 \tableofcontents
 
 \newpage
 
-\section{Introducere in separarea surselor}
+\section{Introducere in analiza si separarea componentelor}
 Aceasta lucrare are scopul de a informa cititorul asupra unor metoda de analizare a componentelor unor date, fie acestea date economice sau imagini, pentru a putea fi interpretate mai usor, cat si metode de separare a componentelor unui set de date. 
 
 Algoritmii abordati sunt \textbf{PCA (Principal Component Analysis)}, \textbf{KPCA (Kernel Principal Component Analysis)} si \textbf{ICA (Independent Component Analysis)}. 
@@ -54,13 +56,11 @@ Libraria Accord.Net contine clase pentru:
 
 In contextul cerintelor pe care vrem noi sa le indeplinim, vom folosi clase dedicate matematicii, statisticii, si ale unor controale de afisare a datelor. 
 
-\subsection{Ce este PCA?\cite{data_reduction}}
-PCA, sau Principal Component Analysis, sau pe romaneste, Analiza Componentelor Principale este o unealta matematica aplicata din algebra liniara.
+\subsection{Ce este PCA?}
+PCA, sau Principal Component Analysis, sau pe romaneste, Analiza Componentelor Principale este o unealta matematica aplicata din algebra liniara. Este o metoda non-parametrica (care nu depinde de statistici) de a extrage informatiile relevante dintr-un set de date complex sau confuz.\cite{data_reduction}
 
-Este o metoda non-parametrica (care nu depinde de statistici) de a extrage informatiile relevante dintr-un set de date complex sau confuz.
-
-\paragraph{Un scurt exemplu: }
-Sa presupunem ca am extras informatii pentru 100 de parametri pentru un student: inaltime, varsta, greutate, nota obtinuta la un test, culoarea parului etc. Vrem sa gasim cele mai importante caracteristici care definesc studentul. Cum facem asta? Folosim PCA pentru a selecta numai cele mai importante caracteristici.
+\paragraph{Un scurt exemplu: \cite{data_reduction}}
+Sa presupunem ca am extras informatii pentru 100 de parametri pentru un student: inaltime, varsta, greutate, nota obtinuta la un test, culoarea parului etc. Vrem sa gasim cele mai importante caracteristici care definesc studentul. Cum facem asta? Folosim PCA pentru a le selecta.
 
 \begin{itemize}
 	\item Ce parametri dorim sa indepartam:
@@ -80,14 +80,14 @@ A putea elimina parametrii irelevanti si a-i pastra pe cei relevanti este usor p
 
 Dorim sa minimizam "sunetul de fundal" si redundanta datelor si sa maximizam variatia dintre parametri.
 
-Se poate vedea in imaginea de mai jos maximizarea variatiei dintre axele norului de puncte respectiv.
+Se poate vedea in imaginea de mai jos maximizarea variatiei dintre axele norului de puncte respectiv.\cite{pca_shlens}
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{Picture1}
 \end{figure}
 
-In imaginile de mai jos se pot vedea inregistrarile unor informatii. In imaginea (a) si (b) se poate vedea cum informatiile nu sunt corelate, avand redunanta mica spre medie (ex: inaltimea unui student si media lui), iar in imaginea (c) se poate vedea o redundanta mare, insemnand ca ambii parametrii pot fi exprimati unul in functie de celalalt.
+In imaginile de mai jos se pot vedea inregistrarile unor informatii. In imaginea (a) si (b) se poate vedea cum informatiile nu sunt corelate, avand redunanta mica spre medie (ex: inaltimea unui student si media lui), iar in imaginea (c) se poate vedea o redundanta mare, insemnand ca ambii parametrii pot fi exprimati unul in functie de celalalt.\cite{pca_shlens}
 
 \begin{figure}[H]
 \centering
@@ -200,9 +200,9 @@ In acest moment, am decis sa realizam o aplicatie care are un GUI usor de folosi
 Primele teste pe care le-am facut, au fost pe 3 nori de puncte generati aleator, la fel ca in exemplul de mai sus, si se poate vedea mai clar separarea norilor atat pe in spatiu 2D, cat si pe axa primei componente, cea cu cea mai mare variatie. De asemenea, atunci cand norii se suprapun putin de-a lungul axei Y, algoritmul PCA reuseste sa separe norii complet de-a lungul axei primei componente. Pe de alta parte, daca norii se suprapun mai mult, atunci se poate observa ca algoritmul PCA nu mai poate separa norii la fel de bine ca si pana acum.
 
 \begin{figure}[H]
-\centering
-\caption{Nori separati total}
-\includegraphics[width=\linewidth]{threecloud1}
+	\caption{Nori separati total}
+	\centering
+	\includegraphics[width=\linewidth]{threecloud1}
 \end{figure}
 
 
@@ -219,12 +219,13 @@ Primele teste pe care le-am facut, au fost pe 3 nori de puncte generati aleator,
 \includegraphics[width=\linewidth]{threecloud3}
 \end{figure}
 
+\newpage
 \section{Kernel PCA}
 
 \subsection{Setul two-moon si abordarea Kernel PCA}
-Pentru a aborda problema seturilor de date liniar inseparabile, nu putem folosi abordarea PCA simpla, rezultatul nu va fi cel dorit, dupa cum se poate vedea aplicand algoritmul PCA pentru setul two-moon: cele doua seturi de puncte se amesteca de-a lungul primei componente principale, astfel o clasificare a unui nou punct proiectat in spatiul respectiv va fi dificila, deoarece nu putem seta un punct de delimitare intre cei doi nori, acestia fiind intrepatrunsi.
+Pentru a aborda problema seturilor de date liniar inseparabile, nu putem folosi abordarea PCA simpla, rezultatul nu va fi cel dorit, dupa cum se poate vedea aplicand algoritmul PCA pentru setul two-moon: cele doua seturi de puncte se amesteca de-a lungul primei componente principale, astfel o clasificare a unui nou punct proiectat in spatiul respectiv va fi dificila, deoarece nu putem seta un punct de delimitare intre cei doi nori, acestia fiind intrepatrunsi. 
 
-Abordarea Kernel PCA rezolva acest lucru prin proiectarea datelor intr-un spatiu dimensional mai mare, unde ele vor deveni liniar separabile, iar acest lucru se face cu o "functie kernel".
+Abordarea Kernel PCA rezolva acest lucru prin proiectarea datelor intr-un spatiu dimensional mai mare, unde ele vor deveni liniar separabile, iar acest lucru se face cu o "functie kernel". Aceasta abordare este prezentata in articolul lui Sebastian Raschka.\cite{kernel_pca}
 
 Pentru a implementa Kernel PCA, vom avea in considerare urmatoarele 2 lucruri:
 
@@ -290,7 +291,7 @@ In cazul testelor noastre, eroarea a variat intre 1\% si 4\%, fiind un rezultat 
 \subsection{Aplicatia Eigenfaces}
 Dupa ce am realizat testele KPCA, urmatorul pas a fost sa crestem dimensiunile cu care lucram. Mai exact, am inceput sa folosim imagini pentru a vedea cum actioneaza algoritmul PCA pe ele.
 
-Imaginile folosite au fost cele din baza de date Yale, care a fost folosita in multe alte cercetari de genul acesta, continand destui subiecti si destule imagini pentru a putea testa orice algoritm.
+Imaginile folosite au fost cele din baza de date Yale, care a fost folosita in multe alte cercetari de genul acesta, continand destui subiecti si destule imagini pentru a putea testa orice algoritm.\cite{yale_db}
 
 Pentru a putea procesa aceste imagini, ele trebuiau sa aiba toate aceeasi dimensiune, in cazul nostru $168 \times 192$, iar fiecare imagine va deveni un rand din matricea care va fi prelucrata de algoritmul PCA.
 
@@ -351,8 +352,8 @@ Acestea fiind zise, am facut urmatorul test: din cele 65 de imagini ale subiectu
 \newpage
 \section{ICA}
 
-\subsection{Ce este ICA? \cite{hyvarien}}
-Una dintre problemele din lumea reala este gasirea unei reprezentari potrivite pentru date multivariate, adica date care au multe dimensiuni, si care de multe ori sunt aleatoare. Din cauza problemelor de performanta, orice fel de reprezentare este deobicei interpretata ca o transformare liniara a datelor originale. Printre aceste metode de analiza a transformarilor liniare se numara si PCA, despre care am vorbit pana acum. ICA (Independent Component Analysis) sau Analiza Componentelor Individuale este o abordare noua care are rolul de a reprezentarile liniare ale unor date cu distributie nongaussiana, astfel incat componentele sa fie cat mai independente din punct de vedere statistic. Acest tip de separare este dorita deoarece captureaza structura esentiala a datelor in multe tipuri de aplicatii, precum extragerea caracteristicilor (feature extraction) sau separarea semnalelor (signal separation). 
+\subsection{Ce este ICA? }
+Una dintre problemele din lumea reala este gasirea unei reprezentari potrivite pentru date multivariate, adica date care au multe dimensiuni, si care de multe ori sunt aleatoare. Din cauza problemelor de performanta, orice fel de reprezentare este deobicei interpretata ca o transformare liniara a datelor originale. Printre aceste metode de analiza a transformarilor liniare se numara si PCA, despre care am vorbit pana acum. ICA (Independent Component Analysis) sau Analiza Componentelor Individuale este o abordare noua care are rolul de a reprezentarile liniare ale unor date cu distributie nongaussiana, astfel incat componentele sa fie cat mai independente din punct de vedere statistic. Acest tip de separare este dorita deoarece captureaza structura esentiala a datelor in multe tipuri de aplicatii, precum extragerea caracteristicilor (feature extraction) sau separarea semnalelor (signal separation). Aceasta introducere si partea teoretica ce urmeaza este prezentata conform articolului publicat de Aapo Hyvärinen si Erkki Oja.\cite{hyvarien}
 
 Pentru a putea vizualiza aceasta idee, putem analiza o problema din lumea reala. Sa spunem ca suntem intr-o camera in care 2 oameni vorbesc simultan. Avem 2 microfoane pe care le pozitionam in locuri diferite in camera, si ele ne dau 2 inregistrari ale semnalelor. Aceste semnale sunt $x_1 (t)$ si $x_2 (t)$, cu $x_1$ si $x_2$ functii de amplitudine in functie de $t$. Fiecare inregistrare este o suma ponderata a semnalelor emise de cei doi oameni care vorbesc, pe care le notam $s_1(t)$ si $s_2(t)$. Pentru claritate le punem sub forma de ecuatie liniara:
 
@@ -364,9 +365,8 @@ Pentru a putea vizualiza aceasta idee, putem analiza o problema din lumea reala.
 \end{equation}
 
 unde $a_{11}, a{12}, a_{21}, a_{22}$ sunt niste parametrii care determina distanta dintre microfoane si vorbitori. Avand aceste date, daca am putea estima cele doua semnale initiale $s_1(t)$ si $s_2(t)$ folosind doar semnalele inregistrate $x_1(t)$ si $x_2(t)$, am reusi sa rezolvam multe probleme din lumea reala. Tipul de problema prezentat mai sus este denumit si \textbf{cocktail-party problem}.
-\newpage
 
-In imaginea urmatoare avem o reprezentare vizuala a problemei:
+In imaginea urmatoare avem o reprezentare vizuala a problemei \cite{noise_reduction}:
 
 \begin{center}
 	\includegraphics[scale=0.4]{two-sound-sources}
@@ -401,7 +401,7 @@ Punctul de inceput al ICA este ipoteza ca componentele independente $s_i$ sunt i
 \textbf{s}=\textbf{Wx}
 \end{equation}
 
-\subsection{Limitarile ICA \cite{hyvarien}}
+\subsection{Limitarile ICA}
 Avand in vedere modelul dat, se pot observa 2 limitari:
 
 1. Nu putem determina \textbf{energiile} componentelor independente.
@@ -418,7 +418,7 @@ Motivul este ca, din nou, atat \textbf{s} cat si \textbf{A} fiind necunoscute, p
 Elementele lui \textbf{Ps} sunt componentele independente originale, dar in ordine diferita, iar matricea $\textbf{AP}^{-1}$ este doar o noua matrice de amestecare necunoscuta, care poate fi aflata.
 \newpage
 
-\subsection{Independenta \cite{hyvarien}}
+\subsection{Independenta}
 \subsubsection{Definitie} 
 
 Ca sa putem intelege conceptul de independenta, consideram 2 variabile scalare aleatoare, $y_1$ si $y_2$. Variabilele $y_1$ si $y_2$ sunt independente daca informatia din $y_1$ nu influnteaza informatia din $y_2$ si invers. Acest lucru este valabil pentru variabilele precedente $s_1,s_2$, dar nu si pentru amestecarile $x_1,x_2$.
@@ -457,7 +457,7 @@ Pe de alta parte, necorelarea nu implica independenta. Sa presupunem ca $(y_1,y_
 E\{y_1^2, y_2^2\}=0 \neq \frac{1}{4} = E\{y_1^2\}E\{y_2^2\}
 \end{equation}
 si astfel conditia de mai sus nu este respectata, variabilele nefiind independente.
-\subsubsection{Variabile nongaussiene \cite{hyvarien}}
+\subsubsection{Variabile nongaussiene}
 Restrictia fundamentala a ICA este ca componentele independente sa fie nongaussiane pentru ca separarea sa se intample. Ca sa vedem de ce acest lucru este necesar, sa presupunem ca sursele $s_1, s_2$ au distributie gaussiana, iar $A$ este o matrice ortonormala. Din asta rezulta ca $x_1,x_2$ vor fi gaussiene, necorelate si au variatie unitara. Densitatea cumulata a $x_1, x_2$ este:
 \begin{equation}
 	p(x_1,x_2)=\frac{1}{2\pi}\exp(-\frac{x_1^2+x_2^2}{2})
@@ -469,7 +469,7 @@ Distributia aceasta este ilustrata mai jos:
  \end{center}
  Se poate observa cum densitatea este complet simetrica. Asta inseamna ca nu contine informatii cu privire la directiile coloanelor matricii de amestecare $A$. Din acest motiv, $A$ nu poate fi estimat.
 
- \subsection{Principiile estimarii ICA \cite{hyvarien}}
+ \subsection{Principiile estimarii ICA}
  \subsubsection{Nongaussianitate inseamna independenta}
  Daca luam in calcul cele spuse pana acum, putem deduce ca esenta estimarii unui model ICA sta in nongaussianitate.
 
@@ -490,10 +490,10 @@ Distributia aceasta este ilustrata mai jos:
 
  Maximizand nongaussianitatea lui $w^Tx$ ne da una dintre componentele independente. Spatiul de cautare pentru optimizarea nongaussianitatii intr-un spatiul $n$-dimensional al vectorilor $w$ are $2n$ maxime locale, 2 pentru fiecare componente independenta, $s_i$ si $-s_i$. Ca sa gasim mai multe componente independente, trebuie sa gasim toate maximele locale.  
 \newpage
-\subsection{Masuratori ale nongaussianitatii \cite{hyvarien}}
+\subsection{Masuratori ale nongaussianitatii}
 Pentru a folosi nongaussianitatea in estimarea ICA, avem nevoie de o masura cantitativa a nongaussinitatii unei variabile aleatoare, $y$. Vom presupune ca $y$ este centrat, adica are media egala cu zero, iar variatia ei este unu. 
-\subsubsection{Kurtosis / Aplatizarea}
-O masura clasica a nongaussinitatii este aplatizarea, sau al patrulea moment central al unei variabile aleatoare, si este definit astfel:
+\subsubsection{Aplatizarea}
+O masura clasica a nongaussinitatii este aplatizarea (kurtosis), sau al patrulea moment central al unei variabile aleatoare, si este definit astfel:
 \begin{equation}
 kurt(y)=E\{y^4\}-3(E\{y^2\})^2
 \end{equation}
@@ -503,12 +503,12 @@ kurt(y)=E\{y^4\}-3
 \end{equation}
 Acest lucru arata defapt ca aplatizarea reprezinta al patrulea moment, $E\{y^4\}$. Pentru un $y$ gaussian, al patrulea moment este definit ca $3(E\{y^2\})^2$, deci aplatizarea pentru un asemenea $y$ este 0. Pentru majoritatea variabilelor aleatoare nongaussiene, aplatizarea este diferita de zero.
 
-Aplatizarea poate fi pozitiva sau negativa, variabilele aleatoare care au aplatizare negativa numinduse subgaussiene, iar cele care au aplatizare pozitiva se numest supergaussiene. Variabilele aleatoare supergaussiene corespund cu distributii de tip Laplace, care au un varf ascutit, si coada alungita:
+Aplatizarea poate fi pozitiva sau negativa, variabilele aleatoare care au aplatizare negativa numinduse subgaussiene, iar cele care au aplatizare pozitiva se numest supergaussiene. Variabilele aleatoare supergaussiene corespund cu distributii de tip Laplace, care au un varf ascutit, si coada alungita \cite{laplace_distribution_wiki}:
 \begin{center}
-	\includegraphics[scale=0.5]{laplace_distribution}
+	\includegraphics[scale=0.3]{laplace_distribution}
  \end{center}
 
- Variabilele aleatoare subgaussiene corespund cu distributiile uniforme, acestea fiind plate in reprezentare:
+ Variabilele aleatoare subgaussiene corespund cu distributiile uniforme, acestea fiind plate in reprezentare \cite{uniform_distribution_wolfram}:
 
 \begin{center}
 	\includegraphics[scale=1.2]{uniform_distribution}
@@ -583,8 +583,8 @@ Alegand $G$ bine, putem obtine aproximari mult mai bune decat cele de mai devrem
 	G_1(u)=\frac{1}{a_1}\log \cosh a_1 u_1, G_2(u)=-\exp(\frac{-u^2}{2})
 \end{equation}
 unde $1\leq a_1 \leq 2$ este o constanta. Cu toate ca nu am folosit aceste tipuri de aproximari, ele sunt un compromis bun intre metodele de masurare a nongaussianitatii abordate mai devreme, aplatizarea si negentropia. 
-\newpage
-\subsection{Abordarea Maximum Likelihood \cite{hyvarien}}
+
+\subsection{Abordarea Maximum Likelihood}
 O abordare foarte populara pentru rezolvarea modelului ICA este \textbf{maximum likelihood estimation}. Aceasta metoda estimeaza valorile parametrului unui model.\cite{probability_concepts} Acesti parametri sunt gasiti astfel inca estimarea lor sa mareasca sansa ca modelul sa produca datele observate. Pentru cazul particular al modelului nostru ICA, avand $W=(w_1, \dots, w_n)^T$ ca $A^{-1}$, \textbf{log-likelihood-ul} ia forma:
 \begin{equation}
 	L=\sum_{t=1}^T \sum_{i=1}^n \log f_i(w_i^Tx(t)) + T \log |\det W|
@@ -601,14 +601,14 @@ Vom folosi aceasta metoda pentru a incerca sa aproximam matricea $A^{-1}$, sau $
 \begin{equation}
 	W^+=W+ \mu [I + g(y) y^T]W
 \end{equation}
-unde $\mu$ este rata de invatare a algoritmului, iar $g$ este functia de densitate a componentelor independente. \cite{hyvarien}
+unde $\mu$ este rata de invatare a algoritmului, iar $g$ este functia de densitate a componentelor independente.\cite{hyvarien}
 
 Un factor important in succesul acestui algoritm este alegerea functiei de densitate. Pana acum am presupus ca se cunoaste functia de densitate a componentelor independente, dar in practica, acest lucru nu poate fi garantat, iar din aceasta cauza, va fi nevoie de o aproximare. S-a observat ca o functie potrivita acestei probleme este functia sigmoida, deoarece avand o distributie continua, calculand derivata acestei functii ajungem la o functie de densitate, care poate fi folosita pentru aproximarea densitatii componentelor independente. Aici vom defini $g$ ca fiind functia sigmoida, in practica s-a demonstrat ca este suficient de buna:
 \begin{equation}
 	g_i(x)=\frac{1}{1+e^{-x}}
 \end{equation}
 
-Functia sigmoida are urmatoarea distributie:
+Functia sigmoida are urmatoarea distributie \cite{sigmoid_function_wiki}:
 \begin{center}
 	\includegraphics[scale=0.6]{sigmoid_function}
  \end{center}
@@ -616,20 +616,20 @@ Functia sigmoida are urmatoarea distributie:
 \subsection{Metodologia si algoritmul}
 \subsubsection{Jupyter Notebook}
 Implementarea algoritmului s-a facut in limbajul de programare Python, folosind platforma Jupyter Notebook. Am ales aceasta platforma deoarece face ca pasii algoritmului sa poata fi mai bine urmariti, iar afisarea rezultatelor sa se faca intr-o maniera usoara si concisa. Aplicatia functioneaza pe un server local, iar codul este scris intr-un \textbf{notebook (caiet)}, prezent intr-o pagina web, codul fiind impartit in \textbf{cells (celule)}, in fiecare celula putem scrie o bucata de cod, care mai apoi poate fi executata. Acest stil de lucru este de folos deoarece permite executarea fiecarei celule individual, scurtand timpul dedicat intretinerii caietului. De asemenea, in aceste celule putem amplasa grafice, histograme, elemente de tip \textbf{mark-up} pentru prezentarea unor informatii suplimentare, si elemente de tip audio sau video. 
-\newpage
+
 \subsubsection{Semnalele audio testate}
 Pentru testarea algoritmului, am ales mai multe seturi de semnale audio, fiecare cu proprietati diferite. Astfel, am realizat patru teste:
 \begin{itemize}
 	\item{Semnale primitive: pentru inceput, am testat algoritmul pe doua tipuri de semnale primitive, generate in notebook, unul de tip sinus, si unul de tip fierastrau.\cite{scikit_ica_pca}}
 	\item{Voce si muzica: pentru a testa un caz de separare unde se poate face clar distinctia intre cele doua semnale amestecate, am ales o voce care spunea cifrele in engleza, si o melodie.\cite{sound_samples_1}
 } 	\item{Doua voci: acesta a fost testul care simula cel mai bine realitatea, doua voci, una care spunea cifrele in engleza, si una care spunea cifrele in spaniola.\cite{sound_samples_1}} 
-	\item{Trei semnale: acesta a fost testul care demonstra faptul ca se pot separa mai mult de doua componente independente amestecate, asa cum era ipoteza in teorie. Semnalele alese au fost cele reprezentand un aspirator in functiune, un voce umana, si un grup de oameni ce aplauda.\cite{vsubhashini}}
+	\item{Trei semnale: acesta a fost testul care demonstra faptul ca se pot separa mai mult de doua componente independente amestecate, asa cum era ipoteza in teorie. Semnalele alese au fost cele reprezentand un aspirator in functiune, o voce umana, si un grup de oameni ce aplauda.\cite{vsubhashini}}
 \end{itemize}
 
 \subsubsection{Pre-procesarea datelor}
 Pentru toate semnalele audio inafara de cele primitive, a fost nevoie sa centram datele, la fel ca in cazul PCA, pentru standardizare. 
 
-Pornind de la semnalele audio initiale, vom simula amestecarea lor, folosind operatorul de amestecare, $A$. In realitate, acest $A$ ar fi dat de distantele dintre sursele de semnal si dispozitivele care le inregistreaza. In cazul nostru, $A$ va fi o matrice patratica, fie de $2 \times 2$, fie de $3 \times 3$, in functie de caz. Acest proces arata ca mai inainte:
+Pornind de la semnalele audio initiale, vom simula amestecarea lor, folosind operatorul de amestecare, $A$. In realitate, acest $A$ ar fi dat de distantele dintre sursele de semnal si dispozitivele care le inregistreaza. In cazul nostru, $A$ va fi o matrice patratica, fie de $2 \times 2$, fie de $3 \times 3$, in functie de caz. Acest proces arata ca mai inainte \cite{noise_reduction}:
 \begin{center}
 	\includegraphics[scale=0.3]{two-sound-sources}
  \end{center}
@@ -650,7 +650,7 @@ Se calculeaza:
 \begin{equation}
 	Y=WX
 \end{equation} 
-unde $Y$ reprezinta banuiala algoritmului cu privire la componentele independente. Functia de actualizare a lui $W$, definita mai sus, va gasi un $W$ mai bun, luand in calcul $Y$. In faza initiala, acest pas se executa pentru un numar finit de pasi, ales in functie de situatie. Dupa terminarea executarii acestui numar de iteratii, $W$ actualizat ar trebui sa fie cel care poate sa separe componentele. Acest lucru nu este intotdeauna adevarat, ceea ce inseamna ca ne trebuie o alta metoda de a opri cautarea solutiei optime.
+unde $Y$ reprezinta banuiala algoritmului cu privire la componentele independente. Functia de actualizare a lui $W$, definita mai sus, va gasi un $W$ mai bun, luand in calcul $Y$. In faza initiala, acest pas se executa pentru un numar finit de pasi, ales in functie de situatie, iar dupa fiecare iteratie rata de invatare se modifica prin metoda recoacerii simulate, asta inseamnand ca fiecare iteratie succesiva are o rata de invatare mai mica, simuland cautarea pe un spatiu de cautare mai mic, scazand posibilitatea ajungerii intr-un minim sau maxim local. Dupa terminarea executarii acestui numar de iteratii, $W$ actualizat ar trebui sa fie cel care poate sa separe componentele. Acest lucru nu este intotdeauna adevarat, ceea ce inseamna ca ne trebuie o alta metoda de a opri cautarea solutiei optime.
 
 \subsubsection{Conditia de oprire}
 Algoritmii care aplica metoda gradient descent, deobicei sunt opriti atunci cand functia de cost ajunge sau este foarte aproape de minim. In general, se considera ca functia a ajuns la costul minim atunci cand diferentele dintre valorile consecutive obtinute de algoritm sunt mai mici decat un anumit \textbf{threshold (prag)}. Alegere acestui prag este foarte importanta, deoarece un prag prea mic va duce la castiguri foarte mici de precizie dupa multe operatii, iar un prag mare poate va opri algoritmul inainte de a ajunge la valoarea minima. Cu toate ca aceasta idee pare destul de simpla, balansul dintre precizia rezultatului obtinut si viteza algoritmului este ceva ce trebuie masurat si ajustat de la caz la caz. Functia de cost calculata este:
@@ -670,7 +670,7 @@ Dupa cum am mentionat mai sus, am realizat patru teste. Le vom prezenta aici pe 
 \subsubsection{Semnale primitive}
 Primul test a fost realizat cu doua semnale generate prin intermediul codului Python, unul de tip sinus, si unul de tip fierastrau:
 \begin{center}
-	\includegraphics[scale=1]{primitive_waves}
+	\includegraphics[scale=0.8]{primitive_waves}
 \end{center}
 
 Matricea de amestecare $A$ aleasa a fost:
@@ -731,9 +731,7 @@ Semnalele amestecate rezultate sunt:
 
  \subsubsection{Semnale audio: doua voci}
  Urmatorul este a fost efectuat cu doua semnale audio, ambele contineau voci de barbat, unul spunea cifrele in engleza, iar celalalt spunea cifrele in spaniola:
-\begin{center}
 	\includegraphics[scale=1]{english_speech}
-\end{center}
 \begin{center}
 	\includegraphics[scale=1]{spanish_speech}
 \end{center}
@@ -803,7 +801,7 @@ Deoarece am abordat si tema PCA in aceasta lucrare, am dorit sa efectuam un test
 \subsubsection{Problema ICA in lumea reala}
 Pana acum, ipoteza teoriei descrise a fost faptul ca semnalele sunt amestecate instant, in diferite proportii. Acest lucru in lumea reala ar insemna ca semnalele audio pornesc de la sursa si ajung la receptori instant, luandu-se in calcul distanta. Se poate observa clar problema: in lumea reala exista un timp de parcurgere al semnalului, care variaza atat in functie de distanta dintre surse si receptori, cat si in functie de tipul mediului prin care se face propagarea. Aceasta intarziere poate fi de la mai putin de o milisecunda, pana la mai multe milisecunde. Avand in considerare faptul ca o secunda inregistrata de un receptor audio poate contine 16000 de esantioane, o intarziere de o milisecunda intre ajungerea unui semnal la cei doi receptori duce la o defazare de 16 esantioane intre inceputul inregistrarilor semnalului. Aceasta diferenta este destul de mare incat rezultatul obtinut de algoritm sa nu fie cel dorit. 
 
-Testul efectuat pentru a ajunge la aceasta concluzie este urmatorul: am pornit de la doua semnale amestecate in conditii reale, muzica si o voce umana, si preluate de doua microfoane. Semnalele inregistrate sunt:
+Testul efectuat pentru a ajunge la aceasta concluzie este urmatorul: am pornit de la doua semnale amestecate in conditii reale, muzica si o voce umana, si preluate de doua microfoane.\cite{sound_samples_1} Semnalele inregistrate sunt:
 \begin{center}
 	\includegraphics[scale=1]{real_mixed}
  \end{center}
@@ -821,7 +819,7 @@ Testul efectuat pentru a ajunge la aceasta concluzie este urmatorul: am pornit d
 	\item{A doua abordare este una matematica, daca in functia de maximum likelihood a algoritmului am putea lua in calcul intarzierea dintre semnale, fara ca intarzierea sa fie masurata in prealabil. Acest lucru ar insemna ca functia noua sa ia practic in calcul faza semnalelor, ceea ce ar duce problema in domeniul complex.}
  \end{itemize}
 
-\subsection{Aplicatii ale ICA \cite{hyvarien}} 
+\subsection{Aplicatii ale ICA } 
 \subsubsection{Separarea artefactelor din inregistrari MEG}
 Magnetoencefalografia (MEG) este o procedure neinvaziva in care este monitorizata activitatea neuronilor corticali cu o precizie foarte buna din punct de vedere al timpului, si cu precizie moderata din punct de vedere spatial. Cand se analizeaza date MEG, o problema comuna este extractia caracteristicilor semnalelor neuromagnetice in prezenta artefactelor. Amplitudinea artefactelor ar putea fi mai mare decat cele ale semnalelor creierului, acestea putand fi interepretate ca semnale patologice, adica ca semnale care pot cauza sau descriu o anumita afectiune.
 
@@ -840,19 +838,24 @@ Semnalele MEG au fost inregistrate intr-o camera izolata magnetic, cu un neuroma
  \end{center}
  In aceasta imagine se vad sectiuni de semnale pentru 9 dintre componentele independente rezultate dupa aplicarea ICA asupra setului de date. In primele doua componente independente au aparut din cauza activitatii musculare cauzate de muscat. Aceasta separare in doua componente pare sa corespunda celor doua seturi de muschi care au fost activati in timpul procesului. A treia si a cincea componenta independenta arata miscarile bruste si rapide ale ochilor, impreuna cu clipitul aferent. A patra componenta arata artefactul cardiac care a fost extras. Ultimele doua componente independente, IC8 si IC9 au fost obtinute dupa o filtrare superioara a frecventelor de peste 1 Hz, IC8 arata artefactele date de ceasul din camera izolata, iar IC9 arata un senzor care are un sunet de fundal mai mare decat restul senzorilor. 
 
- Acest test arata cum ICA este folosit in separarea multor componente complexe, putand separa multe tipuri de artefacte care pot aparea in cadrului unor scanari de tip MEG.
+ Acest test arata cum ICA este folosit in separarea multor componente complexe, putand separa multe tipuri de artefacte care pot aparea in cadrului unor scanari de tip MEG.\cite{hyvarien}
 
  \subsubsection{Factori ascunsi in date financiare}
  ICA a fost folosit si in campul finantelor. Un test a fost efectuat asupra fluxului de bani din cadrul a 40 de magazine care apartin aceluiasi lant comercial. Ipoteza a fost ca toate magazinele trebuie sa fie afectate de factori comuni, spre exemplu variatia sezonieria a consumului cumparatorilor datorata sarbatorilor si altor evenimente, dar fiecare magazin este manageriat in mod diferit, isi face publicitate in alt mod, lucru care ar face diferenta intre fluxul de bani adus de magazine. 
 
- Au fost analizate datele a 40 de magazine pe durata a 140 de saptamani. Dupa aplicarea PCA asupra datelor, s-au pastrat primele cinci componente principale, iar dupa aplicarea ICA, s-au estimat patru componente independente. Primele doua componente au fost cele reflectate de sarbatorile de iarna si sarbatorile de vara, in acest caz, sarbatorile de vara au avut o variatie mai mica asupra fluxului de bani decat cele de iarna. A treia componenta are o variatie si mai mica decat a doua componenta, semanand cu un trend de piata, iar a patra componenta nu se asemana cu precedentele, o banuiala ar fi ca reprezinta pozitia pe piata relativ la lanturile de magazine rivale.
+ Au fost analizate datele a 40 de magazine pe durata a 140 de saptamani. Dupa aplicarea PCA asupra datelor, s-au pastrat primele cinci componente principale, iar dupa aplicarea ICA, s-au estimat patru componente independente. Primele doua componente au fost cele reflectate de sarbatorile de iarna si sarbatorile de vara, in acest caz, sarbatorile de vara au avut o variatie mai mica asupra fluxului de bani decat cele de iarna. A treia componenta are o variatie si mai mica decat a doua componenta, semanand cu un trend de piata, iar a patra componenta nu se asemana cu precedentele, o banuiala ar fi ca reprezinta pozitia pe piata relativ la lanturile de magazine rivale.\cite{hyvarien}
 
  \subsubsection{Telecomunicatii}
-Aplicarea ICA in telecomunicatii s-a facut cu succesul in cazurile unde semnalul unui utilizator poate interfera cu semnalul altor utilizatori. Acest lucru se poate intampla in cazul modelului de comunicatii mobile CDMA (Code-Division Multiple Access), unde telefoanele mai multor utilizatori trimit semnale radio combinate pe un singur canal, iar receptorii decripteaza semnalele cu ajutorul unor chei numerice unice, asignate fiecarui utilizator. In acest caz, datorita numarului mare de utilizatori, problema se preteaza unei abordari de tip ICA, desi prin modelul CDMA avem acces la mai multe informatii initiale, ceea ce face separarea mult mai usoara.
+Aplicarea ICA in telecomunicatii s-a facut cu succesul in cazurile unde semnalul unui utilizator poate interfera cu semnalul altor utilizatori. Acest lucru se poate intampla in cazul modelului de comunicatii mobile CDMA (Code-Division Multiple Access), unde telefoanele mai multor utilizatori trimit semnale radio combinate pe un singur canal, iar receptorii decripteaza semnalele cu ajutorul unor chei numerice unice, asignate fiecarui utilizator. In acest caz, datorita numarului mare de utilizatori, problema se preteaza unei abordari de tip ICA, desi prin modelul CDMA avem acces la mai multe informatii initiale, ceea ce face separarea mult mai usoara.\cite{hyvarien}
 \newpage
-\section{Concluzii //TODO}
+\section{Concluzii}
+Urmarind baza matematica si aplicatiile acestor abordari de analiza si separare a componentelor, ne putem da seama ca acestea sunt robuste si au un folos real in viata de zi cu zi. 
 
+PCA este alcatuit din concepte simple de matematica liniara, fiind foarte usor de inteles, si este folosit in majoritatea algoritmilor din domeniul data science, puterea de standardizare si de reducere a dimensionalitatii datelor fiind foarte pretioasa in starea curenta a lumii IT, unde in fiecare secunda se strang miliarde de esantioane, unele relevante, altele nu. 
+
+Abordarea ICA, dupa cum am vazut, are multiple aplicatii moderne, printre care cele medicale si economice, fiind flexibila in implementare. Aici am acoperit doar o mica parte din ceea ce inseamna ICA, posibilitatile de dezvoltare a problemei de separare a componentelor independente sunt foarte mari, problema semnalelor defazate este inca una de actualitate.  
 \newpage
+
 \bibliography{referinte}
 %\bibliographystyle{plain}
 \bibliographystyle{IEEEtran}
