@@ -1,14 +1,49 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2018.6.15)  16 JUN 2018 13:22
-entering extended mode
-**c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie.tex
+This is LuaTeX, Version 1.0.4 (MiKTeX 2.9.6350 64-bit)  (format=lualatex 2018.6.15)  16 JUN 2018 16:06
+ restricted system commands enabled.
+ file:line:error style messages enabled.
+**c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie
 (c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie.tex
 LaTeX2e <2017-04-15>
-Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files\MiKTeX 2.9\tex/latex\base\article.cls"
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using cache: C:/Users/BDRadu/AppData/Local/MiKTeX/2.9/luatex-cache/gen
+eric)
+luaotfload | conf : Root cache directory is C:/Users/BDRadu/AppData/Local/MiKTeX
+/2.9/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “C:/Program Files/MiKTeX 2.9/tex/luatex/luaotfload/fontloader-2
+017-02-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is C:/Users/BDRadu/AppData/Local/MiKTeX
+/2.9/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 4.267 seconds
+Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
+("C:/Program Files/MiKTeX 2.9/tex/latex/base/article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex/latex\base\size12.clo"
+("C:/Program Files/MiKTeX 2.9/tex/latex/base/size12.clo"
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
-)
+luaotfload | db : Font names database loaded from C:/Users/BDRadu/AppData/Local/
+MiKTeX/2.9/luatex-cache/generic/names/luaotfload-names.luc(load luc: C:/Users/BD
+Radu/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman12-regular.l
+uc))
 \c@part=\count79
 \c@section=\count80
 \c@subsection=\count81
@@ -20,333 +55,22 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-("C:\Program Files\MiKTeX 2.9\tex/latex\base\inputenc.sty"
+) ("C:/Program Files/MiKTeX 2.9/tex/latex/base/inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files\MiKTeX 2.9\tex/latex\base\utf8.def"
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-Now handling font encoding OML ...
-... no UTF-8 mapping file for font encoding OML
-Now handling font encoding T1 ...
-... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files\MiKTeX 2.9\tex/latex\base\t1enc.dfu"
-File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
-   defining Unicode char U+00A1 (decimal 161)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00AB (decimal 171)
-   defining Unicode char U+00AD (decimal 173)
-   defining Unicode char U+00BB (decimal 187)
-   defining Unicode char U+00BF (decimal 191)
-   defining Unicode char U+00C0 (decimal 192)
-   defining Unicode char U+00C1 (decimal 193)
-   defining Unicode char U+00C2 (decimal 194)
-   defining Unicode char U+00C3 (decimal 195)
-   defining Unicode char U+00C4 (decimal 196)
-   defining Unicode char U+00C5 (decimal 197)
-   defining Unicode char U+00C6 (decimal 198)
-   defining Unicode char U+00C7 (decimal 199)
-   defining Unicode char U+00C8 (decimal 200)
-   defining Unicode char U+00C9 (decimal 201)
-   defining Unicode char U+00CA (decimal 202)
-   defining Unicode char U+00CB (decimal 203)
-   defining Unicode char U+00CC (decimal 204)
-   defining Unicode char U+00CD (decimal 205)
-   defining Unicode char U+00CE (decimal 206)
-   defining Unicode char U+00CF (decimal 207)
-   defining Unicode char U+00D0 (decimal 208)
-   defining Unicode char U+00D1 (decimal 209)
-   defining Unicode char U+00D2 (decimal 210)
-   defining Unicode char U+00D3 (decimal 211)
-   defining Unicode char U+00D4 (decimal 212)
-   defining Unicode char U+00D5 (decimal 213)
-   defining Unicode char U+00D6 (decimal 214)
-   defining Unicode char U+00D8 (decimal 216)
-   defining Unicode char U+00D9 (decimal 217)
-   defining Unicode char U+00DA (decimal 218)
-   defining Unicode char U+00DB (decimal 219)
-   defining Unicode char U+00DC (decimal 220)
-   defining Unicode char U+00DD (decimal 221)
-   defining Unicode char U+00DE (decimal 222)
-   defining Unicode char U+00DF (decimal 223)
-   defining Unicode char U+00E0 (decimal 224)
-   defining Unicode char U+00E1 (decimal 225)
-   defining Unicode char U+00E2 (decimal 226)
-   defining Unicode char U+00E3 (decimal 227)
-   defining Unicode char U+00E4 (decimal 228)
-   defining Unicode char U+00E5 (decimal 229)
-   defining Unicode char U+00E6 (decimal 230)
-   defining Unicode char U+00E7 (decimal 231)
-   defining Unicode char U+00E8 (decimal 232)
-   defining Unicode char U+00E9 (decimal 233)
-   defining Unicode char U+00EA (decimal 234)
-   defining Unicode char U+00EB (decimal 235)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00EE (decimal 238)
-   defining Unicode char U+00EF (decimal 239)
-   defining Unicode char U+00F0 (decimal 240)
-   defining Unicode char U+00F1 (decimal 241)
-   defining Unicode char U+00F2 (decimal 242)
-   defining Unicode char U+00F3 (decimal 243)
-   defining Unicode char U+00F4 (decimal 244)
-   defining Unicode char U+00F5 (decimal 245)
-   defining Unicode char U+00F6 (decimal 246)
-   defining Unicode char U+00F8 (decimal 248)
-   defining Unicode char U+00F9 (decimal 249)
-   defining Unicode char U+00FA (decimal 250)
-   defining Unicode char U+00FB (decimal 251)
-   defining Unicode char U+00FC (decimal 252)
-   defining Unicode char U+00FD (decimal 253)
-   defining Unicode char U+00FE (decimal 254)
-   defining Unicode char U+00FF (decimal 255)
-   defining Unicode char U+0100 (decimal 256)
-   defining Unicode char U+0101 (decimal 257)
-   defining Unicode char U+0102 (decimal 258)
-   defining Unicode char U+0103 (decimal 259)
-   defining Unicode char U+0104 (decimal 260)
-   defining Unicode char U+0105 (decimal 261)
-   defining Unicode char U+0106 (decimal 262)
-   defining Unicode char U+0107 (decimal 263)
-   defining Unicode char U+0108 (decimal 264)
-   defining Unicode char U+0109 (decimal 265)
-   defining Unicode char U+010A (decimal 266)
-   defining Unicode char U+010B (decimal 267)
-   defining Unicode char U+010C (decimal 268)
-   defining Unicode char U+010D (decimal 269)
-   defining Unicode char U+010E (decimal 270)
-   defining Unicode char U+010F (decimal 271)
-   defining Unicode char U+0110 (decimal 272)
-   defining Unicode char U+0111 (decimal 273)
-   defining Unicode char U+0112 (decimal 274)
-   defining Unicode char U+0113 (decimal 275)
-   defining Unicode char U+0114 (decimal 276)
-   defining Unicode char U+0115 (decimal 277)
-   defining Unicode char U+0116 (decimal 278)
-   defining Unicode char U+0117 (decimal 279)
-   defining Unicode char U+0118 (decimal 280)
-   defining Unicode char U+0119 (decimal 281)
-   defining Unicode char U+011A (decimal 282)
-   defining Unicode char U+011B (decimal 283)
-   defining Unicode char U+011C (decimal 284)
-   defining Unicode char U+011D (decimal 285)
-   defining Unicode char U+011E (decimal 286)
-   defining Unicode char U+011F (decimal 287)
-   defining Unicode char U+0120 (decimal 288)
-   defining Unicode char U+0121 (decimal 289)
-   defining Unicode char U+0122 (decimal 290)
-   defining Unicode char U+0123 (decimal 291)
-   defining Unicode char U+0124 (decimal 292)
-   defining Unicode char U+0125 (decimal 293)
-   defining Unicode char U+0128 (decimal 296)
-   defining Unicode char U+0129 (decimal 297)
-   defining Unicode char U+012A (decimal 298)
-   defining Unicode char U+012B (decimal 299)
-   defining Unicode char U+012C (decimal 300)
-   defining Unicode char U+012D (decimal 301)
-   defining Unicode char U+012E (decimal 302)
-   defining Unicode char U+012F (decimal 303)
-   defining Unicode char U+0130 (decimal 304)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0132 (decimal 306)
-   defining Unicode char U+0133 (decimal 307)
-   defining Unicode char U+0134 (decimal 308)
-   defining Unicode char U+0135 (decimal 309)
-   defining Unicode char U+0136 (decimal 310)
-   defining Unicode char U+0137 (decimal 311)
-   defining Unicode char U+0139 (decimal 313)
-   defining Unicode char U+013A (decimal 314)
-   defining Unicode char U+013B (decimal 315)
-   defining Unicode char U+013C (decimal 316)
-   defining Unicode char U+013D (decimal 317)
-   defining Unicode char U+013E (decimal 318)
-   defining Unicode char U+0141 (decimal 321)
-   defining Unicode char U+0142 (decimal 322)
-   defining Unicode char U+0143 (decimal 323)
-   defining Unicode char U+0144 (decimal 324)
-   defining Unicode char U+0145 (decimal 325)
-   defining Unicode char U+0146 (decimal 326)
-   defining Unicode char U+0147 (decimal 327)
-   defining Unicode char U+0148 (decimal 328)
-   defining Unicode char U+014A (decimal 330)
-   defining Unicode char U+014B (decimal 331)
-   defining Unicode char U+014C (decimal 332)
-   defining Unicode char U+014D (decimal 333)
-   defining Unicode char U+014E (decimal 334)
-   defining Unicode char U+014F (decimal 335)
-   defining Unicode char U+0150 (decimal 336)
-   defining Unicode char U+0151 (decimal 337)
-   defining Unicode char U+0152 (decimal 338)
-   defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0154 (decimal 340)
-   defining Unicode char U+0155 (decimal 341)
-   defining Unicode char U+0156 (decimal 342)
-   defining Unicode char U+0157 (decimal 343)
-   defining Unicode char U+0158 (decimal 344)
-   defining Unicode char U+0159 (decimal 345)
-   defining Unicode char U+015A (decimal 346)
-   defining Unicode char U+015B (decimal 347)
-   defining Unicode char U+015C (decimal 348)
-   defining Unicode char U+015D (decimal 349)
-   defining Unicode char U+015E (decimal 350)
-   defining Unicode char U+015F (decimal 351)
-   defining Unicode char U+0160 (decimal 352)
-   defining Unicode char U+0161 (decimal 353)
-   defining Unicode char U+0162 (decimal 354)
-   defining Unicode char U+0163 (decimal 355)
-   defining Unicode char U+0164 (decimal 356)
-   defining Unicode char U+0165 (decimal 357)
-   defining Unicode char U+0168 (decimal 360)
-   defining Unicode char U+0169 (decimal 361)
-   defining Unicode char U+016A (decimal 362)
-   defining Unicode char U+016B (decimal 363)
-   defining Unicode char U+016C (decimal 364)
-   defining Unicode char U+016D (decimal 365)
-   defining Unicode char U+016E (decimal 366)
-   defining Unicode char U+016F (decimal 367)
-   defining Unicode char U+0170 (decimal 368)
-   defining Unicode char U+0171 (decimal 369)
-   defining Unicode char U+0172 (decimal 370)
-   defining Unicode char U+0173 (decimal 371)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
-   defining Unicode char U+0178 (decimal 376)
-   defining Unicode char U+0179 (decimal 377)
-   defining Unicode char U+017A (decimal 378)
-   defining Unicode char U+017B (decimal 379)
-   defining Unicode char U+017C (decimal 380)
-   defining Unicode char U+017D (decimal 381)
-   defining Unicode char U+017E (decimal 382)
-   defining Unicode char U+01CD (decimal 461)
-   defining Unicode char U+01CE (decimal 462)
-   defining Unicode char U+01CF (decimal 463)
-   defining Unicode char U+01D0 (decimal 464)
-   defining Unicode char U+01D1 (decimal 465)
-   defining Unicode char U+01D2 (decimal 466)
-   defining Unicode char U+01D3 (decimal 467)
-   defining Unicode char U+01D4 (decimal 468)
-   defining Unicode char U+01E2 (decimal 482)
-   defining Unicode char U+01E3 (decimal 483)
-   defining Unicode char U+01E6 (decimal 486)
-   defining Unicode char U+01E7 (decimal 487)
-   defining Unicode char U+01E8 (decimal 488)
-   defining Unicode char U+01E9 (decimal 489)
-   defining Unicode char U+01EA (decimal 490)
-   defining Unicode char U+01EB (decimal 491)
-   defining Unicode char U+01F0 (decimal 496)
-   defining Unicode char U+01F4 (decimal 500)
-   defining Unicode char U+01F5 (decimal 501)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+0232 (decimal 562)
-   defining Unicode char U+0233 (decimal 563)
-   defining Unicode char U+1E02 (decimal 7682)
-   defining Unicode char U+1E03 (decimal 7683)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2010 (decimal 8208)
-   defining Unicode char U+2011 (decimal 8209)
-   defining Unicode char U+2012 (decimal 8210)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2015 (decimal 8213)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201A (decimal 8218)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-   defining Unicode char U+201E (decimal 8222)
-   defining Unicode char U+2030 (decimal 8240)
-   defining Unicode char U+2031 (decimal 8241)
-   defining Unicode char U+2039 (decimal 8249)
-   defining Unicode char U+203A (decimal 8250)
-   defining Unicode char U+2423 (decimal 9251)
-   defining Unicode char U+1E20 (decimal 7712)
-   defining Unicode char U+1E21 (decimal 7713)
-)
-Now handling font encoding OT1 ...
-... processing UTF-8 mapping file for font encoding OT1
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
-   defining Unicode char U+00A1 (decimal 161)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00AD (decimal 173)
-   defining Unicode char U+00B8 (decimal 184)
-   defining Unicode char U+00BF (decimal 191)
-   defining Unicode char U+00C5 (decimal 197)
-   defining Unicode char U+00C6 (decimal 198)
-   defining Unicode char U+00D8 (decimal 216)
-   defining Unicode char U+00DF (decimal 223)
-   defining Unicode char U+00E6 (decimal 230)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00EE (decimal 238)
-   defining Unicode char U+00EF (decimal 239)
-   defining Unicode char U+00F8 (decimal 248)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0141 (decimal 321)
-   defining Unicode char U+0142 (decimal 322)
-   defining Unicode char U+0152 (decimal 338)
-   defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-)
-Now handling font encoding OMS ...
-... processing UTF-8 mapping file for font encoding OMS
-
-("C:\Program Files\MiKTeX 2.9\tex/latex\base\omsenc.dfu"
-File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
-   defining Unicode char U+00A7 (decimal 167)
-   defining Unicode char U+00B6 (decimal 182)
-   defining Unicode char U+00B7 (decimal 183)
-   defining Unicode char U+2020 (decimal 8224)
-   defining Unicode char U+2021 (decimal 8225)
-   defining Unicode char U+2022 (decimal 8226)
-)
-Now handling font encoding OMX ...
-... no UTF-8 mapping file for font encoding OMX
-Now handling font encoding U ...
-... no UTF-8 mapping file for font encoding U
-   defining Unicode char U+00A9 (decimal 169)
-   defining Unicode char U+00AA (decimal 170)
-   defining Unicode char U+00AE (decimal 174)
-   defining Unicode char U+00BA (decimal 186)
-   defining Unicode char U+02C6 (decimal 710)
-   defining Unicode char U+02DC (decimal 732)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2026 (decimal 8230)
-   defining Unicode char U+2122 (decimal 8482)
-   defining Unicode char U+2423 (decimal 9251)
-))
-("C:\Program Files\MiKTeX 2.9\tex/latex\mathtools\mathtools.sty"
+) ("C:/Program Files/MiKTeX 2.9/tex/latex/mathtools/mathtools.sty"
 Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
-("C:\Program Files\MiKTeX 2.9\tex/latex\graphics\keyval.sty"
+("C:/Program Files/MiKTeX 2.9/tex/latex/graphics/keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex\tools\calc.sty"
+("C:/Program Files/MiKTeX 2.9/tex/latex/tools/calc.sty"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count87
 \calc@Bcount=\count88
@@ -359,27 +83,27 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count89
 \calc@Cskip=\skip45
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex\mathtools\mhsetup.sty"
+("C:/Program Files/MiKTeX 2.9/tex/latex/mathtools/mhsetup.sty"
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex\amsmath\amsmath.sty"
+("C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsmath.sty"
 Package: amsmath 2016/11/05 v2.16a AMS math features
 \@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex/latex\amsmath\amstext.sty"
+("C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files\MiKTeX 2.9\tex/latex\amsmath\amsgen.sty"
+("C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen105
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex\amsmath\amsbsy.sty"
+("C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen106
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex\amsmath\amsopn.sty"
+("C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count90
@@ -434,7 +158,7 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen119
 \l_MT_below_shortintertext_sep=\dimen120
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex\titlesec\titlesec.sty"
+("C:/Program Files/MiKTeX 2.9/tex/latex/titlesec/titlesec.sty"
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box28
 \beforetitleunit=\skip50
@@ -446,30 +170,30 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidthlast=\dimen124
 \titlewidthfirst=\dimen125
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex\tools\indentfirst.sty"
+("C:/Program Files/MiKTeX 2.9/tex/latex/tools/indentfirst.sty"
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex\graphics\graphicx.sty"
+("C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex\graphics\graphics.sty"
+("C:/Program Files/MiKTeX 2.9/tex/latex/graphics/graphics.sty"
 Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex\graphics\trig.sty"
+("C:/Program Files/MiKTeX 2.9/tex/latex/graphics/trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex\graphics-cfg\graphics.cfg"
+("C:/Program Files/MiKTeX 2.9/tex/latex/graphics-cfg/graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: luatex.def on input line 99.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex\graphics-def\pdftex.def"
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+("C:/Program Files/MiKTeX 2.9/tex/latex/graphics-def/luatex.def"
+File: luatex.def 2017/01/12 v0.01h Graphics/Color for luaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex/generic\oberdiek\infwarerr.sty"
+("C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex/generic\oberdiek\ltxcmds.sty"
+("C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count103
@@ -477,7 +201,7 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen126
 \Gin@req@width=\dimen127
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex\float\float.sty"
+("C:/Program Files/MiKTeX 2.9/tex/latex/float/float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count104
 \float@exts=\toks23
@@ -485,11 +209,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks24
 \@floatcapt=\box30
 )
-("C:\Users\BDRadu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+("C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:\Users\BDRadu\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tocbibind\tocbibi
+("C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tocbibind/tocbibi
 nd.sty"
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has section divisions on input line 50.
@@ -497,8 +221,8 @@ Package tocbibind Info: The document has section divisions on input line 50.
 
 Package tocbibind Note: Using section or other style headings.
 
-) (documentatie.aux)
-\openout1 = `documentatie.aux'.
+) (./documentatie.aux)
+\openout1 = documentatie.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
@@ -508,12 +232,14 @@ LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
 
-("C:\Users\BDRadu\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.m
+("C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/supp-pdf.m
 kii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count105
@@ -527,474 +253,464 @@ kii"
 \MPnumerator=\count109
 \makeMPintoPDFobject=\count110
 \everyMPtoPDFconversion=\toks26
-) ("C:\Program Files\MiKTeX 2.9\tex/generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
-)
+) ("C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex/generic\oberdiek\ifluatex.sty"
+("C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifluatex.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-("C:\Program Files\MiKTeX 2.9\tex/generic\oberdiek\ifpdf.sty"
+Package ifluatex Info: LuaTeX detected.
+))))
+("C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/pdftexcmds.sty"
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO)
+
+
+("C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty"
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
-Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks27
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Program Files\MiKTeX 2.9\tex/latex\oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
-("C:\Program Files\MiKTeX 2.9\tex/latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 43
+8.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG
+,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-) [1
+)(load luc: C:/Users/BDRadu/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/
+otl/lmroman17-regular.luc) [1
 
-{C:/Users/BDRadu/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (documenta
-tie.toc
-[2] [3])
+{C:/Users/BDRadu/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}](load luc: C
+:/Users/BDRadu/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman12
+-bold.luc) (./documentatie.toc [2] [3])
 \tf@toc=\write3
-\openout3 = `documentatie.toc'.
 
- [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 42.
- ("C:\Program Files\MiKTeX 2.9\tex/latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
- [5]
-[6] <images/Picture1.png, id=24, 331.2375pt x 316.93407pt>
+\openout3 = documentatie.toc
+ [4] [5] [6]
+<images/Picture1.png, id=23, 331.2375pt x 316.93407pt>
 File: images/Picture1.png Graphic file (type png)
 
 <use images/Picture1.png>
-Package pdftex.def Info: images/Picture1.png used on input line 87.
-(pdftex.def)             Requested size: 165.61833pt x 158.46664pt.
+Package luatex.def Info: images/Picture1.png used on input line 87.
+(luatex.def)             Requested size: 165.61833pt x 158.46664pt.
 
-<images/Picture2.png, id=25, 568.37344pt x 219.06844pt>
+<images/Picture2.png, id=24, 568.37344pt x 219.06844pt>
 File: images/Picture2.png Graphic file (type png)
 
 <use images/Picture2.png>
-Package pdftex.def Info: images/Picture2.png used on input line 94.
-(pdftex.def)             Requested size: 390.0pt x 150.32503pt.
- [7 <./images/Picture1.png>]
-Overfull \hbox (11.97534pt too wide) in paragraph at lines 116--117
-\OT1/cmr/m/n/12 tragem val-oarea me-die (zero-mean data) si avand se-tul de vec
--tori $[]$
+Package luatex.def Info: images/Picture2.png used on input line 94.
+(luatex.def)             Requested size: 390.0pt x 150.32503pt.
+ [7<./images/Picture1.png>](load luc: C:/Users/BDRadu/AppData/Local/MiKTeX/2.9/l
+uatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: C:/Users/BDRadu/Ap
+pData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman6-regular.luc)
+Overfull \hbox (12.02911pt too wide) in paragraph at lines 116--117
+\TU/lmr/m/n/12 tragem val-oarea me-die (zero-mean data) si avand se-tul de vec-
+tori $[]$
  []
 
 
-Overfull \hbox (12.33333pt too wide) in paragraph at lines 118--119
-[]\OT1/cmr/m/n/12 Fiecare linie a ma-tricii reprez-inta toate ma-sur-a-to-rile 
-unui an-u-mit parametru,
+Overfull \hbox (12.7683pt too wide) in paragraph at lines 118--119
+[]\TU/lmr/m/n/12 Fiecare linie a ma-tricii reprez-inta toate ma-sur-a-to-rile u
+nui an-u-mit parametru,
  []
 
-[8 <./images/Picture2.png>] [9] [10]
+[8<./images/Picture2.png>] [9] [10]
 <images/Compute.png, id=45, 623.32875pt x 234.1247pt>
 File: images/Compute.png Graphic file (type png)
  <use images/Compute.png>
-Package pdftex.def Info: images/Compute.png used on input line 174.
-(pdftex.def)             Requested size: 390.0pt x 146.48833pt.
+Package luatex.def Info: images/Compute.png used on input line 174.
+(luatex.def)             Requested size: 390.0pt x 146.48833pt.
 
-<images/Test1.png, id=47, 758.835pt x 307.90031pt>
+<images/Test1.png, id=46, 758.835pt x 307.90031pt>
 File: images/Test1.png Graphic file (type png)
  <use images/Test1.png>
-Package pdftex.def Info: images/Test1.png used on input line 181.
-(pdftex.def)             Requested size: 390.0pt x 158.2439pt.
+Package luatex.def Info: images/Test1.png used on input line 181.
+(luatex.def)             Requested size: 390.0pt x 158.2439pt.
 
-[11 <./images/Compute.png> <./images/Test1.png>]
+[11<./images/Compute.png><./images/Test1.png>]
 <images/Test2.png, id=53, 756.57657pt x 302.63063pt>
 File: images/Test2.png Graphic file (type png)
  <use images/Test2.png>
-Package pdftex.def Info: images/Test2.png used on input line 190.
-(pdftex.def)             Requested size: 390.0pt x 156.00197pt.
+Package luatex.def Info: images/Test2.png used on input line 190.
+(luatex.def)             Requested size: 390.0pt x 156.00197pt.
 
-[12 <./images/Test2.png>]
+[12<./images/Test2.png>]
 <images/threecloud1.png, id=58, 1113.40968pt x 456.20438pt>
 File: images/threecloud1.png Graphic file (type png)
 
 <use images/threecloud1.png>
-Package pdftex.def Info: images/threecloud1.png used on input line 205.
-(pdftex.def)             Requested size: 390.0pt x 159.79225pt.
+Package luatex.def Info: images/threecloud1.png used on input line 205.
+(luatex.def)             Requested size: 390.0pt x 159.79225pt.
 
 <images/threecloud2.png, id=59, 1112.65688pt x 455.45157pt>
 File: images/threecloud2.png Graphic file (type png)
 
 <use images/threecloud2.png>
-Package pdftex.def Info: images/threecloud2.png used on input line 212.
-(pdftex.def)             Requested size: 390.0pt x 159.63977pt.
+Package luatex.def Info: images/threecloud2.png used on input line 212.
+(luatex.def)             Requested size: 390.0pt x 159.63977pt.
 
 <images/threecloud3.png, id=60, 1113.40968pt x 457.71pt>
 File: images/threecloud3.png Graphic file (type png)
 
 <use images/threecloud3.png>
-Package pdftex.def Info: images/threecloud3.png used on input line 219.
-(pdftex.def)             Requested size: 390.0pt x 160.31963pt.
- [13 <./images/threecloud1.png> <./images/threecloud2.png>] [14 <./images/three
-cloud3.png>] [15]
-<images/twomoon1.png, id=71, 1114.1625pt x 456.20438pt>
+Package luatex.def Info: images/threecloud3.png used on input line 219.
+(luatex.def)             Requested size: 390.0pt x 160.31963pt.
+ [13<./images/threecloud1.png><./images/threecloud2.png>] [14<./images/threeclou
+d3.png>] [15]
+<images/twomoon1.png, id=70, 1114.1625pt x 456.20438pt>
 File: images/twomoon1.png Graphic file (type png)
 
 <use images/twomoon1.png>
-Package pdftex.def Info: images/twomoon1.png used on input line 261.
-(pdftex.def)             Requested size: 390.0pt x 159.68784pt.
+Package luatex.def Info: images/twomoon1.png used on input line 261.
+(luatex.def)             Requested size: 390.0pt x 159.68784pt.
 
-Overfull \hbox (5.57922pt too wide) in paragraph at lines 271--272
-[]\OT1/cmr/m/n/12 -cu cele-lalte 90 de puncte vom "antrena" al-go-rit-mul pen-t
-ru a putea proiecta
+Overfull \hbox (5.33623pt too wide) in paragraph at lines 271--272
+[]\TU/lmr/m/n/12 -cu cele-lalte 90 de puncte vom ”antrena” al-go-rit-mul pe
+n-tru a putea proiecta
  []
 
-[16 <./images/twomoon1.png>]
-Overfull \hbox (50.50192pt too wide) in paragraph at lines 277--278
-\OT1/cmr/m/n/12 putem ver-i-fica eroarea al-go-rit-mu-lui pen-tru cele 10 punct
-e: $[]$ 
+[16<./images/twomoon1.png>]
+Overfull \hbox (50.5189pt too wide) in paragraph at lines 277--278
+\TU/lmr/m/n/12 putem ver-i-fica eroarea al-go-rit-mu-lui pen-tru cele 10 puncte
+: $[]$ 
  []
 
-<images/tenfold1.png, id=76, 1113.40968pt x 469.00218pt>
+<images/tenfold1.png, id=75, 1113.40968pt x 469.00218pt>
 File: images/tenfold1.png Graphic file (type png)
 
 <use images/tenfold1.png>
-Package pdftex.def Info: images/tenfold1.png used on input line 286.
-(pdftex.def)             Requested size: 390.0pt x 164.27487pt.
- [17 <./images/tenfold1.png>]
-<images/eigenfaces.png, id=80, 632.3625pt x 289.08pt>
+Package luatex.def Info: images/tenfold1.png used on input line 286.
+(luatex.def)             Requested size: 390.0pt x 164.27487pt.
+ [17<./images/tenfold1.png>]
+<images/eigenfaces.png, id=79, 632.3625pt x 289.08pt>
 File: images/eigenfaces.png Graphic file (type png)
 
 <use images/eigenfaces.png>
-Package pdftex.def Info: images/eigenfaces.png used on input line 303.
-(pdftex.def)             Requested size: 390.0pt x 178.2882pt.
- [18 <./images/eigenfaces.png>] [19]
-Overfull \hbox (5.7621pt too wide) in paragraph at lines 350--351
-\OT1/cmr/m/n/12 "antrena" al-go-rit-mul, iar ul-timele 21 au fost folosite pen-
-tru clasi-fi-care. Eroarea
+Package luatex.def Info: images/eigenfaces.png used on input line 303.
+(luatex.def)             Requested size: 390.0pt x 178.2882pt.
+ [18<./images/eigenfaces.png>] [19]
+Overfull \hbox (5.16246pt too wide) in paragraph at lines 350--351
+\TU/lmr/m/n/12 ”antrena” al-go-rit-mul, iar ul-timele 21 au fost folosite p
+en-tru clasi-fi-care. Eroarea
  []
 
-[20] [21] <images/two-sound-sources.png, id=94, 928.21782pt x 737.00343pt>
+[20] [21] <images/two-sound-sources.png, id=93, 928.21782pt x 737.00343pt>
 File: images/two-sound-sources.png Graphic file (type png)
 
 <use images/two-sound-sources.png>
-Package pdftex.def Info: images/two-sound-sources.png used on input line 372.
-(pdftex.def)             Requested size: 371.28055pt x 294.79614pt.
- [22 <./images/two-sound-sources.png>]
-[23] [24] [25]
-<images/multivariate_gaussian_distribution.png, id=108, 280.04625pt x 280.79906
+Package luatex.def Info: images/two-sound-sources.png used on input line 372.
+(luatex.def)             Requested size: 371.28055pt x 294.79614pt.
+ [22<./images/two-sound-sources.png>](load luc: C:/Users/BDRadu/AppData/Local/Mi
+KTeX/2.9/luatex-cache/generic/fonts/otl/lmroman8-bold.luc)(load luc: C:/Users/BD
+Radu/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman6-bold.luc) [23] [24] [25]
+<images/multivariate_gaussian_distribution.png, id=106, 280.04625pt x 280.79906
 pt>
 File: images/multivariate_gaussian_distribution.png Graphic file (type png)
  <use images/multivariate_gaussian_distribution.png>
-Package pdftex.def Info: images/multivariate_gaussian_distribution.png used on 
-input line 468.
-(pdftex.def)             Requested size: 252.03928pt x 252.71681pt.
- [26] [27 <./images/multivariate_gaussian_distribution.png>] [28]
-Overfull \hbox (0.35178pt too wide) in paragraph at lines 503--505
-\OT1/cmr/m/n/12 Acest lu-cru arata de-fapt ca apla-ti-zarea reprez-inta al pa-t
-rulea mo-ment, $\OML/cmm/m/it/12 E\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 y[]\OMS/cm
-sy/m/n/12 g$\OT1/cmr/m/n/12 .
- []
-
-<images/laplace_distribution.png, id=118, 803.0pt x 602.25pt>
+Package luatex.def Info: images/multivariate_gaussian_distribution.png used on i
+nput line 468.
+(luatex.def)             Requested size: 252.03928pt x 252.71681pt.
+ [26] [27<./images/multivariate_gaussian_distribution.png>] [28]
+<images/laplace_distribution.png, id=116, 803.0pt x 602.25pt>
 File: images/laplace_distribution.png Graphic file (type png)
 
 <use images/laplace_distribution.png>
-Package pdftex.def Info: images/laplace_distribution.png used on input line 508
-.
-(pdftex.def)             Requested size: 240.90186pt x 180.67639pt.
+Package luatex.def Info: images/laplace_distribution.png used on input line 508.
+
+(luatex.def)             Requested size: 240.90186pt x 180.67639pt.
  [29]
-<images/uniform_distribution.png, id=122, 371.88937pt x 121.95563pt>
+<images/uniform_distribution.png, id=120, 371.88937pt x 121.95563pt>
 File: images/uniform_distribution.png Graphic file (type png)
 
 <use images/uniform_distribution.png>
-Package pdftex.def Info: images/uniform_distribution.png used on input line 514
-.
-(pdftex.def)             Requested size: 446.26501pt x 146.346pt.
+Package luatex.def Info: images/uniform_distribution.png used on input line 514.
+
+(luatex.def)             Requested size: 446.26501pt x 146.346pt.
 
 Overfull \hbox (56.26501pt too wide) in paragraph at lines 514--515
  [] 
  []
 
-[30 <./images/laplace_distribution.png> <./images/uniform_distribution.png>]
+[30<./images/laplace_distribution.png><./images/uniform_distribution.png>]
 [31] [32]
-Overfull \hbox (5.22203pt too wide) in paragraph at lines 588--589
-\OT1/cmr/bx/n/12 mum like-li-hood es-ti-ma-tion\OT1/cmr/m/n/12 . Aceasta metoda
- es-timeaza val-o-rile parametru-
+Overfull \hbox (5.01349pt too wide) in paragraph at lines 588--589
+\TU/lmr/bx/n/12 mum like-li-hood es-ti-ma-tion\TU/lmr/m/n/12 . Aceasta metoda e
+s-timeaza val-o-rile parametru-
  []
 
-[33] [34] <sigmoid_function.png, id=141, 602.25pt x 401.5pt>
+[33] [34] <sigmoid_function.png, id=139, 602.25pt x 401.5pt>
 File: sigmoid_function.png Graphic file (type png)
 
 <use sigmoid_function.png>
-Package pdftex.def Info: sigmoid_function.png used on input line 613.
-(pdftex.def)             Requested size: 361.35278pt x 240.90184pt.
- [35 <./sigmoid_function.png>] [36]
-Overfull \hbox (4.89174pt too wide) in paragraph at lines 632--633
-[]\OT1/cmr/m/n/12 Pornind de la sem-nalele au-dio ini-tiale, vom sim-ula ameste
--carea lor, folosind
+Package luatex.def Info: sigmoid_function.png used on input line 613.
+(luatex.def)             Requested size: 361.35278pt x 240.90184pt.
+ [35<./sigmoid_function.png>] [36]
+Overfull \hbox (5.30188pt too wide) in paragraph at lines 632--633
+[]\TU/lmr/m/n/12 Pornind de la sem-nalele au-dio ini-tiale, vom sim-ula ameste-
+carea lor, folosind
  []
 
 File: images/two-sound-sources.png Graphic file (type png)
 <use images/two-sound-sources.png>
-Package pdftex.def Info: images/two-sound-sources.png used on input line 634.
-(pdftex.def)             Requested size: 278.4675pt x 221.10274pt.
+Package luatex.def Info: images/two-sound-sources.png used on input line 634.
+(luatex.def)             Requested size: 278.4675pt x 221.10274pt.
  [37] [38] [39]
-<images/primitive_waves.png, id=159, 298.11375pt x 386.19281pt>
+<images/primitive_waves.png, id=156, 298.11375pt x 386.19281pt>
 File: images/primitive_waves.png Graphic file (type png)
 
 <use images/primitive_waves.png>
-Package pdftex.def Info: images/primitive_waves.png used on input line 673.
-(pdftex.def)             Requested size: 238.49132pt x 308.95465pt.
- [40 <./images/primitive_waves.png>]
-<images/primitives_mixed.png, id=163, 276.28218pt x 192.72pt>
+Package luatex.def Info: images/primitive_waves.png used on input line 673.
+(luatex.def)             Requested size: 238.49132pt x 308.95465pt.
+ [40<./images/primitive_waves.png>]
+<images/primitives_mixed.png, id=160, 276.28218pt x 192.72pt>
 File: images/primitives_mixed.png Graphic file (type png)
 
 <use images/primitives_mixed.png>
-Package pdftex.def Info: images/primitives_mixed.png used on input line 685.
-(pdftex.def)             Requested size: 276.2815pt x 192.71951pt.
+Package luatex.def Info: images/primitives_mixed.png used on input line 685.
+(luatex.def)             Requested size: 276.2815pt x 192.71951pt.
 
-<images/primitives_separated.png, id=164, 298.86656pt x 391.4625pt>
+<images/primitives_separated.png, id=161, 298.86656pt x 391.4625pt>
 File: images/primitives_separated.png Graphic file (type png)
 
 <use images/primitives_separated.png>
-Package pdftex.def Info: images/primitives_separated.png used on input line 692
-.
-(pdftex.def)             Requested size: 298.86581pt x 391.46153pt.
- [41 <./images/primitives_mixed.png>]
-[42 <./images/primitives_separated.png>]
-<images/music_music.png, id=173, 296.60812pt x 192.72pt>
+Package luatex.def Info: images/primitives_separated.png used on input line 692.
+
+(luatex.def)             Requested size: 298.86581pt x 391.46153pt.
+ [41<./images/primitives_mixed.png>]
+[42<./images/primitives_separated.png>]
+<images/music_music.png, id=171, 296.60812pt x 192.72pt>
 File: images/music_music.png Graphic file (type png)
 
 <use images/music_music.png>
-Package pdftex.def Info: images/music_music.png used on input line 700.
-(pdftex.def)             Requested size: 296.60739pt x 192.71951pt.
+Package luatex.def Info: images/music_music.png used on input line 700.
+(luatex.def)             Requested size: 296.60739pt x 192.71951pt.
 
-<images/speech_music.png, id=174, 298.86656pt x 189.70876pt>
+<images/speech_music.png, id=172, 298.86656pt x 189.70876pt>
 File: images/speech_music.png Graphic file (type png)
 
 <use images/speech_music.png>
-Package pdftex.def Info: images/speech_music.png used on input line 703.
-(pdftex.def)             Requested size: 298.86581pt x 189.70828pt.
- [43 <./images/music_music.png> <./images/speech_music.png>] <images/music_mixe
-d_1.png, id=179, 295.1025pt x 195.73125pt>
+Package luatex.def Info: images/speech_music.png used on input line 703.
+(luatex.def)             Requested size: 298.86581pt x 189.70828pt.
+ [43<./images/music_music.png><./images/speech_music.png>] <images/music_mixed_
+1.png, id=176, 295.1025pt x 195.73125pt>
 File: images/music_mixed_1.png Graphic file (type png)
 
 <use images/music_mixed_1.png>
-Package pdftex.def Info: images/music_mixed_1.png used on input line 715.
-(pdftex.def)             Requested size: 295.10176pt x 195.73076pt.
+Package luatex.def Info: images/music_mixed_1.png used on input line 715.
+(luatex.def)             Requested size: 295.10176pt x 195.73076pt.
 
-<images/music_mixed_2.png, id=180, 283.0575pt x 190.46156pt>
+<images/music_mixed_2.png, id=177, 283.0575pt x 190.46156pt>
 File: images/music_mixed_2.png Graphic file (type png)
 
 <use images/music_mixed_2.png>
-Package pdftex.def Info: images/music_mixed_2.png used on input line 718.
-(pdftex.def)             Requested size: 283.0568pt x 190.46107pt.
- [44 <./images/music_mixed_1.png> <./images/music_mixed_2.png>]
-<images/music_separated_1.png, id=186, 294.34969pt x 194.22563pt>
+Package luatex.def Info: images/music_mixed_2.png used on input line 718.
+(luatex.def)             Requested size: 283.0568pt x 190.46107pt.
+ [44<./images/music_mixed_1.png><./images/music_mixed_2.png>] <images/music_sep
+arated_1.png, id=183, 294.34969pt x 194.22563pt>
 File: images/music_separated_1.png Graphic file (type png)
 
 <use images/music_separated_1.png>
-Package pdftex.def Info: images/music_separated_1.png used on input line 724.
-(pdftex.def)             Requested size: 294.34895pt x 194.22514pt.
+Package luatex.def Info: images/music_separated_1.png used on input line 724.
+(luatex.def)             Requested size: 294.34895pt x 194.22514pt.
 
-<images/music_separated_2.png, id=187, 290.58563pt x 194.97844pt>
+<images/music_separated_2.png, id=184, 290.58563pt x 194.97844pt>
 File: images/music_separated_2.png Graphic file (type png)
 
 <use images/music_separated_2.png>
-Package pdftex.def Info: images/music_separated_2.png used on input line 727.
-(pdftex.def)             Requested size: 290.58492pt x 194.97795pt.
- [45 <./images/music_separated_1.png> <./images/music_separated_2.png>]
-<images/english_speech.png, id=193, 294.34969pt x 185.94469pt>
+Package luatex.def Info: images/music_separated_2.png used on input line 727.
+(luatex.def)             Requested size: 290.58492pt x 194.97795pt.
+ [45<./images/music_separated_1.png><./images/music_separated_2.png>]
+<images/english_speech.png, id=190, 294.34969pt x 185.94469pt>
 File: images/english_speech.png Graphic file (type png)
 
 <use images/english_speech.png>
-Package pdftex.def Info: images/english_speech.png used on input line 734.
-(pdftex.def)             Requested size: 294.34895pt x 185.94421pt.
+Package luatex.def Info: images/english_speech.png used on input line 734.
+(luatex.def)             Requested size: 294.34895pt x 185.94421pt.
 
-<images/spanish_speech.png, id=194, 296.60812pt x 185.94469pt>
+<images/spanish_speech.png, id=191, 296.60812pt x 185.94469pt>
 File: images/spanish_speech.png Graphic file (type png)
 
 <use images/spanish_speech.png>
-Package pdftex.def Info: images/spanish_speech.png used on input line 736.
-(pdftex.def)             Requested size: 296.60739pt x 185.94421pt.
- [46 <./images/english_speech.png> <./images/spanish_speech.png>]
-<images/speech_mixed_1.png, id=198, 280.79906pt x 188.20313pt>
+Package luatex.def Info: images/spanish_speech.png used on input line 736.
+(luatex.def)             Requested size: 296.60739pt x 185.94421pt.
+ [46<./images/english_speech.png><./images/spanish_speech.png>] <images/speech_
+mixed_1.png, id=195, 280.79906pt x 188.20313pt>
 File: images/speech_mixed_1.png Graphic file (type png)
 
 <use images/speech_mixed_1.png>
-Package pdftex.def Info: images/speech_mixed_1.png used on input line 748.
-(pdftex.def)             Requested size: 280.79837pt x 188.20265pt.
+Package luatex.def Info: images/speech_mixed_1.png used on input line 748.
+(luatex.def)             Requested size: 280.79837pt x 188.20265pt.
 
-<images/speech_mixed_2.png, id=199, 277.78781pt x 185.94469pt>
+<images/speech_mixed_2.png, id=196, 277.78781pt x 185.94469pt>
 File: images/speech_mixed_2.png Graphic file (type png)
 
 <use images/speech_mixed_2.png>
-Package pdftex.def Info: images/speech_mixed_2.png used on input line 751.
-(pdftex.def)             Requested size: 277.78711pt x 185.94421pt.
- [47 <./images/speech_mixed_1.png> <./images/speech_mixed_2.png>]
-<images/speech_separated_1.png, id=205, 300.3722pt x 194.22563pt>
+Package luatex.def Info: images/speech_mixed_2.png used on input line 751.
+(luatex.def)             Requested size: 277.78711pt x 185.94421pt.
+ [47<./images/speech_mixed_1.png><./images/speech_mixed_2.png>]
+<images/speech_separated_1.png, id=202, 300.3722pt x 194.22563pt>
 File: images/speech_separated_1.png Graphic file (type png)
 
 <use images/speech_separated_1.png>
-Package pdftex.def Info: images/speech_separated_1.png used on input line 758.
-(pdftex.def)             Requested size: 300.37144pt x 194.22514pt.
+Package luatex.def Info: images/speech_separated_1.png used on input line 758.
+(luatex.def)             Requested size: 300.37144pt x 194.22514pt.
 
-<images/speech_separated_2.png, id=206, 295.85532pt x 186.6975pt>
+<images/speech_separated_2.png, id=203, 295.85532pt x 186.6975pt>
 File: images/speech_separated_2.png Graphic file (type png)
 
 <use images/speech_separated_2.png>
-Package pdftex.def Info: images/speech_separated_2.png used on input line 761.
-(pdftex.def)             Requested size: 295.85458pt x 186.69704pt.
- [48 <./images/speech_separated_1.png> <./images/speech_separated_2.png>]
-<images/three_initial.png, id=212, 466.74374pt x 458.46281pt>
+Package luatex.def Info: images/speech_separated_2.png used on input line 761.
+(luatex.def)             Requested size: 295.85458pt x 186.69704pt.
+ [48<./images/speech_separated_1.png><./images/speech_separated_2.png>]
+<images/three_initial.png, id=209, 466.74374pt x 458.46281pt>
 File: images/three_initial.png Graphic file (type png)
 
 <use images/three_initial.png>
-Package pdftex.def Info: images/three_initial.png used on input line 769.
-(pdftex.def)             Requested size: 466.7426pt x 458.46169pt.
+Package luatex.def Info: images/three_initial.png used on input line 769.
+(luatex.def)             Requested size: 466.7426pt x 458.46169pt.
 
 Overfull \hbox (76.7426pt too wide) in paragraph at lines 769--770
  [] 
  []
 
-[49] [50 <./images/three_initial.png>]
-<images/three_mixed.png, id=220, 456.95718pt x 458.46281pt>
+[49] [50<./images/three_initial.png>]
+<images/three_mixed.png, id=216, 456.95718pt x 458.46281pt>
 File: images/three_mixed.png Graphic file (type png)
 
 <use images/three_mixed.png>
-Package pdftex.def Info: images/three_mixed.png used on input line 782.
-(pdftex.def)             Requested size: 456.95605pt x 458.46169pt.
+Package luatex.def Info: images/three_mixed.png used on input line 782.
+(luatex.def)             Requested size: 456.95605pt x 458.46169pt.
 
 Overfull \hbox (66.95605pt too wide) in paragraph at lines 782--783
  [] 
  []
 
-[51 <./images/three_mixed.png>]
-<images/three_separated.png, id=225, 470.50781pt x 460.72125pt>
+[51<./images/three_mixed.png>]
+<images/three_separated.png, id=222, 470.50781pt x 460.72125pt>
 File: images/three_separated.png Graphic file (type png)
 
 <use images/three_separated.png>
-Package pdftex.def Info: images/three_separated.png used on input line 787.
-(pdftex.def)             Requested size: 470.50665pt x 460.72012pt.
+Package luatex.def Info: images/three_separated.png used on input line 787.
+(luatex.def)             Requested size: 470.50665pt x 460.72012pt.
 
 Overfull \hbox (80.50665pt too wide) in paragraph at lines 787--788
  [] 
  []
 
-[52 <./images/three_separated.png>]
-<images/pca_vs_ica.png, id=230, 534.49687pt x 533.74406pt>
+[52<./images/three_separated.png>]
+<images/pca_vs_ica.png, id=227, 534.49687pt x 533.74406pt>
 File: images/pca_vs_ica.png Graphic file (type png)
 
 <use images/pca_vs_ica.png>
-Package pdftex.def Info: images/pca_vs_ica.png used on input line 796.
-(pdftex.def)             Requested size: 390.0pt x 389.46704pt.
- [53] [54 <./images/pca_vs_ica.png>]
-<images/real_mixed.png, id=237, 289.08pt x 392.21532pt>
+Package luatex.def Info: images/pca_vs_ica.png used on input line 796.
+(luatex.def)             Requested size: 390.0pt x 389.46704pt.
+ [53] [54<./images/pca_vs_ica.png>]
+<images/real_mixed.png, id=234, 289.08pt x 392.21532pt>
 File: images/real_mixed.png Graphic file (type png)
 
 <use images/real_mixed.png>
-Package pdftex.def Info: images/real_mixed.png used on input line 806.
-(pdftex.def)             Requested size: 289.07928pt x 392.21436pt.
+Package luatex.def Info: images/real_mixed.png used on input line 806.
+(luatex.def)             Requested size: 289.07928pt x 392.21436pt.
  [55]
-<images/real_separated.png, id=242, 301.125pt x 387.69844pt>
+<images/real_separated.png, id=238, 301.125pt x 387.69844pt>
 File: images/real_separated.png Graphic file (type png)
 
 <use images/real_separated.png>
-Package pdftex.def Info: images/real_separated.png used on input line 811.
-(pdftex.def)             Requested size: 301.12425pt x 387.69748pt.
- [56 <./images/real_mixed.png>] [57 <./images/real_separated.png>] [58] <images
-/meg_1.png, id=254, 402.00188pt x 369.63094pt>
+Package luatex.def Info: images/real_separated.png used on input line 811.
+(luatex.def)             Requested size: 301.12425pt x 387.69748pt.
+ [56<./images/real_mixed.png>] [57<./images/real_separated.png>] [58] <images/m
+eg_1.png, id=250, 402.00188pt x 369.63094pt>
 File: images/meg_1.png Graphic file (type png)
 
 <use images/meg_1.png>
-Package pdftex.def Info: images/meg_1.png used on input line 831.
-(pdftex.def)             Requested size: 402.00089pt x 369.63002pt.
+Package luatex.def Info: images/meg_1.png used on input line 831.
+(luatex.def)             Requested size: 402.00089pt x 369.63002pt.
 
 Overfull \hbox (12.00089pt too wide) in paragraph at lines 831--832
  [] 
  []
 
-[59 <./images/meg_1.png>] <images/meg_2.png, id=259, 415.5525pt x 611.28375pt>
+[59<./images/meg_1.png>] <images/meg_2.png, id=255, 415.5525pt x 611.28375pt>
 File: images/meg_2.png Graphic file (type png)
 
 <use images/meg_2.png>
-Package pdftex.def Info: images/meg_2.png used on input line 837.
-(pdftex.def)             Requested size: 332.44244pt x 489.02766pt.
- [60 <./images/meg_2.png>]
-Overfull \hbox (5.2098pt too wide) in paragraph at lines 849--850
-\OT1/cmr/m/n/12 (Code-Division Mul-ti-ple Ac-cess), unde tele-foanele mai mul-t
-or uti-liza-tori trimit
+Package luatex.def Info: images/meg_2.png used on input line 837.
+(luatex.def)             Requested size: 332.44244pt x 489.02766pt.
+ [60<./images/meg_2.png>]
+Overfull \hbox (4.9011pt too wide) in paragraph at lines 849--850
+\TU/lmr/m/n/12 (Code-Division Mul-ti-ple Ac-cess), unde tele-foanele mai mul-to
+r uti-liza-tori trimit
  []
 
-[61] [62] [63] (documentatie.bbl
-Overfull \hbox (33.51508pt too wide) in paragraph at lines 76--80
-\OT1/cmr/m/n/12 probability-[]concepts-[]explained-[]maximum-[]likelihood-[]est
-imation-[]c7b4342fdbb1$ 
+[61] [62] [63] (./documentatie.bbl(load luc: C:/Users/BDRadu/AppData/Local/MiKTe
+X/2.9/luatex-cache/generic/fonts/otl/lmroman12-italic.luc)
+Overfull \hbox (34.03226pt too wide) in paragraph at lines 80--84
+\TU/lmr/m/n/12 probability-[]concepts-[]explained-[]maximum-[]likelihood-[]esti
+mation-[]c7b4342fdbb1$ 
  []
 
-
-Underfull \hbox (badness 2343) in paragraph at lines 95--98
-[]\OT1/cmr/m/n/12 Blind source sep-a-ra-tion us-ing fas-tica - scikit-
- []
-
-
-Underfull \hbox (badness 1320) in paragraph at lines 95--98
-\OT1/cmr/m/n/12 learn. [On-line]. Avail-able: $http : / / scikit-[]learn . org 
-/ stable /
+[64]
+Underfull \hbox (badness 1142) in paragraph at lines 99--102
+[]\TU/lmr/m/n/12 Blind source sep-a-ra-tion us-ing fas-tica - scikit-learn.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--98
-\OT1/cmr/m/n/12 auto[]examples / decomposition / plot[]ica[]blind[]source[]sepa
-ration . html #
+Underfull \hbox (badness 3364) in paragraph at lines 99--102
+\TU/lmr/m/n/12 [On-line]. Avail-able: $http://scikit-[]learn.org/stable/auto_
  []
 
 
-Overfull \hbox (17.27013pt too wide) in paragraph at lines 95--98
-\OT1/cmr/m/n/12 sphx-[]glr-[]auto-[]examples-[]decomposition-[]plot-[]ica-[]bli
-nd-[]source-[]separation-[]py$ 
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
+\TU/lmr/m/n/12 examples/decomposition/plot_ica_blind_source_separation.html#
  []
 
-[64]) [65] (documentatie.aux) ) 
-Here is how much of TeX's memory you used:
- 3711 strings out of 493323
- 53137 string characters out of 3139063
- 118995 words of memory out of 3000000
- 7147 multiletter control sequences out of 15000+200000
- 10781 words of font info for 39 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 39i,15n,33p,1125b,323s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
-12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmsy8.pfb>
-Output written on documentatie.pdf (65 pages, 1717399 bytes).
-PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 196 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+Overfull \hbox (17.26425pt too wide) in paragraph at lines 99--102
+\TU/lmr/m/n/12 sphx-[]glr-[]auto-[]examples-[]decomposition-[]plot-[]ica-[]blin
+d-[]source-[]separation-[]py$ 
+ []
+
+) [65] (./documentatie.aux))
+
+Here is how much of LuaTeX's memory you used:
+ 3876 strings out of 494481
+ 100000,128383 words of node,token memory allocated
+ 868 words of node memory still in use:
+   5 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 107 attribute, 55 glue_spec, 107 at
+tribute_list, 1 write nodes
+   avail lists: 2:267,3:205,4:26,5:210,6:2721,7:554,8:169,9:205,10:18,11:261
+ 7491 multiletter control sequences out of 65536+200000
+ 54 fonts using 3911895 bytes
+ 38i,15n,33p,1109b,261s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman12-italic.otf><C:/P
+rogram Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman12-bold.otf><C:/Program 
+Files/MiKTeX 2.9/fonts/opentype/public/lm/lmroman12-regular.otf><c:/program file
+s/miktex 2.9/fonts/opentype/public/lm/lmroman17-regular.otf><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on documentatie.pdf (65 pages, 1720642 bytes).
+
+PDF statistics: 324 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

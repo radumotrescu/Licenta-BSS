@@ -4,12 +4,8 @@ Database file #1: referinte.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty journal in data_reduction
-Warning--empty journal in pca_shlens
-Warning--empty journal in accord_pca
-Warning--empty journal in kernel_pca
-Warning--empty journal in hyvarien
-Warning--empty journal in paltanea
+Warning--missing publisher in pca_shlens
+Warning--missing publisher in kernel_pca
 
 Done.
-(There were 6 warnings)
+(There were 2 warnings)

@@ -22,21 +22,23 @@
 \BIBdecl
 
 \bibitem{data_reduction}
-A.~F. Shireen~Elhabian, ``A tutorial on data reduction, principal component
-  analysis theoretical discussion,'' 2008.
+A.~F. Shireen~Elhabian, \emph{A Tutorial on Data Reduction, Principal Component
+  Analysis Theoretical Discussion}.\hskip 1em plus 0.5em minus 0.4em\relax
+  University of Louisville, CVIP Lab, 2008.
 
 \bibitem{pca_shlens}
-J.~Shlens, ``A tutorial on principal component analysis, derivation, discussion
-  and singular value decomposition,'' 2003.
+J.~Shlens, \emph{A Tutorial On Principal Component Analysis, Derivation,
+  Discussion and Singular Value Decomposition}, 2003.
 
 \bibitem{accord_pca}
-C.~Souza, ``A tutorial on principal component analysis with the accor.net
-  framework,'' 2012.
+C.~Souza, \emph{A Tutorial On Principal Component Analysis with the Accor.NET
+  Framework}.\hskip 1em plus 0.5em minus 0.4em\relax Department of Computing,
+  Federal University of Sao Carlos, 2012.
 
 \bibitem{kernel_pca}
 \BIBentryALTinterwordspacing
-S.~Raschka, ``Kernel tricks and nonlinear dimensionality reduction via rbf
-  kernel pca,'' 2014. [Online]. Available:
+S.~Raschka, \emph{Kernel tricks and nonlinear dimensionality reduction via RBF
+  kernel PCA}, 2014. [Online]. Available:
   \url{http://sebastianraschka.com/Articles/2014_kernel_pca.html}
 \BIBentrySTDinterwordspacing
 
@@ -47,8 +49,9 @@ The yale face database b. [Online]. Available:
 \BIBentrySTDinterwordspacing
 
 \bibitem{hyvarien}
-A.~Hyvärinen and E.~Oja, ``Independent component analysis: Algorithms and
-  applications,'' 2000.
+A.~Hyvärinen and E.~Oja, \emph{Independent Component Analysis: Algorithms and
+  Applications}.\hskip 1em plus 0.5em minus 0.4em\relax Helsinki University of
+  Technology, 2000.
 
 \bibitem{noise_reduction}
 \BIBentryALTinterwordspacing
@@ -57,7 +60,8 @@ Blind source separation for noise reduction in mobile. [Online]. Available:
 \BIBentrySTDinterwordspacing
 
 \bibitem{paltanea}
-E.~Paltanea, ``Probabilitati si statistica,'' 2018.
+E.~Paltanea, \emph{Probabilitati si Statistica}.\hskip 1em plus 0.5em minus
+  0.4em\relax Universitatea Transilvania, Brasov, 2018.
 
 \bibitem{laplace_distribution_wiki}
 \BIBentryALTinterwordspacing
