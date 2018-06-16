@@ -57,8 +57,46 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/latex/float/float.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/float/float.sty
 INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty
 INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty
-INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tocbibind/tocbibind.sty
-INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tocbibind/tocbibind.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/koma-script/scrextend.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/koma-script/scrextend.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/koma-script/scrkbase.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/koma-script/scrkbase.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/koma-script/scrbase.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/koma-script/scrbase.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/koma-script/scrlfile.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/koma-script/scrlfile.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/adjustbox/adjustbox.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/adjustbox/adjustbox.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/xkeyval/xkeyval.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/xkeyval/xkeyval.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/xkeyval/xkeyval.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/xkeyval/xkvutils.tex
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/adjustbox/adjcalc.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/adjustbox/adjcalc.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/adjustbox/trimclip.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/adjustbox/trimclip.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/collectbox/collectbox.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/collectbox/collectbox.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/adjustbox/tc-pdftex.def
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/adjustbox/tc-pdftex.def
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ifoddpage/ifoddpage.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ifoddpage/ifoddpage.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ifoddpage/ifoddpage.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/ltxmisc/varwidth.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/ltxmisc/varwidth.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/ltxmisc/varwidth.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifvtex.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifvtex.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.cfg
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/geometry/geometry.cfg
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/fancyhdr/fancyhdr.sty
+INPUT C:/Users/BDRadu/AppData/Local/Programs/MiKTeX 2.9/tex/latex/fancyhdr/fancyhdr.sty
 INPUT documentatie.aux
 INPUT documentatie.aux
 OUTPUT documentatie.aux
@@ -68,8 +106,6 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/pdftexcmds.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/pdftexcmds.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifluatex.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifluatex.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty
@@ -82,19 +118,12 @@ INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/kvsetkeys.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/kvsetkeys.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/etexcmds.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/generic/oberdiek/etexcmds.sty
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr17.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT images/sigla.png
+INPUT ./images/sigla.png
 OUTPUT documentatie.pdf
-INPUT C:/Users/BDRadu/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr17.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
-INPUT documentatie.toc
-INPUT documentatie.toc
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./images/sigla.png
+INPUT ./images/sigla.png
+INPUT ./images/sigla.png
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr8.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr6.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm
@@ -106,10 +135,48 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy6.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-OUTPUT documentatie.toc
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr17.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr17.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr17.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT C:/Users/BDRadu/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
+INPUT documentatie.toc
+INPUT documentatie.toc
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx12.tfm
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+OUTPUT documentatie.toc
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/omscmr.fd
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/Picture1.png
 INPUT ./images/Picture1.png
 INPUT ./images/Picture1.png
@@ -120,6 +187,14 @@ INPUT ./images/Picture2.png
 INPUT ./images/Picture2.png
 INPUT ./images/Picture2.png
 INPUT ./images/Picture2.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/Compute.png
 INPUT ./images/Compute.png
 INPUT ./images/Compute.png
@@ -130,11 +205,15 @@ INPUT ./images/Test1.png
 INPUT ./images/Test1.png
 INPUT ./images/Test1.png
 INPUT ./images/Test1.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/Test2.png
 INPUT ./images/Test2.png
 INPUT ./images/Test2.png
 INPUT ./images/Test2.png
 INPUT ./images/Test2.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/threecloud1.png
 INPUT ./images/threecloud1.png
 INPUT ./images/threecloud1.png
@@ -150,51 +229,103 @@ INPUT ./images/threecloud3.png
 INPUT ./images/threecloud3.png
 INPUT ./images/threecloud3.png
 INPUT ./images/threecloud3.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/twomoon1.png
 INPUT ./images/twomoon1.png
 INPUT ./images/twomoon1.png
 INPUT ./images/twomoon1.png
 INPUT ./images/twomoon1.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/tenfold1.png
 INPUT ./images/tenfold1.png
 INPUT ./images/tenfold1.png
 INPUT ./images/tenfold1.png
 INPUT ./images/tenfold1.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/eigenfaces.png
 INPUT ./images/eigenfaces.png
 INPUT ./images/eigenfaces.png
 INPUT ./images/eigenfaces.png
 INPUT ./images/eigenfaces.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/two-sound-sources.png
 INPUT ./images/two-sound-sources.png
 INPUT ./images/two-sound-sources.png
 INPUT ./images/two-sound-sources.png
 INPUT ./images/two-sound-sources.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx8.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmbx6.tfm
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/multivariate_gaussian_distribution.png
 INPUT ./images/multivariate_gaussian_distribution.png
 INPUT ./images/multivariate_gaussian_distribution.png
 INPUT ./images/multivariate_gaussian_distribution.png
 INPUT ./images/multivariate_gaussian_distribution.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/laplace_distribution.png
 INPUT ./images/laplace_distribution.png
 INPUT ./images/laplace_distribution.png
 INPUT ./images/laplace_distribution.png
 INPUT ./images/laplace_distribution.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/uniform_distribution.png
 INPUT ./images/uniform_distribution.png
 INPUT ./images/uniform_distribution.png
 INPUT ./images/uniform_distribution.png
 INPUT ./images/uniform_distribution.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT sigmoid_function.png
 INPUT ./sigmoid_function.png
 INPUT ./sigmoid_function.png
 INPUT ./sigmoid_function.png
 INPUT ./sigmoid_function.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/two-sound-sources.png
 INPUT ./images/two-sound-sources.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/primitive_waves.png
 INPUT ./images/primitive_waves.png
 INPUT ./images/primitive_waves.png
@@ -205,16 +336,22 @@ INPUT ./images/primitives_mixed.png
 INPUT ./images/primitives_mixed.png
 INPUT ./images/primitives_mixed.png
 INPUT ./images/primitives_mixed.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/primitives_separated.png
 INPUT ./images/primitives_separated.png
 INPUT ./images/primitives_separated.png
 INPUT ./images/primitives_separated.png
 INPUT ./images/primitives_separated.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/music_music.png
 INPUT ./images/music_music.png
 INPUT ./images/music_music.png
 INPUT ./images/music_music.png
 INPUT ./images/music_music.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/speech_music.png
 INPUT ./images/speech_music.png
 INPUT ./images/speech_music.png
@@ -225,6 +362,8 @@ INPUT ./images/music_mixed_1.png
 INPUT ./images/music_mixed_1.png
 INPUT ./images/music_mixed_1.png
 INPUT ./images/music_mixed_1.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/music_mixed_2.png
 INPUT ./images/music_mixed_2.png
 INPUT ./images/music_mixed_2.png
@@ -235,6 +374,8 @@ INPUT ./images/music_separated_1.png
 INPUT ./images/music_separated_1.png
 INPUT ./images/music_separated_1.png
 INPUT ./images/music_separated_1.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/music_separated_2.png
 INPUT ./images/music_separated_2.png
 INPUT ./images/music_separated_2.png
@@ -245,6 +386,8 @@ INPUT ./images/english_speech.png
 INPUT ./images/english_speech.png
 INPUT ./images/english_speech.png
 INPUT ./images/english_speech.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/spanish_speech.png
 INPUT ./images/spanish_speech.png
 INPUT ./images/spanish_speech.png
@@ -255,6 +398,8 @@ INPUT ./images/speech_mixed_1.png
 INPUT ./images/speech_mixed_1.png
 INPUT ./images/speech_mixed_1.png
 INPUT ./images/speech_mixed_1.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/speech_mixed_2.png
 INPUT ./images/speech_mixed_2.png
 INPUT ./images/speech_mixed_2.png
@@ -265,53 +410,88 @@ INPUT ./images/speech_separated_1.png
 INPUT ./images/speech_separated_1.png
 INPUT ./images/speech_separated_1.png
 INPUT ./images/speech_separated_1.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/speech_separated_2.png
 INPUT ./images/speech_separated_2.png
 INPUT ./images/speech_separated_2.png
 INPUT ./images/speech_separated_2.png
 INPUT ./images/speech_separated_2.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/three_initial.png
 INPUT ./images/three_initial.png
 INPUT ./images/three_initial.png
 INPUT ./images/three_initial.png
 INPUT ./images/three_initial.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/three_mixed.png
 INPUT ./images/three_mixed.png
 INPUT ./images/three_mixed.png
 INPUT ./images/three_mixed.png
 INPUT ./images/three_mixed.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/three_separated.png
 INPUT ./images/three_separated.png
 INPUT ./images/three_separated.png
 INPUT ./images/three_separated.png
 INPUT ./images/three_separated.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/pca_vs_ica.png
 INPUT ./images/pca_vs_ica.png
 INPUT ./images/pca_vs_ica.png
 INPUT ./images/pca_vs_ica.png
 INPUT ./images/pca_vs_ica.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/real_mixed.png
 INPUT ./images/real_mixed.png
 INPUT ./images/real_mixed.png
 INPUT ./images/real_mixed.png
 INPUT ./images/real_mixed.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/real_separated.png
 INPUT ./images/real_separated.png
 INPUT ./images/real_separated.png
 INPUT ./images/real_separated.png
 INPUT ./images/real_separated.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/meg_1.png
 INPUT ./images/meg_1.png
 INPUT ./images/meg_1.png
 INPUT ./images/meg_1.png
 INPUT ./images/meg_1.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT images/meg_2.png
 INPUT ./images/meg_2.png
 INPUT ./images/meg_2.png
 INPUT ./images/meg_2.png
 INPUT ./images/meg_2.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT documentatie.bbl
 INPUT documentatie.bbl
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmti12.tfm
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
+INPUT images/sigla_footer.png
+INPUT ./images/sigla_footer.png
 INPUT documentatie.aux
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -321,13 +501,19 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb
