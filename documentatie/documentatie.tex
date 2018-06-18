@@ -1,5 +1,5 @@
 \documentclass[12pt,oneside]{article}
-\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{inputenc}
 \usepackage{mathtools}
 \usepackage{titlesec}
 \usepackage{indentfirst}
@@ -8,8 +8,11 @@
 \usepackage{amsmath}
 \usepackage{url}
 \usepackage{scrextend}
+\usepackage{listings}
 \usepackage[export]{adjustbox}
 \usepackage[paper=a4paper]{geometry}
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Calibri}
 \renewcommand{\contentsname}{Cuprins}
 \renewcommand{\refname}{Bibliografie}
 %\usepackage{fontspec}
@@ -22,8 +25,6 @@
 \cfoot{\thepage}
 \rfoot{\includegraphics[scale=0.15]{sigla_footer.png}}
 \renewcommand{\headrulewidth}{0pt}
-\fancyhead[LE,RO]{\slshape \rightmark}
-\fancyhead[LO,RE]{\slshape \leftmark}
 
 \fancypagestyle{plain}{%
 	\fancyhf{} 
@@ -232,10 +233,31 @@ Matricea rezultata \textbf{FinalData} va contine setul de date dupa aplicarea al
 \subsection{Aplicatia AccordPCA}
 Primii pasi pe care i-am facut in cadrul acestui proiect a fost implementarea algoritmului PCA. Acest lucru a fost realizat usor, folosind libraria Accord, mai specific, pentru a realiza diferitele operatii cu matrici. \cite{accord_pca}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=\linewidth]{Compute}
-\end{figure}
+\begin{lstlisting}[basicstyle=\footnotesize]
+public void Compute()
+{
+	mean = initialData.Mean(0);
+
+	dataAdjusted = initialData.Subtract(mean, 0);
+	covarianceMatrix = dataAdjusted.Covariance();
+
+	evd = new EigenvalueDecomposition(covarianceMatrix);
+
+	eigenvalues = evd.RealEigenvalues;
+	eigenvectors = evd.Eigenvectors;
+
+	eigenvectors = Matrix.Sort(eigenvalues, eigenvectors,
+			new GeneralComparer(ComparerDirection.Descending, true));
+
+	finalData = dataAdjusted.Dot(eigenvectors);
+
+	data2D = finalData.GetColumns(0, 1);
+}
+\end{lstlisting}
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=\linewidth]{Compute}
+%\end{figure}
 
 Pentru a testa acest algoritm, am introdus prima data un set de date deja testat, unde se poate observa clar rezultatul algoritmului.\cite{data_reduction}
 \begin{figure}[H]
@@ -255,12 +277,14 @@ Urmatorul lucru pe care l-am dorit sa il facem a fost sa vedem cum mai multe nor
 
 La fel ca in primul test, se poate observa aranjarea dupa prima componenta principala a norilor.
 
+Aceasta aplicatie a fost folosita mai departe pentru a implementa ceilalti algoritmi PCA folositi, elementele de UI fiind eliminate.
 
+\newpage
 \subsection{Aplicatia PlotPCA}
 In acest moment, am decis sa realizam o aplicatie care are un GUI usor de folosit si unde fiecare nor de puncte este reprezentat in alta culoare, pentru a se vedea mai clar ce se intampla, acest lucru fiind mai important pentru seturile de date in care masuratorile pentru fiecare entitate sunt intrepatrunse.
 
 \subsubsection{Setul 3-cloud-points}
-Primele teste pe care le-am facut, au fost pe 3 nori de puncte generati aleator, la fel ca in exemplul de mai sus, si se poate vedea mai clar separarea norilor atat pe in spatiu 2D, cat si pe axa primei componente, cea cu cea mai mare variatie. De asemenea, atunci cand norii se suprapun putin de-a lungul axei Y, algoritmul PCA reuseste sa separe norii complet de-a lungul axei primei componente. Pe de alta parte, daca norii se suprapun mai mult, atunci se poate observa ca algoritmul PCA nu mai poate separa norii la fel de bine ca si pana acum.
+Primele teste pe care le-am facut, au fost pe 3 nori de puncte generati aleator, la fel ca in exemplul de mai sus, si se poate vedea mai clar separarea norilor atat pe in spatiu 2D, cat si pe axa primei componente, cea cu cea mai mare variatie. De asemenea, atunci cand norii se suprapun putin de-a lungul axei Y, algoritmul PCA reuseste sa separe norii complet de-a lungul axei primei componente. Pe de alta parte, daca norii se suprapun mai mult, atunci se poate observa ca algoritmul PCA nu mai poate separa norii la fel de bine.
 
 \begin{figure}[H]
 	\caption{Nori separati total}
@@ -354,7 +378,7 @@ In cazul testelor noastre, eroarea a variat intre 1\% si 4\%, fiind un rezultat 
 \subsection{Aplicatia Eigenfaces}
 Dupa ce am realizat testele KPCA, urmatorul pas a fost sa crestem dimensiunile cu care lucram. Mai exact, am inceput sa folosim imagini pentru a vedea cum actioneaza algoritmul PCA pe ele.
 
-Imaginile folosite au fost cele din baza de date Yale, care a fost folosita in multe alte cercetari de genul acesta, continand destui subiecti si destule imagini pentru a putea testa orice algoritm.\cite{yale_db}
+Imaginile folosite au fost cele din baza de date Yale, care a fost folosita in multe alte cercetari de genul acesta, continand destui subiecti si destule imagini pentru a putea testa orice algoritm.\cite{yale_db} \cite{KCLee05}
 
 Pentru a putea procesa aceste imagini, ele trebuiau sa aiba toate aceeasi dimensiune, in cazul nostru $168 \times 192$, iar fiecare imagine va deveni un rand din matricea care va fi prelucrata de algoritmul PCA.
 
@@ -362,7 +386,7 @@ Fetele rezultate din acest algoritm reprezinta toti vectorii proprii care contri
 
 \begin{figure}[H]
 \centering
-\caption{Primele 10 eigenfaces-uri ale primului subiect}
+\caption{Primele 10 eigenfaces-uri ale celui de-al treilea subiect}
 \includegraphics[width=\linewidth]{eigenfaces}
 \end{figure}
 
@@ -416,7 +440,7 @@ Acestea fiind zise, am facut urmatorul test: din cele 65 de imagini ale subiectu
 \section{ICA}
 
 \subsection{Ce este ICA? }
-Una dintre problemele din lumea reala este gasirea unei reprezentari potrivite pentru date multivariate, adica date care au multe dimensiuni, si care de multe ori sunt aleatoare. Din cauza problemelor de performanta, orice fel de reprezentare este deobicei interpretata ca o transformare liniara a datelor originale. Printre aceste metode de analiza a transformarilor liniare se numara si PCA, despre care am vorbit pana acum. ICA (Independent Component Analysis) sau Analiza Componentelor Individuale este o abordare noua care are rolul de a reprezentarile liniare ale unor date cu distributie nongaussiana, astfel incat componentele sa fie cat mai independente din punct de vedere statistic. Acest tip de separare este dorita deoarece captureaza structura esentiala a datelor in multe tipuri de aplicatii, precum extragerea caracteristicilor (feature extraction) sau separarea semnalelor (signal separation). Aceasta introducere si partea teoretica ce urmeaza este prezentata conform articolului publicat de Aapo Hyvärinen si Erkki Oja.\cite{hyvarien}
+Una dintre problemele din lumea reala este gasirea unei reprezentari potrivite pentru date multivariate, adica date care au multe dimensiuni, si care de multe ori sunt aleatoare. Din cauza problemelor de performanta, orice fel de reprezentare este deobicei interpretata ca o transformare liniara a datelor originale. Printre aceste metode de analiza a transformarilor liniare se numara si PCA, despre care am vorbit pana acum. ICA (Independent Component Analysis) sau Analiza Componentelor Individuale este o abordare noua care are rolul de a reprezentarile liniare ale unor date cu distributie nongaussiana, astfel incat componentele sa fie cat mai independente din punct de vedere statistic. Acest tip de separare este dorita deoarece captureaza structura esentiala a datelor in multe tipuri de aplicatii, precum extragerea caracteristicilor (feature extraction) sau separarea semnalelor (signal separation). Aceasta introducere cat si partea teoretica ce urmeaza este prezentata conform articolului publicat de Aapo Hyvärinen si Erkki Oja.\cite{hyvarien}
 
 Pentru a putea vizualiza aceasta idee, putem analiza o problema din lumea reala. Sa spunem ca suntem intr-o camera in care 2 oameni vorbesc simultan. Avem 2 microfoane pe care le pozitionam in locuri diferite in camera, si ele ne dau 2 inregistrari ale semnalelor. Aceste semnale sunt $x_1 (t)$ si $x_2 (t)$, cu $x_1$ si $x_2$ functii de amplitudine in functie de $t$. Fiecare inregistrare este o suma ponderata a semnalelor emise de cei doi oameni care vorbesc, pe care le notam $s_1(t)$ si $s_2(t)$. Pentru claritate le punem sub forma de ecuatie liniara:
 
@@ -707,7 +731,7 @@ Pentru fiecare caz testat, am ales initial matricea $A$ aleator, cu valorile dis
 Vom prezenta mai tarziu rezultatele fiecarui test, iar acolo vor fi prezentate toate variabilele folosite pentru a se ajunge la rezultatele noastre.
 
 \subsubsection{Aplicarea algoritmului Gradient Descent}
-Implementarea folosita a fost o copie adaptata in limbajului Python a unei cercetari facute in limbajul Matlab.\cite{vsubhashini} Avand sursele de semnal amestecate, trebuie sa aplicam algoritmul gradient descent prezentat mai devreme pentru a incerca sa gasim componentele independente initiale.  Pentru acest lucru, vom porni de la o matrice $A^{-1}$, sau $W$, cu valori aleatoare uniform distribuite intre $0.01$ si $0.1$. Acest interval s-a observat ca fiind unul bun pentru cazurile noastre, dar el trebuie adaptat in functie de situatie. 
+Implementarea folosita a fost o adaptare in limbajul Python a unei cercetari facute in limbajul Matlab.\cite{vsubhashini} Avand sursele de semnal amestecate, trebuie sa aplicam algoritmul gradient descent prezentat mai devreme pentru a incerca sa gasim componentele independente initiale.  Pentru acest lucru, vom porni de la o matrice $A^{-1}$, sau $W$, cu valori aleatoare uniform distribuite intre $0.01$ si $0.1$. Acest interval s-a observat ca fiind unul bun pentru cazurile noastre, dar el trebuie adaptat in functie de situatie. 
 
 Se calculeaza:
 \begin{equation}
@@ -725,6 +749,37 @@ care va fi o matrice patratica, cu numarul de linii egal cu numarul de esantioan
 Aceasta abordare este cea de preferat in cazul algoritmilor de tip gradient descent, deoarece avem un mod obiectiv de a masura performanta algoritmului, si pentru ca functia de cost este legata direct de restul operatiilor. In realitate, am descoperit ca metoda aceasta de a opri algoritmul nu este posibila atunci cand lucram cu semnale audio lungi, care pot avea pana la 16000 de esantioane pe secunda, matricea pentru care trebuie sa calculam suma elementelor ar avea dimensiuni foarte mari, spre exemplu $120000 \times 120000$ elemente, care nu incape in memoria RAM a calculatorului. 
 
 O alta abordare pentru a masura independenta este necorelatia, asa cum am mentionat intr-un capitol mai devreme. Acolo am spus ca daca doua variabile sunt independente, ele sunt necorelate, dar afirmatia inversa nu este intotdeauna adevarata. Deoarece abordarea care implica functia de cost nu era potrivita pentru semnale audio de dimensiuni mari, pentru testele care implicau acest tip de componente, am decis sa folosim necorelatia pentru a masura independenta componentelor. Dupa fiecare iteratie a algoritmului, am calculat corelatia intre componentele rezultate, si daca se afla sub un anumit prag, deobicei foarte mic, spre exemplu $3e^{-6}$. Aceasta abordare s-a dovedit a fi una reusita, era consistenta de-a lungul testelor, si poate fi aplicata pentru orice fel de semnale. 
+
+\subsubsection{Implementarea algoritmului}
+\begin{lstlisting}[language=Python]
+def sigmoid(y):
+    g=np.divide(1,np.add(1,np.exp(-y)))
+    return g
+
+def gradient(eta, Y, W):
+    Z=sigmoid(Y)
+    Id=np.identity(Y.shape[0])
+    grad=eta*(Id+np.dot((1-2*Z),Y.T))*W
+	return grad
+
+corr=1
+while abs(corr)>=4e-6:
+	eta=0.01
+	eta0=eta
+	T=1000
+	num_iter=10000
+	W=np.random.uniform(0.001,0.01,(n,n))
+	for i in range(0,num_iter):
+		Y=np.dot(W,X)
+		delW=gradient(eta,Y,W)
+		W+=delW
+		eta=eta0/(1+(i/T))
+	Y2=np.dot(W,X)
+	corr=np.corrcoef(Y2)[1][0]
+
+Y2=np.dot(W,X)
+\end{lstlisting}
+Constantele alese aici sunt particulare pentru testul cu muzica si vorbit.
 
 \newpage
 \subsection{Rezultate}
@@ -794,7 +849,9 @@ Semnalele amestecate rezultate sunt:
 
  \subsubsection{Semnale audio: doua voci}
  Urmatorul este a fost efectuat cu doua semnale audio, ambele contineau voci de barbat, unul spunea cifrele in engleza, iar celalalt spunea cifrele in spaniola:
+ \begin{center}
 	\includegraphics[scale=1]{english_speech}
+ \end{center}
 \begin{center}
 	\includegraphics[scale=1]{spanish_speech}
 \end{center}
@@ -810,6 +867,7 @@ Rezultatul amestecarii este:
 \begin{center}
 	\includegraphics[scale=1]{speech_mixed_1}
  \end{center}
+
 \begin{center}
 	\includegraphics[scale=1]{speech_mixed_2}
  \end{center}
@@ -882,7 +940,10 @@ Testul efectuat pentru a ajunge la aceasta concluzie este urmatorul: am pornit d
 	\item{A doua abordare este una matematica, daca in functia de maximum likelihood a algoritmului am putea lua in calcul intarzierea dintre semnale, fara ca intarzierea sa fie masurata in prealabil. Acest lucru ar insemna ca functia noua sa ia practic in calcul faza semnalelor, ceea ce ar duce problema in domeniul complex.}
  \end{itemize}
 
-\subsection{Aplicatii ale ICA } 
+\subsection{Utilizari ale ICA} 
+
+Aceste utilizari sunt prezentate conform articolului publicat de Aapo Hyvärinen si Erkki Oja.\cite{hyvarien}
+
 \subsubsection{Separarea artefactelor din inregistrari MEG}
 Magnetoencefalografia (MEG) este o procedure neinvaziva in care este monitorizata activitatea neuronilor corticali cu o precizie foarte buna din punct de vedere al timpului, si cu precizie moderata din punct de vedere spatial. Cand se analizeaza date MEG, o problema comuna este extractia caracteristicilor semnalelor neuromagnetice in prezenta artefactelor. Amplitudinea artefactelor ar putea fi mai mare decat cele ale semnalelor creierului, acestea putand fi interepretate ca semnale patologice, adica ca semnale care pot cauza sau descriu o anumita afectiune.
 
@@ -893,9 +954,9 @@ Semnalele MEG au fost inregistrate intr-o camera izolata magnetic, cu un neuroma
 \begin{center}
 	\includegraphics[scale=1]{meg_1}
  \end{center}
- In aceasta imagine se pot vedea 12 semnale MEG din zona frontala, temporala si occipitala, impreuna cu pozitia senzorilor pe casca. Ultimele trei semnale reprezinta doua electrooculograme si o electrocardiograma, si nu au fost folosite in prelucrarea datelor cu ICA.
+ In aceasta imagine\cite{hyvarien} se pot vedea 12 semnale MEG din zona frontala, temporala si occipitala, impreuna cu pozitia senzorilor pe casca. Ultimele trei semnale reprezinta doua electrooculograme si o electrocardiograma, si nu au fost folosite in prelucrarea datelor cu ICA.
 
- Asupra vectorului de semnale $x$, care contine amplitudinile $x(t)$ a 122 de semnale (deci dimensionalitatea este $n=22$), s-a aplicat mai intai PCA, pentru a reduce dimensionalitatea si pentru a standardiza datele. Apoi s-a aplicat un algoritm de tip ICA, rezultatele fiind urmatoarele:
+ Asupra vectorului de semnale $x$, care contine amplitudinile $x(t)$ a 122 de semnale (deci dimensionalitatea este $n=22$), s-a aplicat mai intai PCA, pentru a reduce dimensionalitatea si pentru a standardiza datele. Apoi s-a aplicat un algoritm de tip ICA, rezultatele fiind urmatoarele\cite{hyvarien}:
 \begin{center}
 	\includegraphics[scale=0.8]{meg_2}
  \end{center}

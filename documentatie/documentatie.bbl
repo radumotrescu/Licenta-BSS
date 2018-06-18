@@ -48,6 +48,11 @@ The yale face database b. [Online]. Available:
   \url{http://vision.ucsd.edu/~iskwak/ExtYaleDatabase/Yale%20Face%20Database.htm}
 \BIBentrySTDinterwordspacing
 
+\bibitem{KCLee05}
+K.~Lee, J.~Ho, and D.~Kriegman, ``Acquiring linear subspaces for face
+  recognition under variable lighting,'' \emph{IEEE Trans. Pattern Anal. Mach.
+  Intelligence}, vol.~27, no.~5, pp. 684--698, 2005.
+
 \bibitem{hyvarien}
 A.~Hyvärinen and E.~Oja, \emph{Independent Component Analysis: Algorithms and
   Applications}.\hskip 1em plus 0.5em minus 0.4em\relax Helsinki University of

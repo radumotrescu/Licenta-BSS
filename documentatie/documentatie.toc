@@ -9,8 +9,8 @@
 \contentsline {paragraph}{\numberline {2.2.0.5}Valorile si vectorii proprii}{5}
 \contentsline {paragraph}{\numberline {2.2.0.6}Pasul final PCA}{5}
 \contentsline {subsection}{\numberline {2.3}Aplicatia AccordPCA}{7}
-\contentsline {subsection}{\numberline {2.4}Aplicatia PlotPCA}{8}
-\contentsline {subsubsection}{\numberline {2.4.1}Setul 3-cloud-points}{8}
+\contentsline {subsection}{\numberline {2.4}Aplicatia PlotPCA}{9}
+\contentsline {subsubsection}{\numberline {2.4.1}Setul 3-cloud-points}{9}
 \contentsline {section}{\numberline {3}Kernel PCA}{11}
 \contentsline {subsection}{\numberline {3.1}Setul two-moon si abordarea Kernel PCA}{11}
 \contentsline {subsection}{\numberline {3.2}Cros-validare 10-fold}{12}
@@ -33,22 +33,23 @@
 \contentsline {subsubsection}{\numberline {4.6.3}Aproximarea negentropiei}{28}
 \contentsline {subsection}{\numberline {4.7}Abordarea Maximum Likelihood}{29}
 \contentsline {subsection}{\numberline {4.8}Metoda Gradient Descent}{29}
-\contentsline {subsection}{\numberline {4.9}Metodologia si algoritmul}{31}
-\contentsline {subsubsection}{\numberline {4.9.1}Jupyter Notebook}{31}
+\contentsline {subsection}{\numberline {4.9}Metodologia si algoritmul}{30}
+\contentsline {subsubsection}{\numberline {4.9.1}Jupyter Notebook}{30}
 \contentsline {subsubsection}{\numberline {4.9.2}Semnalele audio testate}{31}
-\contentsline {subsubsection}{\numberline {4.9.3}Pre-procesarea datelor}{32}
-\contentsline {subsubsection}{\numberline {4.9.4}Aplicarea algoritmului Gradient Descent}{33}
+\contentsline {subsubsection}{\numberline {4.9.3}Pre-procesarea datelor}{31}
+\contentsline {subsubsection}{\numberline {4.9.4}Aplicarea algoritmului Gradient Descent}{32}
 \contentsline {subsubsection}{\numberline {4.9.5}Conditia de oprire}{33}
+\contentsline {subsubsection}{\numberline {4.9.6}Implementarea algoritmului}{34}
 \contentsline {subsection}{\numberline {4.10}Rezultate}{35}
 \contentsline {subsubsection}{\numberline {4.10.1}Semnale primitive}{35}
 \contentsline {subsubsection}{\numberline {4.10.2}Semnale audio: voce si muzica}{37}
 \contentsline {subsubsection}{\numberline {4.10.3}Semnale audio: doua voci}{40}
-\contentsline {subsubsection}{\numberline {4.10.4}Semnale audio: trei semnale}{44}
-\contentsline {subsubsection}{\numberline {4.10.5}Analiza coeficientilor de corelatie a testelor}{47}
+\contentsline {subsubsection}{\numberline {4.10.4}Semnale audio: trei semnale}{43}
+\contentsline {subsubsection}{\numberline {4.10.5}Analiza coeficientilor de corelatie a testelor}{46}
 \contentsline {subsubsection}{\numberline {4.10.6}ICA versus PCA}{47}
 \contentsline {subsubsection}{\numberline {4.10.7}Problema ICA in lumea reala}{48}
-\contentsline {subsection}{\numberline {4.11}Aplicatii ale ICA }{51}
+\contentsline {subsection}{\numberline {4.11}Utilizari ale ICA}{51}
 \contentsline {subsubsection}{\numberline {4.11.1}Separarea artefactelor din inregistrari MEG}{51}
 \contentsline {subsubsection}{\numberline {4.11.2}Factori ascunsi in date financiare}{54}
 \contentsline {subsubsection}{\numberline {4.11.3}Telecomunicatii}{54}
-\contentsline {section}{\numberline {5}Concluzii}{56}
+\contentsline {section}{\numberline {5}Concluzii}{55}
