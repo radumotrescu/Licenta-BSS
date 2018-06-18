@@ -30,6 +30,12 @@ A.~F. Shireen~Elhabian, \emph{A Tutorial on Data Reduction, Principal Component
 J.~Shlens, \emph{A Tutorial On Principal Component Analysis, Derivation,
   Discussion and Singular Value Decomposition}, 2003.
 
+\bibitem{pearsson_correlation_coefficient_wiki}
+\BIBentryALTinterwordspacing
+Pearsson correlation coefficient. [Online]. Available:
+  \url{https://en.wikipedia.org/wiki/Pearson_correlation_coefficient}
+\BIBentrySTDinterwordspacing
+
 \bibitem{accord_pca}
 C.~Souza, \emph{A Tutorial On Principal Component Analysis with the Accor.NET
   Framework}.\hskip 1em plus 0.5em minus 0.4em\relax Department of Computing,

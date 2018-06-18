@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (MiKTeX 2.9.6630 64-bit)  (format=lualatex 2018.6.18)  18 JUN 2018 10:52
+This is LuaTeX, Version 1.07.0 (MiKTeX 2.9.6630 64-bit)  (format=lualatex 2018.6.18)  18 JUN 2018 17:46
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/BDRadu/Licenta-BSS/documentatie/documentatie
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.493 seconds
+luaotfload | main : initialization completed in 0.437 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 ("C:/Program Files/MiKTeX 2.9/tex/latex/base/article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -983,20 +983,20 @@ Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footers
 (./documentatie.aux)
 \openout1 = documentatie.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
 
 ("C:/Program Files/MiKTeX 2.9/tex/context/base/supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1098,72 +1098,72 @@ ABD: EveryShipout initializing macros
 .................................................
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 52.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 52.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 52.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 52.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 52.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 52.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 52.
-LaTeX Font Info:    Redeclaring math accent \check on input line 52.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 52.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 52.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 52.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 52.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 51.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 51.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 51.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 51.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 51.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 51.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 51.
+LaTeX Font Info:    Redeclaring math accent \check on input line 51.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 51.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 51.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 51.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 51.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 52.
+(Font)              `operators' in the math version `normal' on input line 51.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Calibri(0)/m/n on input line 52.
+(Font)                  OT1/cmr/m/n --> TU/Calibri(0)/m/n on input line 51.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 52.
+(Font)              `operators' in the math version `bold' on input line 51.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Calibri(0)/m/n on input line 52.
+(Font)                  OT1/cmr/bx/n --> TU/Calibri(0)/m/n on input line 51.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Calibri(0)/m/n --> TU/Calibri(0)/m/n on input line 52
+(Font)                  TU/Calibri(0)/m/n --> TU/Calibri(0)/m/n on input line 51
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Calibri(0)/m/it on input line 52.
+(Font)                  OT1/cmr/m/it --> TU/Calibri(0)/m/it on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Calibri(0)/bx/n on input line 52.
+(Font)                  OT1/cmr/bx/n --> TU/Calibri(0)/bx/n on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 52.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 52.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 51.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/Calibri(0)/m/n --> TU/Calibri(0)/bx/n on input line 5
-2.
+1.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Calibri(0)/bx/it on input line 52.
+(Font)                  OT1/cmr/bx/it --> TU/Calibri(0)/bx/it on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 52.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 51.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 52.
-<images/sigla.png, id=4, 615.80063pt x 262.73157pt>
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 51.
+<images/sigla.png, id=4, 615.0478pt x 261.97874pt>
 File: images/sigla.png Graphic file (type png)
 <use images/sigla.png>
-Package luatex.def Info: images/sigla.png  used on input line 59.
-(luatex.def)             Requested size: 246.31589pt x 105.09076pt.
+Package luatex.def Info: images/sigla.png  used on input line 58.
+(luatex.def)             Requested size: 246.01476pt x 104.78964pt.
 
-Overfull \hbox (176.31589pt too wide) in paragraph at lines 59--60
+Overfull \hbox (176.01476pt too wide) in paragraph at lines 58--59
 [][] 
  []
 
 <images/sigla_footer.png, id=5, 115.18031pt x 113.67468pt>
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 83.
+Package luatex.def Info: images/sigla_footer.png  used on input line 82.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
 [1
 
@@ -1184,553 +1184,579 @@ Package luatex.def Info: images/sigla_footer.png  used on input line 49.
 \openout4 = documentatie.toc
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 90.
+Package luatex.def Info: images/sigla_footer.png  used on input line 89.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
  [3]
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 109.
+Package luatex.def Info: images/sigla_footer.png  used on input line 106.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
 
-[1
+[4
 
 ]
+<images/Picture1.png, id=25, 331.2375pt x 316.93407pt>
+File: images/Picture1.png Graphic file (type png)
+<use images/Picture1.png>
+Package luatex.def Info: images/Picture1.png  used on input line 138.
+(luatex.def)             Requested size: 165.61833pt x 158.46664pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
 Package luatex.def Info: images/sigla_footer.png  used on input line 140.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [2]
-<images/Picture1.png, id=29, 331.2375pt x 316.93407pt>
-File: images/Picture1.png Graphic file (type png)
-<use images/Picture1.png>
-Package luatex.def Info: images/Picture1.png  used on input line 151.
-(luatex.def)             Requested size: 165.61833pt x 158.46664pt.
-<images/Picture2.png, id=30, 568.37344pt x 219.06844pt>
+ [5]
+<images/Picture2.png, id=29, 568.37344pt x 219.06844pt>
 File: images/Picture2.png Graphic file (type png)
 <use images/Picture2.png>
-Package luatex.def Info: images/Picture2.png  used on input line 158.
+Package luatex.def Info: images/Picture2.png  used on input line 145.
 (luatex.def)             Requested size: 418.25368pt x 161.21559pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 160.
+Package luatex.def Info: images/sigla_footer.png  used on input line 157.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [3<./images/Picture1.png>]
+ [6<./images/Picture1.png><./images/Picture2.png>]
+Overfull \hbox (35.45853pt too wide) in paragraph at lines 175--176
+\TU/Calibri(0)/m/n/12 oarea me-die, rezul-tand date cen-trate (zero-mean data) 
+si avand se-tul de vec-tori $[]$
+ []
+
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 191.
+Package luatex.def Info: images/sigla_footer.png  used on input line 196.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [4<./images/Picture2.png>]
+[7]
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 223.
+Package luatex.def Info: images/sigla_footer.png  used on input line 228.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [5]
+ [8]
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 231.
+Package luatex.def Info: images/sigla_footer.png  used on input line 256.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [6]
-Overfull \hbox (67.75127pt too wide) in paragraph at lines 250--252
+ [9]
+Overfull \hbox (67.75127pt too wide) in paragraph at lines 265--267
 [][][][][][][][][][][][][][] 
  []
 
-<images/Test1.png, id=51, 758.835pt x 307.90031pt>
+<images/Test1.png, id=50, 758.835pt x 307.90031pt>
 File: images/Test1.png Graphic file (type png)
 <use images/Test1.png>
-Package luatex.def Info: images/Test1.png  used on input line 266.
+Package luatex.def Info: images/Test1.png  used on input line 281.
 (luatex.def)             Requested size: 418.25368pt x 169.71214pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 268.
+Package luatex.def Info: images/sigla_footer.png  used on input line 283.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
-[7<./images/Test1.png>]
-<images/Test2.png, id=57, 756.57657pt x 302.63063pt>
+[10<./images/Test1.png>]
+<images/Test2.png, id=56, 756.57657pt x 302.63063pt>
 File: images/Test2.png Graphic file (type png)
 <use images/Test2.png>
-Package luatex.def Info: images/Test2.png  used on input line 275.
+Package luatex.def Info: images/Test2.png  used on input line 290.
 (luatex.def)             Requested size: 418.25368pt x 167.30164pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 282.
+Package luatex.def Info: images/sigla_footer.png  used on input line 297.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [8<./images/Test2.png>]
-<images/threecloud1.png, id=62, 1113.40968pt x 456.20438pt>
+ [11<./images/Test2.png>]
+<images/threecloud1.png, id=61, 1113.40968pt x 456.20438pt>
 File: images/threecloud1.png Graphic file (type png)
 <use images/threecloud1.png>
-Package luatex.def Info: images/threecloud1.png  used on input line 292.
+Package luatex.def Info: images/threecloud1.png  used on input line 305.
 (luatex.def)             Requested size: 418.25368pt x 171.36858pt.
-<images/threecloud2.png, id=63, 1112.65688pt x 455.45157pt>
+<images/threecloud2.png, id=62, 1112.65688pt x 455.45157pt>
 File: images/threecloud2.png Graphic file (type png)
 <use images/threecloud2.png>
-Package luatex.def Info: images/threecloud2.png  used on input line 299.
+Package luatex.def Info: images/threecloud2.png  used on input line 313.
 (luatex.def)             Requested size: 418.25368pt x 171.21089pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 301.
+Package luatex.def Info: images/sigla_footer.png  used on input line 315.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [9<./images/threecloud1.png>]
-<images/threecloud3.png, id=67, 1113.40968pt x 457.71pt>
+ [12<./images/threecloud1.png>]
+<images/threecloud3.png, id=66, 1113.40968pt x 457.71pt>
 File: images/threecloud3.png Graphic file (type png)
 <use images/threecloud3.png>
-Package luatex.def Info: images/threecloud3.png  used on input line 306.
+Package luatex.def Info: images/threecloud3.png  used on input line 321.
 (luatex.def)             Requested size: 418.25368pt x 171.93416pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 309.
+Package luatex.def Info: images/sigla_footer.png  used on input line 324.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
-
-[10<./images/threecloud2.png><./images/threecloud3.png>]
+ [13<./images/threecloud2.png><./images/threecloud3.png>]
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 342.
+Package luatex.def Info: images/sigla_footer.png  used on input line 356.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [11]
-<images/twomoon1.png, id=75, 1114.1625pt x 456.20438pt>
+ [14]
+<images/twomoon1.png, id=74, 1114.1625pt x 456.20438pt>
 File: images/twomoon1.png Graphic file (type png)
 <use images/twomoon1.png>
-Package luatex.def Info: images/twomoon1.png  used on input line 348.
+Package luatex.def Info: images/twomoon1.png  used on input line 363.
 (luatex.def)             Requested size: 418.25368pt x 171.2572pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 363.
+Package luatex.def Info: images/sigla_footer.png  used on input line 378.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [12<./images/twomoon1.png>]
-<images/tenfold1.png, id=79, 1113.40968pt x 469.00218pt>
+ [15<./images/twomoon1.png>]
+<images/tenfold1.png, id=78, 1113.40968pt x 469.00218pt>
 File: images/tenfold1.png Graphic file (type png)
 <use images/tenfold1.png>
-Package luatex.def Info: images/tenfold1.png  used on input line 373.
+Package luatex.def Info: images/tenfold1.png  used on input line 388.
 (luatex.def)             Requested size: 418.25368pt x 176.17595pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 376.
+Package luatex.def Info: images/sigla_footer.png  used on input line 391.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [13<./images/tenfold1.png>]
-<images/eigenfaces.png, id=83, 632.3625pt x 289.08pt>
+ [16<./images/tenfold1.png>]
+<images/eigenfaces.png, id=82, 632.3625pt x 289.08pt>
 File: images/eigenfaces.png Graphic file (type png)
 <use images/eigenfaces.png>
-Package luatex.def Info: images/eigenfaces.png  used on input line 390.
+Package luatex.def Info: images/eigenfaces.png  used on input line 405.
 (luatex.def)             Requested size: 418.25368pt x 191.2036pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 398.
+Package luatex.def Info: images/sigla_footer.png  used on input line 413.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [14<./images/eigenfaces.png>]
+ [17<./images/eigenfaces.png>]
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 436.
+Package luatex.def Info: images/sigla_footer.png  used on input line 451.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [15]
+ [18]
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 439.
+Package luatex.def Info: images/sigla_footer.png  used on input line 454.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
 
-[16]
-<images/two-sound-sources.png, id=93, 928.21782pt x 737.00343pt>
+[19]
+<images/two-sound-sources.png, id=92, 928.21782pt x 737.00343pt>
 File: images/two-sound-sources.png Graphic file (type png)
 <use images/two-sound-sources.png>
-Package luatex.def Info: images/two-sound-sources.png  used on input line 459.
+Package luatex.def Info: images/two-sound-sources.png  used on input line 474.
 (luatex.def)             Requested size: 371.28055pt x 294.79614pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 460.
-(luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [17]
-File: images/sigla_footer.png Graphic file (type png)
-<use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 474.
-(luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [18<./images/two-sound-sources.png>]
-File: images/sigla_footer.png Graphic file (type png)
-<use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 500.
-(luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [19]
-File: images/sigla_footer.png Graphic file (type png)
-<use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 506.
+Package luatex.def Info: images/sigla_footer.png  used on input line 475.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
  [20]
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 540.
+Package luatex.def Info: images/sigla_footer.png  used on input line 489.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [21]
-Overfull \hbox (11.72597pt too wide) in paragraph at lines 540--543
+ [21<./images/two-sound-sources.png>]
+File: images/sigla_footer.png Graphic file (type png)
+<use images/sigla_footer.png>
+Package luatex.def Info: images/sigla_footer.png  used on input line 515.
+(luatex.def)             Requested size: 17.27629pt x 17.05046pt.
+ [22]
+File: images/sigla_footer.png Graphic file (type png)
+<use images/sigla_footer.png>
+Package luatex.def Info: images/sigla_footer.png  used on input line 521.
+(luatex.def)             Requested size: 17.27629pt x 17.05046pt.
+ [23]
+File: images/sigla_footer.png Graphic file (type png)
+<use images/sigla_footer.png>
+Package luatex.def Info: images/sigla_footer.png  used on input line 555.
+(luatex.def)             Requested size: 17.27629pt x 17.05046pt.
+ [24]
+Overfull \hbox (11.72597pt too wide) in paragraph at lines 555--558
 \TU/Calibri(0)/m/n/12 Daca vari-abilele sunt in-de-pen-dente, ele sunt necore-l
 ate, rezul-tand $\OML/cmm/m/it/12 h[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y[]\OT1/
 cmr/m/n/12 ) = \OML/cmm/m/it/12 y[]$ \TU/Calibri(0)/m/n/12 si $\OML/cmm/m/it/12
  h[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y[]\OT1/cmr/m/n/12 ) =
  []
 
-<images/multivariate_gaussian_distribution.png, id=110, 280.04625pt x 280.79906p
+<images/multivariate_gaussian_distribution.png, id=109, 280.04625pt x 280.79906p
 t>
 File: images/multivariate_gaussian_distribution.png Graphic file (type png)
 <use images/multivariate_gaussian_distribution.png>
 Package luatex.def Info: images/multivariate_gaussian_distribution.png  used on 
-input line 555.
+input line 570.
 (luatex.def)             Requested size: 252.03928pt x 252.71681pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 556.
+Package luatex.def Info: images/sigla_footer.png  used on input line 571.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
-[22]
+[25]
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 568.
+Package luatex.def Info: images/sigla_footer.png  used on input line 583.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [23<./images/multivariate_gaussian_distribution.png>]
-Overfull \hbox (21.58762pt too wide) in paragraph at lines 578--579
+ [26<./images/multivariate_gaussian_distribution.png>]
+Overfull \hbox (21.58762pt too wide) in paragraph at lines 593--594
 \TU/Calibri(0)/m/n/12 dente. Spatiul de cautare pen-tru op-ti-mizarea non-gaus-
 sian-i-tatii intr-un spatiul $\OML/cmm/m/it/12 n$\TU/Calibri(0)/m/n/12 -dimensi
 onal
  []
 
 
-Overfull \hbox (4.08893pt too wide) in paragraph at lines 578--579
+Overfull \hbox (4.08893pt too wide) in paragraph at lines 593--594
 \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 s[]$\TU/Calibri(0)/m/n/12 . Ca sa gasim mai 
 multe com-po-nente in-de-pen-dente, tre-buie sa gasim toate maximele
  []
 
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 579.
+Package luatex.def Info: images/sigla_footer.png  used on input line 594.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
-[24]
-<images/laplace_distribution.png, id=120, 803.0pt x 602.25pt>
+[27]
+<images/laplace_distribution.png, id=119, 803.0pt x 602.25pt>
 File: images/laplace_distribution.png Graphic file (type png)
 <use images/laplace_distribution.png>
-Package luatex.def Info: images/laplace_distribution.png  used on input line 595
+Package luatex.def Info: images/laplace_distribution.png  used on input line 610
 .
 (luatex.def)             Requested size: 240.90186pt x 180.67639pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 600.
+Package luatex.def Info: images/sigla_footer.png  used on input line 615.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [25<./images/laplace_distribution.png>]
-<images/uniform_distribution.png, id=125, 371.88937pt x 121.95563pt>
+ [28<./images/laplace_distribution.png>]
+<images/uniform_distribution.png, id=124, 371.88937pt x 121.95563pt>
 File: images/uniform_distribution.png Graphic file (type png)
 <use images/uniform_distribution.png>
-Package luatex.def Info: images/uniform_distribution.png  used on input line 601
+Package luatex.def Info: images/uniform_distribution.png  used on input line 616
 .
 (luatex.def)             Requested size: 446.26501pt x 146.346pt.
 
-Overfull \hbox (28.01134pt too wide) in paragraph at lines 601--602
+Overfull \hbox (28.01134pt too wide) in paragraph at lines 616--617
  [] 
  []
 
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 628.
+Package luatex.def Info: images/sigla_footer.png  used on input line 643.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
-[26<./images/uniform_distribution.png>]
+[29<./images/uniform_distribution.png>]
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 647.
+Package luatex.def Info: images/sigla_footer.png  used on input line 662.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [27]
+ [30]
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 673.
+Package luatex.def Info: images/sigla_footer.png  used on input line 688.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [28]
+ [31]
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 694.
+Package luatex.def Info: images/sigla_footer.png  used on input line 709.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [29]
-<sigmoid_function.png, id=140, 602.25pt x 401.5pt>
+ [32]
+<sigmoid_function.png, id=139, 602.25pt x 401.5pt>
 File: sigmoid_function.png Graphic file (type png)
 <use sigmoid_function.png>
-Package luatex.def Info: sigmoid_function.png  used on input line 700.
+Package luatex.def Info: sigmoid_function.png  used on input line 715.
 (luatex.def)             Requested size: 361.35278pt x 240.90184pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 706.
+Package luatex.def Info: images/sigla_footer.png  used on input line 721.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [30<./sigmoid_function.png>]
-Overfull \hbox (3.49399pt too wide) in paragraph at lines 710--711
+ [33<./sigmoid_function.png>]
+Overfull \hbox (0.83148pt too wide) in paragraph at lines 722--723
+[]\TU/Calibri(0)/m/n/12 Pen-tru a ex-e-cuta testele prezen-tate aici, tot ce tr
+e-buie fa-cut este de-schiderea fisieru-
+ []
+
+
+Overfull \hbox (3.49399pt too wide) in paragraph at lines 727--728
 \TU/Calibri(0)/m/n/12 nale prim-i-tive, gen-er-ate in note-book, unul de tip si
 -nus, si unul de tip fieras-trau.[[]] 
  []
 
+File: images/sigla_footer.png Graphic file (type png)
+<use images/sigla_footer.png>
+Package luatex.def Info: images/sigla_footer.png  used on input line 737.
+(luatex.def)             Requested size: 17.27629pt x 17.05046pt.
+[34]
 File: images/two-sound-sources.png Graphic file (type png)
 <use images/two-sound-sources.png>
-Package luatex.def Info: images/two-sound-sources.png  used on input line 721.
+Package luatex.def Info: images/two-sound-sources.png  used on input line 738.
 (luatex.def)             Requested size: 278.4675pt x 221.10274pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 722.
+Package luatex.def Info: images/sigla_footer.png  used on input line 756.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
-[31]
-Overfull \hbox (5.87718pt too wide) in paragraph at lines 739--741
+ [35]
+Overfull \hbox (5.87718pt too wide) in paragraph at lines 756--758
 \TU/Calibri(0)/m/n/12 unde $\OML/cmm/m/it/12 Y$ \TU/Calibri(0)/m/n/12 reprez-in
 ta banuiala al-go-rit-mu-lui cu privire la com-po-nen-tele in-de-pen-dente. Fun
 c-
  []
 
+
+Overfull \hbox (10.31444pt too wide) in paragraph at lines 768--769
+\TU/Calibri(0)/m/n/12 dente, ele sunt necore-late, dar afir-ma-tia in-versa nu 
+este in-tot-deauna ade-varata. Deoarece
+ []
+
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 741.
+Package luatex.def Info: images/sigla_footer.png  used on input line 769.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
-[32]
-File: images/sigla_footer.png Graphic file (type png)
-<use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 752.
-(luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [33] ("C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty"
+[36] ("C:/Program Files/MiKTeX 2.9/tex/latex/listings/lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 784.
+Package luatex.def Info: images/sigla_footer.png  used on input line 801.
+(luatex.def)             Requested size: 17.27629pt x 17.05046pt.
+ [37]
+File: images/sigla_footer.png Graphic file (type png)
+<use images/sigla_footer.png>
+Package luatex.def Info: images/sigla_footer.png  used on input line 801.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
 
-[34]
-Overfull \hbox (1.15453pt too wide) in paragraph at lines 789--790
+[38]
+Overfull \hbox (1.15453pt too wide) in paragraph at lines 806--807
 []\TU/Calibri(0)/m/n/12 Primul test a fost re-al-izat cu doua sem-nale gen-er-a
 te prin in-ter-mediul co-du-lui Python,
  []
 
-<images/primitive_waves.png, id=157, 298.11375pt x 386.19281pt>
+<images/primitive_waves.png, id=159, 298.11375pt x 386.19281pt>
 File: images/primitive_waves.png Graphic file (type png)
 <use images/primitive_waves.png>
-Package luatex.def Info: images/primitive_waves.png  used on input line 791.
+Package luatex.def Info: images/primitive_waves.png  used on input line 808.
 (luatex.def)             Requested size: 238.49132pt x 308.95465pt.
-<images/primitives_mixed.png, id=158, 276.28218pt x 192.72pt>
+<images/primitives_mixed.png, id=160, 276.28218pt x 192.72pt>
 File: images/primitives_mixed.png Graphic file (type png)
 <use images/primitives_mixed.png>
-Package luatex.def Info: images/primitives_mixed.png  used on input line 803.
+Package luatex.def Info: images/primitives_mixed.png  used on input line 820.
 (luatex.def)             Requested size: 276.2815pt x 192.71951pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 804.
+Package luatex.def Info: images/sigla_footer.png  used on input line 821.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
-[35<./images/primitive_waves.png>]
-<images/primitives_separated.png, id=162, 298.86656pt x 391.4625pt>
+[39<./images/primitive_waves.png>]
+<images/primitives_separated.png, id=164, 298.86656pt x 391.4625pt>
 File: images/primitives_separated.png Graphic file (type png)
 <use images/primitives_separated.png>
-Package luatex.def Info: images/primitives_separated.png  used on input line 810
+Package luatex.def Info: images/primitives_separated.png  used on input line 827
 .
 (luatex.def)             Requested size: 298.86581pt x 391.46153pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 811.
+Package luatex.def Info: images/sigla_footer.png  used on input line 828.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [36<./images/primitives_mixed.png>]
-<images/music_music.png, id=167, 296.60812pt x 192.72pt>
+ [40<./images/primitives_mixed.png>]
+<images/music_music.png, id=170, 296.60812pt x 192.72pt>
 File: images/music_music.png Graphic file (type png)
 <use images/music_music.png>
-Package luatex.def Info: images/music_music.png  used on input line 818.
+Package luatex.def Info: images/music_music.png  used on input line 835.
 (luatex.def)             Requested size: 296.60739pt x 192.71951pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 819.
+Package luatex.def Info: images/sigla_footer.png  used on input line 836.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [37<./images/primitives_separated.png>]
-<images/speech_music.png, id=173, 298.86656pt x 189.70876pt>
+ [41<./images/primitives_separated.png>]
+<images/speech_music.png, id=175, 298.86656pt x 189.70876pt>
 File: images/speech_music.png Graphic file (type png)
 <use images/speech_music.png>
-Package luatex.def Info: images/speech_music.png  used on input line 821.
+Package luatex.def Info: images/speech_music.png  used on input line 838.
 (luatex.def)             Requested size: 298.86581pt x 189.70828pt.
-<images/music_mixed_1.png, id=174, 295.1025pt x 195.73125pt>
+<images/music_mixed_1.png, id=176, 295.1025pt x 195.73125pt>
 File: images/music_mixed_1.png Graphic file (type png)
 <use images/music_mixed_1.png>
-Package luatex.def Info: images/music_mixed_1.png  used on input line 833.
+Package luatex.def Info: images/music_mixed_1.png  used on input line 850.
 (luatex.def)             Requested size: 295.10176pt x 195.73076pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 834.
+Package luatex.def Info: images/sigla_footer.png  used on input line 851.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [38<./images/music_music.png><./images/speech_music.png>]
-<images/music_mixed_2.png, id=178, 283.0575pt x 190.46156pt>
+ [42<./images/music_music.png><./images/speech_music.png>]
+<images/music_mixed_2.png, id=180, 283.0575pt x 190.46156pt>
 File: images/music_mixed_2.png Graphic file (type png)
 <use images/music_mixed_2.png>
-Package luatex.def Info: images/music_mixed_2.png  used on input line 836.
+Package luatex.def Info: images/music_mixed_2.png  used on input line 853.
 (luatex.def)             Requested size: 283.0568pt x 190.46107pt.
-<images/music_separated_1.png, id=179, 294.34969pt x 194.22563pt>
+<images/music_separated_1.png, id=181, 294.34969pt x 194.22563pt>
 File: images/music_separated_1.png Graphic file (type png)
 <use images/music_separated_1.png>
-Package luatex.def Info: images/music_separated_1.png  used on input line 842.
+Package luatex.def Info: images/music_separated_1.png  used on input line 859.
 (luatex.def)             Requested size: 294.34895pt x 194.22514pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 843.
+Package luatex.def Info: images/sigla_footer.png  used on input line 860.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [39<./images/music_mixed_1.png><./images/music_mixed_2.png>]
-<images/music_separated_2.png, id=185, 290.58563pt x 194.97844pt>
+ [43<./images/music_mixed_1.png><./images/music_mixed_2.png>]
+<images/music_separated_2.png, id=187, 290.58563pt x 194.97844pt>
 File: images/music_separated_2.png Graphic file (type png)
 <use images/music_separated_2.png>
-Package luatex.def Info: images/music_separated_2.png  used on input line 845.
+Package luatex.def Info: images/music_separated_2.png  used on input line 862.
 (luatex.def)             Requested size: 290.58492pt x 194.97795pt.
-<images/english_speech.png, id=186, 294.34969pt x 185.94469pt>
+<images/english_speech.png, id=188, 294.34969pt x 185.94469pt>
 File: images/english_speech.png Graphic file (type png)
 <use images/english_speech.png>
-Package luatex.def Info: images/english_speech.png  used on input line 853.
+Package luatex.def Info: images/english_speech.png  used on input line 870.
 (luatex.def)             Requested size: 294.34895pt x 185.94421pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 854.
+Package luatex.def Info: images/sigla_footer.png  used on input line 871.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
 
-[40<./images/music_separated_1.png><./images/music_separated_2.png>]
-<images/spanish_speech.png, id=192, 296.60812pt x 185.94469pt>
+[44<./images/music_separated_1.png><./images/music_separated_2.png>]
+<images/spanish_speech.png, id=194, 296.60812pt x 185.94469pt>
 File: images/spanish_speech.png Graphic file (type png)
 <use images/spanish_speech.png>
-Package luatex.def Info: images/spanish_speech.png  used on input line 856.
+Package luatex.def Info: images/spanish_speech.png  used on input line 873.
 (luatex.def)             Requested size: 296.60739pt x 185.94421pt.
-<images/speech_mixed_1.png, id=193, 280.79906pt x 188.20313pt>
+<images/speech_mixed_1.png, id=195, 280.79906pt x 188.20313pt>
 File: images/speech_mixed_1.png Graphic file (type png)
 <use images/speech_mixed_1.png>
-Package luatex.def Info: images/speech_mixed_1.png  used on input line 868.
+Package luatex.def Info: images/speech_mixed_1.png  used on input line 885.
 (luatex.def)             Requested size: 280.79837pt x 188.20265pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 869.
+Package luatex.def Info: images/sigla_footer.png  used on input line 886.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [41<./images/english_speech.png><./images/spanish_speech.png>]
-<images/speech_mixed_2.png, id=197, 277.78781pt x 185.94469pt>
+ [45<./images/english_speech.png><./images/spanish_speech.png>]
+<images/speech_mixed_2.png, id=199, 277.78781pt x 185.94469pt>
 File: images/speech_mixed_2.png Graphic file (type png)
 <use images/speech_mixed_2.png>
-Package luatex.def Info: images/speech_mixed_2.png  used on input line 872.
+Package luatex.def Info: images/speech_mixed_2.png  used on input line 889.
 (luatex.def)             Requested size: 277.78711pt x 185.94421pt.
-<images/speech_separated_1.png, id=198, 300.3722pt x 194.22563pt>
+<images/speech_separated_1.png, id=200, 300.3722pt x 194.22563pt>
 File: images/speech_separated_1.png Graphic file (type png)
 <use images/speech_separated_1.png>
-Package luatex.def Info: images/speech_separated_1.png  used on input line 879.
+Package luatex.def Info: images/speech_separated_1.png  used on input line 896.
 (luatex.def)             Requested size: 300.37144pt x 194.22514pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 880.
+Package luatex.def Info: images/sigla_footer.png  used on input line 897.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [42<./images/speech_mixed_1.png><./images/speech_mixed_2.png>]
-<images/speech_separated_2.png, id=204, 295.85532pt x 186.6975pt>
+ [46<./images/speech_mixed_1.png><./images/speech_mixed_2.png>]
+<images/speech_separated_2.png, id=206, 295.85532pt x 186.6975pt>
 File: images/speech_separated_2.png Graphic file (type png)
 <use images/speech_separated_2.png>
-Package luatex.def Info: images/speech_separated_2.png  used on input line 882.
+Package luatex.def Info: images/speech_separated_2.png  used on input line 899.
 (luatex.def)             Requested size: 295.85458pt x 186.69704pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 889.
+Package luatex.def Info: images/sigla_footer.png  used on input line 906.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [43<./images/speech_separated_1.png><./images/speech_separated_2.png>]
-<images/three_initial.png, id=210, 466.74374pt x 458.46281pt>
+ [47<./images/speech_separated_1.png><./images/speech_separated_2.png>]
+<images/three_initial.png, id=212, 466.74374pt x 458.46281pt>
 File: images/three_initial.png Graphic file (type png)
 <use images/three_initial.png>
-Package luatex.def Info: images/three_initial.png  used on input line 890.
+Package luatex.def Info: images/three_initial.png  used on input line 907.
 (luatex.def)             Requested size: 466.7426pt x 458.46169pt.
 
-Overfull \hbox (48.48892pt too wide) in paragraph at lines 890--891
+Overfull \hbox (48.48892pt too wide) in paragraph at lines 907--908
  [] 
  []
 
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 902.
+Package luatex.def Info: images/sigla_footer.png  used on input line 919.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
-[44<./images/three_initial.png>]
-<images/three_mixed.png, id=214, 456.95718pt x 458.46281pt>
+[48<./images/three_initial.png>]
+<images/three_mixed.png, id=216, 456.95718pt x 458.46281pt>
 File: images/three_mixed.png Graphic file (type png)
 <use images/three_mixed.png>
-Package luatex.def Info: images/three_mixed.png  used on input line 903.
+Package luatex.def Info: images/three_mixed.png  used on input line 920.
 (luatex.def)             Requested size: 456.95605pt x 458.46169pt.
 
-Overfull \hbox (38.70238pt too wide) in paragraph at lines 903--904
+Overfull \hbox (38.70238pt too wide) in paragraph at lines 920--921
  [] 
  []
 
-<images/three_separated.png, id=215, 470.50781pt x 460.72125pt>
+<images/three_separated.png, id=217, 470.50781pt x 460.72125pt>
 File: images/three_separated.png Graphic file (type png)
 <use images/three_separated.png>
-Package luatex.def Info: images/three_separated.png  used on input line 908.
+Package luatex.def Info: images/three_separated.png  used on input line 925.
 (luatex.def)             Requested size: 470.50665pt x 460.72012pt.
 
-Overfull \hbox (52.25298pt too wide) in paragraph at lines 908--909
+Overfull \hbox (52.25298pt too wide) in paragraph at lines 925--926
  [] 
  []
 
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 909.
+Package luatex.def Info: images/sigla_footer.png  used on input line 926.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
-[45<./images/three_mixed.png>]
+[49<./images/three_mixed.png>]
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 913.
+Package luatex.def Info: images/sigla_footer.png  used on input line 930.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [46<./images/three_separated.png>]
-<images/pca_vs_ica.png, id=224, 534.49687pt x 533.74406pt>
+ [50<./images/three_separated.png>]
+<images/pca_vs_ica.png, id=227, 534.49687pt x 533.74406pt>
 File: images/pca_vs_ica.png Graphic file (type png)
 <use images/pca_vs_ica.png>
-Package luatex.def Info: images/pca_vs_ica.png  used on input line 917.
+Package luatex.def Info: images/pca_vs_ica.png  used on input line 934.
 (luatex.def)             Requested size: 418.25368pt x 417.67879pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 918.
+Package luatex.def Info: images/sigla_footer.png  used on input line 935.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [47]
+ [51]
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 924.
+Package luatex.def Info: images/sigla_footer.png  used on input line 941.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [48<./images/pca_vs_ica.png>]
-<images/real_mixed.png, id=232, 289.08pt x 392.21532pt>
+ [52<./images/pca_vs_ica.png>]
+<images/real_mixed.png, id=234, 289.08pt x 392.21532pt>
 File: images/real_mixed.png Graphic file (type png)
 <use images/real_mixed.png>
-Package luatex.def Info: images/real_mixed.png  used on input line 927.
+Package luatex.def Info: images/real_mixed.png  used on input line 944.
 (luatex.def)             Requested size: 289.07928pt x 392.21436pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 931.
+Package luatex.def Info: images/sigla_footer.png  used on input line 948.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [49<./images/real_mixed.png>]
-<images/real_separated.png, id=237, 301.125pt x 387.69844pt>
+ [53<./images/real_mixed.png>]
+<images/real_separated.png, id=239, 301.125pt x 387.69844pt>
 File: images/real_separated.png Graphic file (type png)
 <use images/real_separated.png>
-Package luatex.def Info: images/real_separated.png  used on input line 932.
+Package luatex.def Info: images/real_separated.png  used on input line 949.
 (luatex.def)             Requested size: 301.12425pt x 387.69748pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 940.
+Package luatex.def Info: images/sigla_footer.png  used on input line 957.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [50<./images/real_separated.png>]
-<images/meg_1.png, id=242, 402.00188pt x 369.63094pt>
+ [54<./images/real_separated.png>]
+<images/meg_1.png, id=244, 402.00188pt x 369.63094pt>
 File: images/meg_1.png Graphic file (type png)
 <use images/meg_1.png>
-Package luatex.def Info: images/meg_1.png  used on input line 955.
+Package luatex.def Info: images/meg_1.png  used on input line 972.
 (luatex.def)             Requested size: 402.00089pt x 369.63002pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 956.
+Package luatex.def Info: images/sigla_footer.png  used on input line 973.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [51]
-<images/meg_2.png, id=246, 415.5525pt x 611.28375pt>
+ [55]
+<images/meg_2.png, id=248, 415.5525pt x 611.28375pt>
 File: images/meg_2.png Graphic file (type png)
 <use images/meg_2.png>
-Package luatex.def Info: images/meg_2.png  used on input line 961.
+Package luatex.def Info: images/meg_2.png  used on input line 978.
 (luatex.def)             Requested size: 332.44244pt x 489.02766pt.
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 962.
+Package luatex.def Info: images/sigla_footer.png  used on input line 979.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [52<./images/meg_1.png>]
-File: images/sigla_footer.png Graphic file (type png)
-<use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 964.
-(luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [53<./images/meg_2.png>]
-File: images/sigla_footer.png Graphic file (type png)
-<use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 974.
-(luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [54]
+ [56<./images/meg_1.png>]
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
 Package luatex.def Info: images/sigla_footer.png  used on input line 981.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [55]
-(./documentatie.bbl
-Underfull \hbox (badness 6094) in paragraph at lines 63--66
+ [57<./images/meg_2.png>]
+File: images/sigla_footer.png Graphic file (type png)
+<use images/sigla_footer.png>
+Package luatex.def Info: images/sigla_footer.png  used on input line 991.
+(luatex.def)             Requested size: 17.27629pt x 17.05046pt.
+ [58](load luc: C:/Users/BDRadu/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fo
+nts/otl/lmmono12-regular.luc)
+Overfull \hbox (6.05339pt too wide) in paragraph at lines 999--1000
+\TU/Calibri(0)/m/n/12 nece-sare sunt pub-lice la adresa: $\TU/lmtt/m/n/12 https
+://github.com/radumotrescu/Licenta-[]BSS$\TU/Calibri(0)/m/n/12 . 
+ []
+
+File: images/sigla_footer.png Graphic file (type png)
+<use images/sigla_footer.png>
+Package luatex.def Info: images/sigla_footer.png  used on input line 1000.
+(luatex.def)             Requested size: 17.27629pt x 17.05046pt.
+[59] (./documentatie.bbl
+Underfull \hbox (badness 6094) in paragraph at lines 69--72
 []\TU/Calibri(0)/m/n/12 Blind source sep-a-ra-tion for noise re-duc-tion in mo-
 
  []
@@ -1739,20 +1765,20 @@ File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
 Package luatex.def Info: images/sigla_footer.png  used on input line 102.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
-[56]
-Underfull \hbox (badness 10000) in paragraph at lines 104--107
+[60]
+Underfull \hbox (badness 10000) in paragraph at lines 110--113
 []\TU/Calibri(0)/m/n/12 Blind source sep-a-ra-tion us-ing fas-tica - scikit-lea
 rn.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--107
+Underfull \hbox (badness 10000) in paragraph at lines 110--113
 \TU/Calibri(0)/m/n/12 [On-line]. Avail-able: $http://scikit-[]learn.org/stable/
 auto_
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--107
+Underfull \hbox (badness 10000) in paragraph at lines 110--113
 \TU/Calibri(0)/m/n/12 examples/decomposition/plot_ica_blind_source_separation.h
 tml#
  []
@@ -1760,31 +1786,32 @@ tml#
 )
 File: images/sigla_footer.png Graphic file (type png)
 <use images/sigla_footer.png>
-Package luatex.def Info: images/sigla_footer.png  used on input line 987.
+Package luatex.def Info: images/sigla_footer.png  used on input line 1006.
 (luatex.def)             Requested size: 17.27629pt x 17.05046pt.
- [57] (./documentatie.aux))
+ [61] (./documentatie.aux))
 
 Here is how much of LuaTeX's memory you used:
- 27025 strings out of 494447
+ 27041 strings out of 494447
  100000,662416 words of node,token memory allocated
- 908 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 108 attribute, 60 glue_spec, 108 at
+ 924 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 112 attribute, 60 glue_spec, 112 at
 tribute_list, 1 write nodes
-   avail lists: 2:989,3:212,4:50,5:634,6:34,7:3578,8:169,9:734,10:14,11:288
- 29046 multiletter control sequences out of 65536+200000
- 63 fonts using 19285975 bytes
- 77i,16n,77p,1113b,694s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Windows/Fonts/calibrii.ttf><C:/Windows/Fonts/calibrib.ttf><C:/Windows/Fonts/
-calibri.ttf><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmsy8.pfb>
-Output written on documentatie.pdf (61 pages, 1817343 bytes).
+   avail lists: 2:989,3:224,4:50,5:666,6:35,7:3810,8:169,9:739,10:14,11:305
+ 29048 multiletter control sequences out of 65536+200000
+ 64 fonts using 19412119 bytes
+ 77i,16n,77p,1113b,904s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Windows/Fonts/calibrii.ttf><c:/program files/miktex 2.9/fonts/opentype/publi
+c/lm/lmmono12-regular.otf><C:/Windows/Fonts/calibrib.ttf><C:/Windows/Fonts/calib
+ri.ttf><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy8.pfb>
+Output written on documentatie.pdf (62 pages, 1823549 bytes).
 
-PDF statistics: 310 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 319 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -43,7 +43,6 @@
 \everymath{\displaystyle}
 \setlength{\parskip}{1em}
 \setcounter{secnumdepth}{4}
-\pagenumbering{roman}
 
 \title{Separarea surselor}
 \author{Motrescu Radu}
@@ -72,7 +71,7 @@
         \vspace{15\baselineskip}
 		\par
 		\begin{flushleft}
-        {\large{Autor: \hspace{35mm}	\textbf{Radu-Marian Motrescu}}\par}
+        {\large{Autor: \hspace{33mm}	\textbf{Radu-Marian Motrescu}}\par}
         {\large{Coordonator științific: \hspace{1mm} \textbf{Lect. Dr. Honorius-Cezar Gâlmeanu}}\par}
 		\end{flushleft}
 		\vfill
@@ -88,10 +87,8 @@
 \setcounter{page}{1}
 \tableofcontents
 \clearpage
-\setcounter{page}{1}
 
 \newpage
-\pagenumbering{arabic}
 
 \pagestyle{plain}
 \section{Introducere in analiza si separarea componentelor}
@@ -101,24 +98,14 @@ Algoritmii abordati sunt \textbf{PCA (Principal Component Analysis)}, \textbf{KP
 
 O scurta descriere a cazurilor de aplicare a algoritmilor mentionati:
 \begin{itemize}
-	\item{PCA - Este folosit pentru a extrage informatiile cele mai relevante dintr-un set de date, adeseori cu dimensionalitate mare, cu scopul atat de a face interpretarea lor mai usoara, cat si pentru prelucrarea lor mai rapida.}
-	\item{KPCA - Este o extensie a PCA, si acopera slabiciunile PCA, spre exemplu in seturi de date in care distributia valorilor nu poate fi analizata la fel de bine de PCA, si in cazuri de clustering.}
-	\item{ICA - Aceasta abordare de analizare a componentelor are avantajul de le putea si separa, folosind atat unelte matematica cat si statistice, si este adeseori folosita in cazuri de separare a semnalelor de diferite tipuri, precum audio si video.}
+	\item{PCA - Este folosit pentru a extrage informatiile cele mai relevante dintr-un set de date, adeseori cu dimensionalitate mare, cu scopul atat de a face interpretarea lor mai usoara, cat si pentru prelucrarea lor mai rapida, prin proiectarea a noi feature-uri ale setului de date obtinute prin combinari liniare ale celor existente, obtinand astfel directiile de maxima variabilitate.}
+	\item{KPCA - Este o extensie a PCA, si acopera slabiciunile PCA, spre exemplu in seturi de date in care distributia valorilor nu poate fi analizata la fel de bine de PCA, si in cazuri de clustering, feature-urile noi ale setului de date se obtin prin combinari neliniare ale celor vechi.}
+	\item{ICA - Aceasta abordare de analizare a componentelor are avantajul de le putea si separa din punct de vedere statistic, si este adeseori folosita in cazuri de separare a semnalelor de diferite tipuri, precum audio si video.}
 \end{itemize}
 
 \newpage
 
 \section{PCA}
-\subsection{Biblioteca Accord.NET}
-Libraria Accord.Net contine clase pentru:
-\begin{itemize}
-\item Calcul stiintific: matematica, statistica si machine learning
-\item Procesare de imagini si semnale: imagini, semnale audio si recunoastere si urmarire faciala in timp real
-\item Biblioteci suport pentru controale specifice: histograme, scatter-plots, controale pentru fiecare clasa de procesare imagini si semnale
-\end{itemize}
-
-
-In contextul cerintelor pe care vrem noi sa le indeplinim, vom folosi clase dedicate matematicii, statisticii, si ale unor controale de afisare a datelor. 
 
 \subsection{Ce este PCA?}
 PCA, sau Principal Component Analysis, sau pe romaneste, Analiza Componentelor Principale este o unealta matematica aplicata din algebra liniara. Este o metoda non-parametrica (care nu depinde de statistici) de a extrage informatiile relevante dintr-un set de date complex sau confuz.\cite{data_reduction}
@@ -127,7 +114,7 @@ PCA, sau Principal Component Analysis, sau pe romaneste, Analiza Componentelor P
 Sa presupunem ca am extras informatii pentru 100 de parametri pentru un student: inaltime, varsta, greutate, nota obtinuta la un test, culoarea parului etc. Vrem sa gasim cele mai importante caracteristici care definesc studentul. Cum facem asta? Folosim PCA pentru a le selecta.
 
 \begin{itemize}
-	\item Ce parametri dorim sa indepartam:
+	\item Ce parametri dorim sa ignoram mergand mai departe cu setul de date:
 	\begin{itemize}
 	\item Constanti: numarul de capete, care este 1 pentru toti studentii
 	\item Aproape constanti: grosimea firului de par: 0.003, 0.002, 0.0005 etc.
@@ -158,11 +145,12 @@ In imaginile de mai jos se pot vedea inregistrarile unor informatii. In imaginea
 \includegraphics[width=\linewidth]{Picture2}
 \end{figure}
 
-\paragraph{Variatia} Este un mijloc de realizare a variabilitatii datelor dintr-un set de date cu media $\overline{X}$:
+\paragraph{Deviatia standard} Este un mijloc de realizare a variabilitatii datelor dintr-un set de date cu media $\overline{X}$:
 
 \begin{equation}
 \sigma^2=\frac{\sum_{i=1}^{n} \left( X_i - \overline{X} \right)^2 }{n-1}
 \end{equation}
+
 
 \paragraph{Covariatia} Reprezinta variabilitatea fiecarei dimensiuni in relatie cu celelalte, si este masurata intre 2 dimensiuni pentru a se putea observa relatia dintre cele 2, spre exemplu numarul de ore studiate si nota obtinuta la examen.
 
@@ -175,9 +163,16 @@ In imaginile de mai jos se pot vedea inregistrarile unor informatii. In imaginea
 \text {cov} \left( X,Y \right) = \frac{\sum_{i=1}^{n} \left( X_i - \overline{X} \right) \left( Y_i - \overline{Y} \right) }{n-1}
 \end{equation}
 
+Pe langa aceste masuratori exista si coeficientul de corelatie Pearsson:
+
+\begin{equation}
+	p(x,y)=\frac{\text{cov}(X,Y)}{\sigma x \sigma y}
+\end{equation}
+
+Aceasta masura a corelatiei liniare dintre doua variabile aleatoare $X$ si $Y$ poate lua valori intre $-1$ si $+1$, unde $+1$ este o corelatie totala pozitiva, $0$ inseamna nici o corelatie liniara, iar $-1$ este corelatie totala negativa.\cite{pearsson_correlation_coefficient_wiki}
 
 \paragraph{Matricea de covariatie}
-Consideram setul de date din care extragem valoarea medie (zero-mean data) si avand setul de vectori \( \left\{ x_1, x_2, ..., x_m \right\} \) care reprezinta liniile unei matrici $X_{m,n}$.
+Consideram setul de date din care extragem valoarea medie, rezultand date centrate (zero-mean data) si avand setul de vectori \( \left\{ x_1, x_2, ..., x_m \right\} \) care reprezinta liniile unei matrici $X_{m,n}$.
 
 Fiecare linie a matricii reprezinta toate masuratorile unui anumit parametru, iar fiecare coloana reprezinta masuratorile care s-au intamplat la un moment dat.
 
@@ -190,7 +185,7 @@ x_1 \\ \vdots \\ x_m
 \end{bmatrix}
 \end{equation}
 
-$S_x$ este o matrice simetrica $m \times m$, termenii de pe diagonala reprezentand variatia din acelasi parametru, iar termenii care nu sunt de pe diagonala reprezinta covariatia dintre parametri diferiti. Calculand $S_x$, cuantificam corelatia dintre toate posibilele perechi de masuratori. Observand elementele din matrice, o cavariatie mare reprezinta un caz de redundanta mare, iar o covariatie egala cu 0 reprezinta date complet necorelate.
+$S_x$ este o matrice simetrica $m \times m$, termenii de pe diagonala reprezentand variatia din acelasi parametru, iar termenii care nu sunt de pe diagonala reprezinta covariatia dintre parametri diferiti. Calculand $S_x$, cuantificam corelatia dintre toate posibilele perechi de masuratori. Observand elementele din matrice, o covariatie mare reprezinta un caz de redundanta mare, iar o covariatie egala cu 0 reprezinta date complet necorelate.
 
 \begin{equation}
 C=\begin{bmatrix}
@@ -209,17 +204,26 @@ Vectorii si valorile proprii reies din probleme de urmatoarea forma:
 A.v= \lambda . v
 \end{equation}
 
-\textbf{A}: matrice $m \times m$
+\textbf{$A$}: matrice $m \times m$
 
 
-\textbf{v}: vector $m \times 1$  nenul
+\textbf{$v$}: vector $m \times 1$  nenul
 
 
 $\lambda$: constanta
 
-Pentru orice valoare a lui $\lambda$ pentru care ecuatia are solutie se numeste valoarea proprie a lui A, si vectorul \textbf{v} care corespunde acestei valori se numeste vectorul propriu a lui A.
+Pentru orice valoare a lui $\lambda$ pentru care ecuatia are solutie se numeste valoarea proprie a lui $A$, si vectorul $v$ care corespunde acestei valori se numeste vectorul propriu a lui $A$. 
 
-\paragraph{Pasul final PCA} este sa aflam valorile finale ale setului de date. Aici avem optiunea sa ignoram o parte din dimensiunile pe care le avem, deoarece ele pot fi nesemnificative, avand valori proprii mici, sau dorim afisarea lor in 1, 2 sau 3 dimensiuni. Dupa stabilirea vectorilor proprii doriti, aflarea datelor finale este simpla, proiectam punctele in spatiul lor: 
+Pentru fiecare vector se calculeaza contributia lui la deviatia standard totala, data de valoarea proprie asociata lui:
+
+\begin{equation}
+	\text{contrib}(a)=\frac{a}{\sum_{i=0} A_i}
+\end{equation}
+
+Contributiile vectorilor proprii care corespund valorilor proprii celor mai mari vor avea un procentaj al deviatiei standard ridicat, si astfel in general se ajunge la cazul in care primele trei sau patru componente ocupa de la $80\%$ pana la $95\%$ din procentajul de deviatie standard total. Urmarind aceste procentaje putem decide ce componente vor fi alese pentru a ramane in setul de date pentru a fi procesate in continuare.
+
+
+\paragraph{Pasul final PCA} este sa aflam valorile finale ale setului de date. Dupa stabilirea vectorilor proprii doriti, aflarea datelor finale este simpla, proiectam punctele in spatiul lor: 
 
 FinalData = RowFeatureVector $\times$ RowZeroMeanData
 
@@ -228,7 +232,18 @@ FinalData = RowFeatureVector $\times$ RowZeroMeanData
 \textbf{RowZeroMeanData} este matricea care contine setul de date initial din care s-a scazut valorea medie.
 
 Matricea rezultata \textbf{FinalData} va contine setul de date dupa aplicarea algoritmului PCA.
-\newpage
+
+\subsection{Biblioteca Accord.NET}
+Biblioteca Accord.NET este o biblioteca pentru limbajul C\#, fiind disponibila prin pachetele NuGet si contine clase pentru:
+\begin{itemize}
+\item Calcul stiintific: matematica, statistica si machine learning
+\item Procesare de imagini si semnale: imagini, semnale audio si recunoastere si urmarire faciala in timp real
+\item Biblioteci suport pentru controale specifice: histograme, scatter-plots, controale pentru fiecare clasa de procesare imagini si semnale
+\end{itemize}
+
+In contextul cerintelor pe care vrem noi sa le indeplinim, vom folosi clase dedicate matematicii, statisticii, si ale unor controale de afisare a datelor.
+
+Implementarea aplicatiilor corespunzatoare algoritmilor PCA s-a facut in mediul de programare Visual Studio, cu limbajul de programare C\#.
 
 \subsection{Aplicatia AccordPCA}
 Primii pasi pe care i-am facut in cadrul acestui proiect a fost implementarea algoritmului PCA. Acest lucru a fost realizat usor, folosind libraria Accord, mai specific, pentru a realiza diferitele operatii cu matrici. \cite{accord_pca}
@@ -267,7 +282,7 @@ Pentru a testa acest algoritm, am introdus prima data un set de date deja testat
 \end{figure}
 \newpage
 
-Urmatorul lucru pe care l-am dorit sa il facem a fost sa vedem cum mai multe noruri de puncte, de diferite dimensiuni, se modifica dupa aplicarea algoritmului. Pentru acest lucru, am creat o clasa \textbf{PointCloud} care descrie un nor de puncte. In interiorul clasei am generat norul de puncte in jurul unor coordonate $\left(x,y\right)$, sub forma unui disc, in care punctele au distributie normala. Rezultatele au fost urmatoarele:
+Urmatorul lucru pe care l-am dorit sa il facem a fost sa vedem cum mai multi nori de puncte, de diferite dimensiuni, se modifica dupa aplicarea algoritmului. Pentru acest lucru, am creat o clasa \textbf{PointCloud} care descrie un nor de puncte. In interiorul clasei am generat norul de puncte in jurul unor coordonate $\left(x,y\right)$, sub forma unui disc, in care punctele au distributie normala. Rezultatele au fost urmatoarele:
 
 \begin{figure}[H]
 \centering
@@ -275,7 +290,7 @@ Urmatorul lucru pe care l-am dorit sa il facem a fost sa vedem cum mai multe nor
 \includegraphics[width=\linewidth]{Test2}
 \end{figure}
 
-La fel ca in primul test, se poate observa aranjarea dupa prima componenta principala a norilor.
+La fel ca in primul test, se poate observa aranjarea dupa prima componenta principala a norilor. Cand vorbim de aceasta aranjare, vorbim defapt de miscari in plan, si sunt reprezentate prin inmultiri ale setului de date cu matrici care corespund translatiei si rotatiei, lucru care se intampla si in cazul nostru, matricea de translatie si rotatie fiind matricea vectorilor proprii.
 
 Aceasta aplicatie a fost folosita mai departe pentru a implementa ceilalti algoritmi PCA folositi, elementele de UI fiind eliminate.
 
@@ -284,21 +299,21 @@ Aceasta aplicatie a fost folosita mai departe pentru a implementa ceilalti algor
 In acest moment, am decis sa realizam o aplicatie care are un GUI usor de folosit si unde fiecare nor de puncte este reprezentat in alta culoare, pentru a se vedea mai clar ce se intampla, acest lucru fiind mai important pentru seturile de date in care masuratorile pentru fiecare entitate sunt intrepatrunse.
 
 \subsubsection{Setul 3-cloud-points}
-Primele teste pe care le-am facut, au fost pe 3 nori de puncte generati aleator, la fel ca in exemplul de mai sus, si se poate vedea mai clar separarea norilor atat pe in spatiu 2D, cat si pe axa primei componente, cea cu cea mai mare variatie. De asemenea, atunci cand norii se suprapun putin de-a lungul axei Y, algoritmul PCA reuseste sa separe norii complet de-a lungul axei primei componente. Pe de alta parte, daca norii se suprapun mai mult, atunci se poate observa ca algoritmul PCA nu mai poate separa norii la fel de bine.
-
-\begin{figure}[H]
+Primele teste pe care le-am facut, au fost pe trei nori de puncte generati aleator, la fel ca in exemplul de mai sus, si se poate vedea mai clar separarea norilor atat in spatiul 2D, cat si pe axa primei componente, cea cu variatie maxima. \begin{figure}[H]
 	\caption{Nori separati total}
 	\centering
 	\includegraphics[width=\linewidth]{threecloud1}
 \end{figure}
 
+De asemenea, atunci cand norii se suprapun putin de-a lungul axei Y, algoritmul PCA reuseste sa separe norii complet de-a lungul axei primei componente. 
 
 \begin{figure}[H]
-\caption{Nori interesectati partial}
+\caption{Nori intersectati partial}
 \centering
 \includegraphics[width=\linewidth]{threecloud2}
 \end{figure}
 
+Pe de alta parte, daca norii se suprapun mai mult, atunci se poate observa ca algoritmul PCA nu ii mai poate separa la fel de bine.
 
 \begin{figure}[H]
 \centering
@@ -312,7 +327,7 @@ Primele teste pe care le-am facut, au fost pe 3 nori de puncte generati aleator,
 \subsection{Setul two-moon si abordarea Kernel PCA}
 Pentru a aborda problema seturilor de date liniar inseparabile, nu putem folosi abordarea PCA simpla, rezultatul nu va fi cel dorit, dupa cum se poate vedea aplicand algoritmul PCA pentru setul two-moon: cele doua seturi de puncte se amesteca de-a lungul primei componente principale, astfel o clasificare a unui nou punct proiectat in spatiul respectiv va fi dificila, deoarece nu putem seta un punct de delimitare intre cei doi nori, acestia fiind intrepatrunsi. 
 
-Abordarea Kernel PCA rezolva acest lucru prin proiectarea datelor intr-un spatiu dimensional mai mare, unde ele vor deveni liniar separabile, iar acest lucru se face cu o "functie kernel". Aceasta abordare este prezentata in articolul lui Sebastian Raschka.\cite{kernel_pca}
+Abordarea Kernel PCA rezolva acest lucru prin proiectarea feature-urilor setului de date din spatiul defectuos neliniar, intr-un spatiu dimensional mai mare, dat de vectorii proprii, unde ele vor deveni liniar separabile, iar acest lucru se face cu o "functie kernel". Vom prezenta aceasta abordare conform articolului lui Sebastian Raschka.\cite{kernel_pca}
 
 Pentru a implementa Kernel PCA, vom avea in considerare urmatoarele 2 lucruri:
 
@@ -349,13 +364,13 @@ In imaginile urmatoare se poate observa cum algoritmul PCA si algoritmul KPCA af
 \end{figure}
 
 \subsection{Cros-validare 10-fold}
-Pentru a ne asigura ca algoritmul se comporta corect si in alte situatii, am decis sa facem o cros-validare 10-fold (10-fold crossvalidation). Acest lucru implica urmatoarele: 
+Pentru a ne asigura ca algoritmul se comporta corect si in alte situatii, am decis sa facem o cros-validare 10-fold (10-fold cross-validation). Acest lucru implica urmatoarele: 
 
 -avem 100 de puncte, distribuite in setul de date two-moon
 
 -din acestea, vom alege pe rand, cate 10 puncte, diferite de fiecare data, si vom retine norul din care face parte fiecare
 
--cu celelalte 90 de puncte vom "antrena" algoritmul pentru a putea proiecta celelalte 10 puncte pe componentele principale respective, in cazul nostru, dorim sa facem proiectarea pe prima componenta principala
+-cu celelalte 90 de puncte vom antrena algoritmul pentru a putea proiecta celelalte 10 puncte pe componentele principale respective, in cazul nostru, dorim sa facem proiectarea pe prima componenta principala
 
 -avand cele 90 de puncte proiectate in spatiul nou, putem determina din nou granitele celor 2 nori de puncte, iar mijlocul acestor granite va fi punctul nostru de separare a norilor
 
@@ -632,8 +647,8 @@ In practica am incepe de la un $w$ aleator, am calcula directia in care aplatiza
 
 In practica, aceasta metoda are cateva dezavantaje. Aplatizarea este sensibila la valori extreme setului de date, ceea ce ar insemna ca toata aproximarea ar depinde de aceste valori, lucru care cauzeaza rezultate eronate.
 
-\subsubsection{Negentropia}
-Negentropia este a doua metoda foarte importanta pentru masurarea nongaussianitatii unor variabile aleatoare independente. Din punctul de vedere al teoriei informatiei, negentropia se bazeaza pe cantitatea de entropie diferentiala. Conceptul de entropie este un concept de baza in teoria informatiei. Aceasta reprezinta gradul de informatiei pe care observarea unei variabile o da. Cu cat variabila este mai putin structurata si mai putin previzibila, cu atat mai mare este entropia variabilei. Entropia $H$ a unei variabile aleatoare discrete $Y$ este:
+\subsubsection{Neghentropia}
+Neghentropia este a doua metoda foarte importanta pentru masurarea nongaussianitatii unor variabile aleatoare independente. Din punctul de vedere al teoriei informatiei, neghentropia se bazeaza pe cantitatea de entropie diferentiala. Conceptul de entropie este un concept de baza in teoria informatiei. Aceasta reprezinta gradul de informatie pe care observarea unei variabile o da. Cu cat variabila este mai putin structurata si mai putin previzibila, cu atat mai mare este entropia variabilei. Entropia $H$ a unei variabile aleatoare discrete $Y$ este:
 \begin{equation}
 	H(Y)=-\sum_i P(Y=a_i)log P(Y=a_i)
 \end{equation}
@@ -643,16 +658,16 @@ H(Y)=-\int f(y) logf(y)dy
 \end{equation}
 unde $f(y)$ este functia de densitate a unui vector aleator $y$.
 
-Un rezultat fundamental al teoriei informatiei este stabilirea faptului ca variabilele gaussiene au cea mai mare entropie, comparativ cu alte variabile cu variatie egala. Asta inseamna ca entropia poate fi folosita ca si masura pentru nongaussianitate, aratand ca variabilele cu distributie gaussiana sunt cele mai putin structurate dintre toate distributiile. Entropia este mica pentru variabilele ale caror distributii sunt concentrate pe anumite valori, fiind analog unor functii cu varfuri ascutite, de tip Laplace. Pentru a obtine o masura a nongaussianitatii care este zero pentru o variabila aleatoare gaussiana si tot timpul pozitiva, se foloseste o versiune modificata a definitiei entropiei diferentiale, numita negentropie. Negentropia $J$ este definitia astfel:
+Un rezultat fundamental al teoriei informatiei este stabilirea faptului ca variabilele gaussiene au cea mai mare entropie, comparativ cu alte variabile cu variatie egala. Asta inseamna ca entropia poate fi folosita ca si masura pentru nongaussianitate, aratand ca variabilele cu distributie gaussiana sunt cele mai putin structurate dintre toate distributiile. Entropia este mica pentru variabilele ale caror distributii sunt concentrate pe anumite valori, fiind analog unor functii cu varfuri ascutite, de tip Laplace. Pentru a obtine o masura a nongaussianitatii care este zero pentru o variabila aleatoare gaussiana si tot timpul pozitiva, se foloseste o versiune modificata a definitiei entropiei diferentiale, numita neghentropie. Neghentropia $J$ este definitia astfel:
 \begin{equation}
 	J(y)=H(y_{gauss})-H(y)	
 \end{equation}
-unde $y_{gauss}$ este variabila aleatoare gaussiana care are aceasi matrice de covariatie ca si $y$. Datorita proprietatilor de mai sus, negentropia este pozitiva, si zero atunci cand variabila $y$ are distributie gaussiana. 
+unde $y_{gauss}$ este variabila aleatoare gaussiana care are aceasi matrice de covariatie ca si $y$. Datorita proprietatilor de mai sus, neghentropia este pozitiva, si zero atunci cand variabila $y$ are distributie gaussiana. 
 
-La fel ca la aplatizare, aproximarea negentropiei are un dezavantaj major, acela ca este greu de calculat din punct de vedere computational, deoarece ar fi nevoie de o estimare a functiei de densitate, lucru care nu poate fi facut precis. 
+La fel ca la aplatizare, aproximarea neghentropiei are un dezavantaj major, acela ca este greu de calculat din punct de vedere computational, deoarece ar fi nevoie de o estimare a functiei de densitate, lucru care nu poate fi facut precis. 
 
-\subsubsection{Aproximarea negentropiei}
-Dupa cum am mentionat mai devreme, aproximarea negentropiei este dificila. In practica, se fac anumite aproximari, iar tipurile de aproximari abordate se va face aici. 
+\subsubsection{Aproximarea neghentropiei}
+Dupa cum am mentionat mai devreme, aproximarea neghentropiei este dificila. In practica, se fac anumite aproximari, iar tipurile de aproximari abordate se va face aici. 
 \begin{equation}
 	J(y)\approx \frac{1}{12}E\{y^3\}^2 + \frac{1}{48}kurt(y)^2
 \end{equation}
@@ -669,7 +684,7 @@ Alegand $G$ bine, putem obtine aproximari mult mai bune decat cele de mai devrem
 \begin{equation}
 	G_1(u)=\frac{1}{a_1}\log \cosh a_1 u_1, G_2(u)=-\exp(\frac{-u^2}{2})
 \end{equation}
-unde $1\leq a_1 \leq 2$ este o constanta. Cu toate ca nu am folosit aceste tipuri de aproximari, ele sunt un compromis bun intre metodele de masurare a nongaussianitatii abordate mai devreme, aplatizarea si negentropia. 
+unde $1\leq a_1 \leq 2$ este o constanta. Cu toate ca nu am folosit aceste tipuri de aproximari, ele sunt un compromis bun intre metodele de masurare a nongaussianitatii abordate mai devreme, aplatizarea si neghentropia. 
 
 \subsection{Abordarea Maximum Likelihood}
 O abordare foarte populara pentru rezolvarea modelului ICA este \textbf{maximum likelihood estimation}. Aceasta metoda estimeaza valorile parametrului unui model.\cite{probability_concepts} Acesti parametri sunt gasiti astfel inca estimarea lor sa mareasca sansa ca modelul sa produca datele observate. Pentru cazul particular al modelului nostru ICA, avand $W=(w_1, \dots, w_n)^T$ ca $A^{-1}$, \textbf{log-likelihood-ul} ia forma:
@@ -703,6 +718,8 @@ Functia sigmoida are urmatoarea distributie \cite{sigmoid_function_wiki}:
 \subsection{Metodologia si algoritmul}
 \subsubsection{Jupyter Notebook}
 Implementarea algoritmului s-a facut in limbajul de programare Python, folosind platforma Jupyter Notebook. Am ales aceasta platforma deoarece face ca pasii algoritmului sa poata fi mai bine urmariti, iar afisarea rezultatelor sa se faca intr-o maniera usoara si concisa. Aplicatia functioneaza pe un server local, iar codul este scris intr-un \textbf{notebook (caiet)}, prezent intr-o pagina web, codul fiind impartit in \textbf{cells (celule)}, in fiecare celula putem scrie o bucata de cod, care mai apoi poate fi executata. Acest stil de lucru este de folos deoarece permite executarea fiecarei celule individual, scurtand timpul dedicat intretinerii caietului. De asemenea, in aceste celule putem amplasa grafice, histograme, elemente de tip \textbf{mark-up} pentru prezentarea unor informatii suplimentare, si elemente de tip audio sau video. 
+
+Pentru a executa testele prezentate aici, tot ce trebuie facut este deschiderea fisierului corespunzator testului in interfata Jupyter Notebook, si executarea tutoror celulelor din fisier.
 
 \subsubsection{Semnalele audio testate}
 Pentru testarea algoritmului, am ales mai multe seturi de semnale audio, fiecare cu proprietati diferite. Astfel, am realizat patru teste:
@@ -748,7 +765,7 @@ care va fi o matrice patratica, cu numarul de linii egal cu numarul de esantioan
 
 Aceasta abordare este cea de preferat in cazul algoritmilor de tip gradient descent, deoarece avem un mod obiectiv de a masura performanta algoritmului, si pentru ca functia de cost este legata direct de restul operatiilor. In realitate, am descoperit ca metoda aceasta de a opri algoritmul nu este posibila atunci cand lucram cu semnale audio lungi, care pot avea pana la 16000 de esantioane pe secunda, matricea pentru care trebuie sa calculam suma elementelor ar avea dimensiuni foarte mari, spre exemplu $120000 \times 120000$ elemente, care nu incape in memoria RAM a calculatorului. 
 
-O alta abordare pentru a masura independenta este necorelatia, asa cum am mentionat intr-un capitol mai devreme. Acolo am spus ca daca doua variabile sunt independente, ele sunt necorelate, dar afirmatia inversa nu este intotdeauna adevarata. Deoarece abordarea care implica functia de cost nu era potrivita pentru semnale audio de dimensiuni mari, pentru testele care implicau acest tip de componente, am decis sa folosim necorelatia pentru a masura independenta componentelor. Dupa fiecare iteratie a algoritmului, am calculat corelatia intre componentele rezultate, si daca se afla sub un anumit prag, deobicei foarte mic, spre exemplu $3e^{-6}$. Aceasta abordare s-a dovedit a fi una reusita, era consistenta de-a lungul testelor, si poate fi aplicata pentru orice fel de semnale. 
+O alta abordare pentru a masura independenta este necorelatia, asa cum am mentionat intr-un capitol precedent. Acolo am spus ca daca doua variabile sunt independente, ele sunt necorelate, dar afirmatia inversa nu este intotdeauna adevarata. Deoarece abordarea care implica functia de cost nu era potrivita pentru semnale audio de dimensiuni mari, pentru testele care implicau acest tip de componente, am decis sa folosim necorelatia pentru a masura independenta componentelor. Dupa fiecare iteratie a algoritmului, am calculat corelatia intre componentele rezultate, si daca se afla sub un anumit prag, deobicei foarte mic, spre exemplu $3e^{-6}$. Aceasta abordare s-a dovedit a fi una reusita, era consistenta de-a lungul testelor, si poate fi aplicata pentru orice fel de semnale. 
 
 \subsubsection{Implementarea algoritmului}
 \begin{lstlisting}[language=Python]
@@ -962,15 +979,15 @@ Semnalele MEG au fost inregistrate intr-o camera izolata magnetic, cu un neuroma
  \end{center}
  In aceasta imagine se vad sectiuni de semnale pentru 9 dintre componentele independente rezultate dupa aplicarea ICA asupra setului de date. In primele doua componente independente au aparut din cauza activitatii musculare cauzate de muscat. Aceasta separare in doua componente pare sa corespunda celor doua seturi de muschi care au fost activati in timpul procesului. A treia si a cincea componenta independenta arata miscarile bruste si rapide ale ochilor, impreuna cu clipitul aferent. A patra componenta arata artefactul cardiac care a fost extras. Ultimele doua componente independente, IC8 si IC9 au fost obtinute dupa o filtrare superioara a frecventelor de peste 1 Hz, IC8 arata artefactele date de ceasul din camera izolata, iar IC9 arata un senzor care are un sunet de fundal mai mare decat restul senzorilor. 
 
- Acest test arata cum ICA este folosit in separarea multor componente complexe, putand separa multe tipuri de artefacte care pot aparea in cadrului unor scanari de tip MEG.\cite{hyvarien}
+ Acest test arata cum ICA este folosit in separarea multor componente complexe, putand separa multe tipuri de artefacte care pot aparea in cadrului unor scanari de tip MEG.
 
  \subsubsection{Factori ascunsi in date financiare}
  ICA a fost folosit si in campul finantelor. Un test a fost efectuat asupra fluxului de bani din cadrul a 40 de magazine care apartin aceluiasi lant comercial. Ipoteza a fost ca toate magazinele trebuie sa fie afectate de factori comuni, spre exemplu variatia sezonieria a consumului cumparatorilor datorata sarbatorilor si altor evenimente, dar fiecare magazin este manageriat in mod diferit, isi face publicitate in alt mod, lucru care ar face diferenta intre fluxul de bani adus de magazine. 
 
- Au fost analizate datele a 40 de magazine pe durata a 140 de saptamani. Dupa aplicarea PCA asupra datelor, s-au pastrat primele cinci componente principale, iar dupa aplicarea ICA, s-au estimat patru componente independente. Primele doua componente au fost cele reflectate de sarbatorile de iarna si sarbatorile de vara, in acest caz, sarbatorile de vara au avut o variatie mai mica asupra fluxului de bani decat cele de iarna. A treia componenta are o variatie si mai mica decat a doua componenta, semanand cu un trend de piata, iar a patra componenta nu se asemana cu precedentele, o banuiala ar fi ca reprezinta pozitia pe piata relativ la lanturile de magazine rivale.\cite{hyvarien}
+ Au fost analizate datele a 40 de magazine pe durata a 140 de saptamani. Dupa aplicarea PCA asupra datelor, s-au pastrat primele cinci componente principale, iar dupa aplicarea ICA, s-au estimat patru componente independente. Primele doua componente au fost cele reflectate de sarbatorile de iarna si sarbatorile de vara, in acest caz, sarbatorile de vara au avut o variatie mai mica asupra fluxului de bani decat cele de iarna. A treia componenta are o variatie si mai mica decat a doua componenta, semanand cu un trend de piata, iar a patra componenta nu se asemana cu precedentele, o banuiala ar fi ca reprezinta pozitia pe piata relativ la lanturile de magazine rivale.
 
  \subsubsection{Telecomunicatii}
-Aplicarea ICA in telecomunicatii s-a facut cu succesul in cazurile unde semnalul unui utilizator poate interfera cu semnalul altor utilizatori. Acest lucru se poate intampla in cazul modelului de comunicatii mobile CDMA (Code-Division Multiple Access), unde telefoanele mai multor utilizatori trimit semnale radio combinate pe un singur canal, iar receptorii decripteaza semnalele cu ajutorul unor chei numerice unice, asignate fiecarui utilizator. In acest caz, datorita numarului mare de utilizatori, problema se preteaza unei abordari de tip ICA, desi prin modelul CDMA avem acces la mai multe informatii initiale, ceea ce face separarea mult mai usoara.\cite{hyvarien}
+Aplicarea ICA in telecomunicatii s-a facut cu succesul in cazurile unde semnalul unui utilizator poate interfera cu semnalul altor utilizatori. Acest lucru se poate intampla in cazul modelului de comunicatii mobile CDMA (Code-Division Multiple Access), unde telefoanele mai multor utilizatori trimit semnale radio combinate pe un singur canal, iar receptorii decripteaza semnalele cu ajutorul unor chei numerice unice, asignate fiecarui utilizator. In acest caz, datorita numarului mare de utilizatori, problema se preteaza unei abordari de tip ICA, desi prin modelul CDMA avem acces la mai multe informatii initiale, ceea ce face separarea mult mai usoara.
 \newpage
 \section{Concluzii}
 Urmarind baza matematica si aplicatiile acestor abordari de analiza si separare a componentelor, ne putem da seama ca acestea sunt robuste si au un folos real in viata de zi cu zi. 
@@ -978,6 +995,8 @@ Urmarind baza matematica si aplicatiile acestor abordari de analiza si separare 
 PCA este alcatuit din concepte simple de matematica liniara, fiind foarte usor de inteles, si este folosit in majoritatea algoritmilor din domeniul data science, puterea de standardizare si de reducere a dimensionalitatii datelor fiind foarte pretioasa in starea curenta a lumii IT, unde in fiecare secunda se strang miliarde de esantioane, unele relevante, altele nu. 
 
 Abordarea ICA, dupa cum am vazut, are multiple aplicatii moderne, printre care cele medicale si economice, fiind flexibila in implementare. Aici am acoperit doar o mica parte din ceea ce inseamna ICA, posibilitatile de dezvoltare a problemei de separare a componentelor independente sunt foarte mari, problema semnalelor defazate este inca una de actualitate.  
+
+Tot codul sursa folosit, impreuna cu aceasta documentatie scrisa si alte resurse necesare sunt publice la adresa: \url{https://github.com/radumotrescu/Licenta-BSS}.
 \newpage
 
 \bibliography{referinte}

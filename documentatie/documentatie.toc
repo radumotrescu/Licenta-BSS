@@ -1,55 +1,55 @@
-\contentsline {section}{\numberline {1}Introducere in analiza si separarea componentelor}{1}
-\contentsline {section}{\numberline {2}PCA}{2}
-\contentsline {subsection}{\numberline {2.1}Biblioteca Accord.NET}{2}
-\contentsline {subsection}{\numberline {2.2}Ce este PCA?}{2}
-\contentsline {paragraph}{\numberline {2.2.0.1}Un scurt exemplu: \cite {data_reduction}}{2}
-\contentsline {paragraph}{\numberline {2.2.0.2}Variatia}{4}
-\contentsline {paragraph}{\numberline {2.2.0.3}Covariatia}{4}
-\contentsline {paragraph}{\numberline {2.2.0.4}Matricea de covariatie}{4}
-\contentsline {paragraph}{\numberline {2.2.0.5}Valorile si vectorii proprii}{5}
-\contentsline {paragraph}{\numberline {2.2.0.6}Pasul final PCA}{5}
-\contentsline {subsection}{\numberline {2.3}Aplicatia AccordPCA}{7}
-\contentsline {subsection}{\numberline {2.4}Aplicatia PlotPCA}{9}
-\contentsline {subsubsection}{\numberline {2.4.1}Setul 3-cloud-points}{9}
-\contentsline {section}{\numberline {3}Kernel PCA}{11}
-\contentsline {subsection}{\numberline {3.1}Setul two-moon si abordarea Kernel PCA}{11}
-\contentsline {subsection}{\numberline {3.2}Cros-validare 10-fold}{12}
-\contentsline {subsection}{\numberline {3.3}Aplicatia Eigenfaces}{14}
-\contentsline {subsubsection}{\numberline {3.3.1}Proiectarea unei imagini noi}{14}
-\contentsline {subsubsection}{\numberline {3.3.2}Clasificarea unei imagini noi}{15}
-\contentsline {section}{\numberline {4}ICA}{17}
-\contentsline {subsection}{\numberline {4.1}Ce este ICA? }{17}
-\contentsline {subsection}{\numberline {4.2}Definitia riguroasa ICA}{18}
-\contentsline {subsection}{\numberline {4.3}Limitarile ICA}{19}
-\contentsline {subsection}{\numberline {4.4}Independenta}{21}
-\contentsline {subsubsection}{\numberline {4.4.1}Definitie}{21}
-\contentsline {subsubsection}{\numberline {4.4.2}Corelatia si independenta}{22}
-\contentsline {subsubsection}{\numberline {4.4.3}Variabile nongaussiene}{22}
-\contentsline {subsection}{\numberline {4.5}Principiile estimarii ICA}{23}
-\contentsline {subsubsection}{\numberline {4.5.1}Nongaussianitate inseamna independenta}{23}
-\contentsline {subsection}{\numberline {4.6}Masuratori ale nongaussianitatii}{25}
-\contentsline {subsubsection}{\numberline {4.6.1}Aplatizarea}{25}
-\contentsline {subsubsection}{\numberline {4.6.2}Negentropia}{27}
-\contentsline {subsubsection}{\numberline {4.6.3}Aproximarea negentropiei}{28}
-\contentsline {subsection}{\numberline {4.7}Abordarea Maximum Likelihood}{29}
-\contentsline {subsection}{\numberline {4.8}Metoda Gradient Descent}{29}
-\contentsline {subsection}{\numberline {4.9}Metodologia si algoritmul}{30}
-\contentsline {subsubsection}{\numberline {4.9.1}Jupyter Notebook}{30}
-\contentsline {subsubsection}{\numberline {4.9.2}Semnalele audio testate}{31}
-\contentsline {subsubsection}{\numberline {4.9.3}Pre-procesarea datelor}{31}
-\contentsline {subsubsection}{\numberline {4.9.4}Aplicarea algoritmului Gradient Descent}{32}
-\contentsline {subsubsection}{\numberline {4.9.5}Conditia de oprire}{33}
-\contentsline {subsubsection}{\numberline {4.9.6}Implementarea algoritmului}{34}
-\contentsline {subsection}{\numberline {4.10}Rezultate}{35}
-\contentsline {subsubsection}{\numberline {4.10.1}Semnale primitive}{35}
-\contentsline {subsubsection}{\numberline {4.10.2}Semnale audio: voce si muzica}{37}
-\contentsline {subsubsection}{\numberline {4.10.3}Semnale audio: doua voci}{40}
-\contentsline {subsubsection}{\numberline {4.10.4}Semnale audio: trei semnale}{43}
-\contentsline {subsubsection}{\numberline {4.10.5}Analiza coeficientilor de corelatie a testelor}{46}
-\contentsline {subsubsection}{\numberline {4.10.6}ICA versus PCA}{47}
-\contentsline {subsubsection}{\numberline {4.10.7}Problema ICA in lumea reala}{48}
-\contentsline {subsection}{\numberline {4.11}Utilizari ale ICA}{51}
-\contentsline {subsubsection}{\numberline {4.11.1}Separarea artefactelor din inregistrari MEG}{51}
-\contentsline {subsubsection}{\numberline {4.11.2}Factori ascunsi in date financiare}{54}
-\contentsline {subsubsection}{\numberline {4.11.3}Telecomunicatii}{54}
-\contentsline {section}{\numberline {5}Concluzii}{55}
+\contentsline {section}{\numberline {1}Introducere in analiza si separarea componentelor}{4}
+\contentsline {section}{\numberline {2}PCA}{5}
+\contentsline {subsection}{\numberline {2.1}Ce este PCA?}{5}
+\contentsline {paragraph}{\numberline {2.1.0.1}Un scurt exemplu: \cite {data_reduction}}{5}
+\contentsline {paragraph}{\numberline {2.1.0.2}Deviatia standard}{6}
+\contentsline {paragraph}{\numberline {2.1.0.3}Covariatia}{6}
+\contentsline {paragraph}{\numberline {2.1.0.4}Matricea de covariatie}{7}
+\contentsline {paragraph}{\numberline {2.1.0.5}Valorile si vectorii proprii}{8}
+\contentsline {paragraph}{\numberline {2.1.0.6}Pasul final PCA}{8}
+\contentsline {subsection}{\numberline {2.2}Biblioteca Accord.NET}{9}
+\contentsline {subsection}{\numberline {2.3}Aplicatia AccordPCA}{9}
+\contentsline {subsection}{\numberline {2.4}Aplicatia PlotPCA}{12}
+\contentsline {subsubsection}{\numberline {2.4.1}Setul 3-cloud-points}{12}
+\contentsline {section}{\numberline {3}Kernel PCA}{14}
+\contentsline {subsection}{\numberline {3.1}Setul two-moon si abordarea Kernel PCA}{14}
+\contentsline {subsection}{\numberline {3.2}Cros-validare 10-fold}{15}
+\contentsline {subsection}{\numberline {3.3}Aplicatia Eigenfaces}{17}
+\contentsline {subsubsection}{\numberline {3.3.1}Proiectarea unei imagini noi}{17}
+\contentsline {subsubsection}{\numberline {3.3.2}Clasificarea unei imagini noi}{18}
+\contentsline {section}{\numberline {4}ICA}{20}
+\contentsline {subsection}{\numberline {4.1}Ce este ICA? }{20}
+\contentsline {subsection}{\numberline {4.2}Definitia riguroasa ICA}{21}
+\contentsline {subsection}{\numberline {4.3}Limitarile ICA}{22}
+\contentsline {subsection}{\numberline {4.4}Independenta}{24}
+\contentsline {subsubsection}{\numberline {4.4.1}Definitie}{24}
+\contentsline {subsubsection}{\numberline {4.4.2}Corelatia si independenta}{25}
+\contentsline {subsubsection}{\numberline {4.4.3}Variabile nongaussiene}{25}
+\contentsline {subsection}{\numberline {4.5}Principiile estimarii ICA}{26}
+\contentsline {subsubsection}{\numberline {4.5.1}Nongaussianitate inseamna independenta}{26}
+\contentsline {subsection}{\numberline {4.6}Masuratori ale nongaussianitatii}{28}
+\contentsline {subsubsection}{\numberline {4.6.1}Aplatizarea}{28}
+\contentsline {subsubsection}{\numberline {4.6.2}Neghentropia}{30}
+\contentsline {subsubsection}{\numberline {4.6.3}Aproximarea neghentropiei}{31}
+\contentsline {subsection}{\numberline {4.7}Abordarea Maximum Likelihood}{32}
+\contentsline {subsection}{\numberline {4.8}Metoda Gradient Descent}{32}
+\contentsline {subsection}{\numberline {4.9}Metodologia si algoritmul}{33}
+\contentsline {subsubsection}{\numberline {4.9.1}Jupyter Notebook}{33}
+\contentsline {subsubsection}{\numberline {4.9.2}Semnalele audio testate}{34}
+\contentsline {subsubsection}{\numberline {4.9.3}Pre-procesarea datelor}{34}
+\contentsline {subsubsection}{\numberline {4.9.4}Aplicarea algoritmului Gradient Descent}{35}
+\contentsline {subsubsection}{\numberline {4.9.5}Conditia de oprire}{36}
+\contentsline {subsubsection}{\numberline {4.9.6}Implementarea algoritmului}{37}
+\contentsline {subsection}{\numberline {4.10}Rezultate}{39}
+\contentsline {subsubsection}{\numberline {4.10.1}Semnale primitive}{39}
+\contentsline {subsubsection}{\numberline {4.10.2}Semnale audio: voce si muzica}{41}
+\contentsline {subsubsection}{\numberline {4.10.3}Semnale audio: doua voci}{44}
+\contentsline {subsubsection}{\numberline {4.10.4}Semnale audio: trei semnale}{47}
+\contentsline {subsubsection}{\numberline {4.10.5}Analiza coeficientilor de corelatie a testelor}{50}
+\contentsline {subsubsection}{\numberline {4.10.6}ICA versus PCA}{51}
+\contentsline {subsubsection}{\numberline {4.10.7}Problema ICA in lumea reala}{52}
+\contentsline {subsection}{\numberline {4.11}Utilizari ale ICA}{55}
+\contentsline {subsubsection}{\numberline {4.11.1}Separarea artefactelor din inregistrari MEG}{55}
+\contentsline {subsubsection}{\numberline {4.11.2}Factori ascunsi in date financiare}{58}
+\contentsline {subsubsection}{\numberline {4.11.3}Telecomunicatii}{58}
+\contentsline {section}{\numberline {5}Concluzii}{59}
