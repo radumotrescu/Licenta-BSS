@@ -222,7 +222,7 @@ Pentru fiecare vector se calculeaza contributia lui la deviatia standard totala,
 
 Contributiile vectorilor proprii care corespund valorilor proprii celor mai mari vor avea un procentaj al deviatiei standard ridicat, si astfel in general se ajunge la cazul in care primele trei sau patru componente ocupa de la $80\%$ pana la $95\%$ din procentajul de deviatie standard total. 
 \begin{center}
-	\includegraphics[scale=0.8]{pca_features}
+	\includegraphics[scale=1]{pca_features}
 \end{center}
 
 Urmarind aceste procentaje putem decide ce componente vor fi alese pentru a ramane in setul de date pentru a fi procesate in continuare.
@@ -284,13 +284,16 @@ public void Compute()
 Pentru a testa acest algoritm, am introdus prima data un set de date deja testat, unde se poate observa clar rezultatul algoritmului.\cite{data_reduction}
 \begin{figure}[H]
 \centering
+\caption{Primul test PCA}
 \includegraphics[width=\linewidth]{Test1}
 \end{figure}
+\newpage
 
 Urmatorul lucru pe care l-am dorit sa il facem a fost sa vedem cum mai multi nori de puncte, de diferite dimensiuni, se modifica dupa aplicarea algoritmului. Pentru acest lucru, am creat o clasa \textbf{PointCloud} care descrie un nor de puncte. In interiorul clasei am generat norul de puncte in jurul unor coordonate $\left(x,y\right)$, sub forma unui disc, in care punctele au distributie normala. Rezultatele au fost urmatoarele:
 
 \begin{figure}[H]
 \centering
+\caption{Al doilea test PCA}
 \includegraphics[width=\linewidth]{Test2}
 \end{figure}
 
@@ -522,6 +525,7 @@ Motivul este ca, din nou, atat \textbf{s} cat si \textbf{A} fiind necunoscute, p
 \end{equation}
 
 Elementele lui \textbf{Ps} sunt componentele independente originale, dar in ordine diferita, iar matricea $\textbf{AP}^{-1}$ este doar o noua matrice de amestecare necunoscuta, care poate fi aflata.
+\newpage
 
 \subsection{Independenta}
 \subsubsection{Definitie} 
@@ -568,7 +572,6 @@ Restrictia fundamentala a ICA este ca componentele independente sa fie nongaussi
 	p(x_1,x_2)=\frac{1}{2\pi}\exp(-\frac{x_1^2+x_2^2}{2})
 \end{equation}
 
-\newpage
 Distributia aceasta este ilustrata mai jos:
 \begin{center}
 	\includegraphics[scale=0.9]{multivariate_gaussian_distribution}
@@ -594,9 +597,8 @@ Distributia aceasta este ilustrata mai jos:
  
  Cautam $w$ astfel incat $w^Tx$ sa fie cat mai nongaussian. Un astfel de vector ar corespunde unui $z$ care are doar o componenta diferita de zero. Asta inseamna ca $w^Tx=z^Ts$ este egal cu una dintre componentele independente.
 
- Maximizand nongaussianitatea lui $w^Tx$ ne da una dintre componentele independente. Spatiul de cautare pentru optimizarea nongaussianitatii intr-un spatiu $n$-dimensional al vectorilor $w$ are $2n$ maxime locale, 2 pentru fiecare componente independenta, $s_i$ si $-s_i$. Ca sa gasim mai multe componente independente, trebuie sa gasim toate maximele locale.  
-
-
+ Maximizand nongaussianitatea lui $w^Tx$ ne da una dintre componentele independente. Spatiul de cautare pentru optimizarea nongaussianitatii intr-un spatiul $n$-dimensional al vectorilor $w$ are $2n$ maxime locale, 2 pentru fiecare componente independenta, $s_i$ si $-s_i$. Ca sa gasim mai multe componente independente, trebuie sa gasim toate maximele locale.  
+\newpage
 \subsection{Masuratori ale nongaussianitatii}
 Pentru a folosi nongaussianitatea in estimarea ICA, avem nevoie de o masura cantitativa a nongaussinitatii unei variabile aleatoare, $y$. Vom presupune ca $y$ este centrat, adica are media egala cu zero, iar deviatia standard ei este unu. 
 \subsubsection{Aplatizarea}
@@ -810,7 +812,7 @@ Dupa cum am mentionat mai sus, am realizat patru teste. Le vom prezenta aici pe 
 \subsubsection{Semnale primitive}
 Primul test a fost realizat cu doua semnale generate prin intermediul codului Python, unul de tip sinus, si unul de tip fierastrau:
 \begin{center}
-	\includegraphics[scale=1]{primitive_waves}
+	\includegraphics[scale=0.8]{primitive_waves}
 \end{center}
 
 Matricea de amestecare $A$ aleasa a fost:
@@ -834,8 +836,6 @@ Dupa executarea algoritmului pe semnalele amestecate, se ajunge la urmatoarea se
 
 Se poate observa cum semnalele au fost complet separate, lucru care ne indica ca teoria prezentata pana acum este corecta. Coeficientul de corelatie al semnalelor separate este $0.000515439559418$. Pentru acest caz simplu, ICA isi face treaba foarte bine, iar timpul de executie este acceptabil, pana in 10 secunde.
 
-\newpage
-
 \subsubsection{Semnale audio: voce si muzica}
 Urmatorul test a fost efectuat cu doua semnale audio preluate de pe disc. Un semnal continea muzica, si un semnal continea o voce de barbat care spunea cifrele in engleza:
 \begin{center}
@@ -852,7 +852,6 @@ Matricea de amestecare $A$ a fost:
 	0.90514896 & 0.53725471
  \end{matrix}
 \]
-\newpage
 Semnalele amestecate rezultate sunt:
 \begin{center}
 	\includegraphics[scale=1]{music_mixed_1}
@@ -862,7 +861,6 @@ Semnalele amestecate rezultate sunt:
  \end{center}
  Am ales prezentarea lor separata deoarece avand magnitudini diferite, al doilea semnal l-ar fi acoperit pe primul in cazul unei afisari combinate. Acest caz de amestecare ar simula un caz din viata reala in care unul dintre microfoane este mai aproape de cele doua surse de semnal, iar celalalt mai departe. Se observa cum cele doua semnale sunt aproape identice, daca ignoram factorul magnitudinii. 
 
- \newpage
  Rezultatele separarii:
 \begin{center}
 	\includegraphics[scale=1]{music_separated_1}
@@ -873,7 +871,6 @@ Semnalele amestecate rezultate sunt:
 
  Din nou, se observa o separare foarte buna semnalelor amestecate, coeficientul de corelatie fiind $-3.11671198288e-06$, acest exemplu fiind foarte expresiv in acest sens, se poate face foarte clar diferenta dintre semnalul cu voce si cel cu muzica. 
 
- \newpage
  \subsubsection{Semnale audio: doua voci}
  Urmatorul este a fost efectuat cu doua semnale audio, ambele contineau voci de barbat, unul spunea cifrele in engleza, iar celalalt spunea cifrele in spaniola:
  \begin{center}
@@ -890,9 +887,6 @@ Semnalele amestecate rezultate sunt:
 	0.12657259 & 0.96097025
  \end{matrix}
 \]
-
-\newpage
-
 Rezultatul amestecarii este:
 \begin{center}
 	\includegraphics[scale=1]{speech_mixed_1}
@@ -903,8 +897,6 @@ Rezultatul amestecarii este:
  \end{center}
 
  Aceasta amestecare simuleaza un caz din viata reala cand primul microfon se afla la o distanta echidistanta de cele doua surse de semnal, iar al doilea microfon se afla mai aproape de semnalul cu vocea spaniola, pe fundal auzindu-se si vocea engleza.
-
- \newpage
 
 Rezultatul separarii este:
 \begin{center}
@@ -946,14 +938,10 @@ Uitandu-ne la coeficientii de corelatie ale surselor separate, se poate observa 
 \subsubsection{ICA versus PCA}
 Deoarece am abordat si tema PCA in aceasta lucrare, am dorit sa efectuam un test in care comparam puterea de separare dintre ICA si PCA, in contextul componentelor independente. Din fericire, cei care au realizat biblioteca scikit-learn pentru Python au efectuat aceasta comparatie pentru noi.\cite{scikit_ica_pca} Acestia au folosit implementarile lor pentru algoritmii PCA si ICA, si deoarece am demonstrat ca implementarile noastre functioneaza conform teoriei, am decis ca nu mai este necesar sa efectuam acest test si cu algoritmii nostrii. Acestea sunt rezultatele:
 \begin{center}
-	\includegraphics[scale=0.8]{pca_vs_ica_1}
+	\includegraphics[width=\linewidth]{pca_vs_ica}
  \end{center}
 
-\begin{center}
-	\includegraphics[scale=0.8]{pca_vs_ica_2}
- \end{center}
-
- Se poate observa cum abordarea PCA nu reuseste sa separe componentele independente, in asemenea cazuri, abordarea ICA este mai buna. Deasemenea, asa cum spunea si teoria, componentele nu se pot recupera in ordinea amestecarii lor tot timpul, iar in acest exemplu se vede din nou asta.
+ Se poate observa cum abordarea PCA nu reuseste sa separe componentele independente, in asemenea cazuri, abordarea ICA este mai buna.
 
 \subsubsection{Problema ICA in lumea reala}
 Pana acum, ipoteza teoriei descrise a fost faptul ca semnalele sunt amestecate instant, in diferite proportii. Acest lucru in lumea reala ar insemna ca semnalele audio pornesc de la sursa si ajung la receptori instant, luandu-se in calcul distanta. Se poate observa clar problema: in lumea reala exista un timp de parcurgere al semnalului, care variaza atat in functie de distanta dintre surse si receptori, cat si in functie de tipul mediului prin care se face propagarea. Aceasta intarziere poate fi de la mai putin de o milisecunda, pana la mai multe milisecunde. Avand in considerare faptul ca o secunda inregistrata de un receptor audio poate contine 16000 de esantioane, o intarziere de o milisecunda intre ajungerea unui semnal la cei doi receptori duce la o defazare de 16 esantioane intre inceputul inregistrarilor semnalului. Aceasta diferenta este destul de mare incat rezultatul obtinut de algoritm sa nu fie cel dorit. 
@@ -963,8 +951,6 @@ Testul efectuat pentru a ajunge la aceasta concluzie este urmatorul: am pornit d
 	\includegraphics[scale=1]{real_mixed}
  \end{center}
 
- \newpage
-
  Dupa aplicarea ICA asupra acestor surse, se obtin urmatoarele semnale:
 \begin{center}
 	\includegraphics[scale=1]{real_separated}
@@ -972,7 +958,6 @@ Testul efectuat pentru a ajunge la aceasta concluzie este urmatorul: am pornit d
 
  Se poate observa ca nu s-a schimbat aproape nimic in configuratia semnalelor, ele ramanand amestecate, ICA fiind sensibil la defazarea semnalelor.
 
- \newpage
  Pentru a rezolva aceasta problema, se pot aplica doua solutii:
  \begin{itemize}
 	\item{Se poate face o calibrare a microfoanelor, sau mai bine spus, a semnalelor primite, astfel incat atunci cand semnalele initiale ajung la microfon sa fie inregistrate digital cu intarzierea deja luata in calcul. Acest lucru s-ar putea face cu doua semnale scurte ascutite care pleaca din locul de unde vor pleca semnalele initiale care se vor amesteca, masurand intarzierea initiala cu ajutorul acestor semnale ascutite si apoi facand pre-procesarea pe semnalele amestecate.} 
@@ -994,7 +979,6 @@ Semnalele MEG au fost inregistrate intr-o camera izolata magnetic, cu un neuroma
 	\includegraphics[scale=1]{meg_1}
  \end{center}
  In aceasta imagine\cite{hyvarien} se pot vedea 12 semnale MEG din zona frontala, temporala si occipitala, impreuna cu pozitia senzorilor pe casca. Ultimele trei semnale reprezinta doua electrooculograme si o electrocardiograma, si nu au fost folosite in prelucrarea datelor cu ICA.
- \newpage
 
  Asupra vectorului de semnale $x$, care contine amplitudinile $x(t)$ a 122 de semnale (deci dimensionalitatea este $n=22$), s-a aplicat mai intai PCA, pentru a reduce dimensionalitatea si pentru a standardiza datele. Apoi s-a aplicat un algoritm de tip ICA, rezultatele fiind urmatoarele\cite{hyvarien}:
 \begin{center}
@@ -1009,7 +993,6 @@ Semnalele MEG au fost inregistrate intr-o camera izolata magnetic, cu un neuroma
 
  Au fost analizate datele a 40 de magazine pe durata a 140 de saptamani. Dupa aplicarea PCA asupra datelor, s-au pastrat primele cinci componente principale, iar dupa aplicarea ICA, s-au estimat patru componente independente. Primele doua componente au fost cele reflectate de sarbatorile de iarna si sarbatorile de vara, in acest caz, sarbatorile de vara au avut o deviatie standard mai mica asupra fluxului de bani decat cele de iarna. A treia componenta are o deviatie standard si mai mica decat a doua componenta, semanand cu un trend de piata, iar a patra componenta nu se asemana cu precedentele, o banuiala ar fi ca reprezinta pozitia pe piata relativ la lanturile de magazine rivale.
 
- \newpage
  \subsubsection{Telecomunicatii}
 Aplicarea ICA in telecomunicatii s-a facut cu succesul in cazurile unde semnalul unui utilizator poate interfera cu semnalul altor utilizatori. Acest lucru se poate intampla in cazul modelului de comunicatii mobile CDMA (Code-Division Multiple Access), unde telefoanele mai multor utilizatori trimit semnale radio combinate pe un singur canal, iar receptorii decripteaza semnalele cu ajutorul unor chei numerice unice, asignate fiecarui utilizator. In acest caz, datorita numarului mare de utilizatori, problema se preteaza unei abordari de tip ICA, desi prin modelul CDMA avem acces la mai multe informatii initiale, ceea ce face separarea mult mai usoara.
 \newpage
@@ -1023,7 +1006,6 @@ Abordarea ICA, dupa cum am vazut, are multiple aplicatii moderne, printre care c
 Tot codul sursa folosit, impreuna cu aceasta documentatie scrisa si alte resurse necesare sunt publice la adresa: \url{https://github.com/radumotrescu/Licenta-BSS}.
 \newpage
 
-\addcontentsline{toc}{section}{Bibliografie}
 \bibliography{referinte}
 %\bibliographystyle{plain}
 \bibliographystyle{IEEEtran}
